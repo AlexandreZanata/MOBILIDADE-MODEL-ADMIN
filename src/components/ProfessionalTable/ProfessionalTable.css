@@ -1,0 +1,73 @@
+.professional-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.professional-table.light {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+}
+
+.professional-table.dark {
+  background: #1F2937;
+  border: 1px solid #374151;
+}
+
+.professional-table-inner :global(.ant-table) {
+  border-radius: 12px;
+}
+
+
+.professional-table-inner :global(.ant-table-thead > tr > th) {
+  background: var(--color-background-container) !important;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 16px;
+  border-bottom: 2px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.professional-table-inner :global(.ant-table-tbody > tr > td) {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.professional-table-inner :global(.ant-table-tbody > tr:hover > td) {
+  background: var(--color-background-container) !important;
+}
+
+.professional-table-inner :global(.ant-table-tbody > tr) {
+  transition: all 0.2s ease;
+}
+
+.professional-table-inner :global(.ant-pagination) {
+  padding: 16px 24px;
+  margin: 0;
+  background: var(--color-background-container);
+  border-top: 1px solid var(--color-border);
+}
+
+.professional-table-inner :global(.ant-table-filter-trigger) {
+  color: var(--color-text-secondary);
+}
+
+.professional-table-inner :global(.ant-table-filter-trigger:hover) {
+  color: #FF6B35;
+}
+
+.professional-table-inner :global(.ant-table-column-sorter) {
+  color: var(--color-text-secondary);
+}
+
+.professional-table-inner :global(.ant-table-column-sorter:hover) {
+  color: #FF6B35;
+}
+
+.professional-table-inner :global(.ant-table-column-sorter-up.active),
+.professional-table-inner :global(.ant-table-column-sorter-down.active) {
+  color: #FF6B35;
+}
+

@@ -1,0 +1,2 @@
+export { MapSorriso } from './MapSorriso';
+

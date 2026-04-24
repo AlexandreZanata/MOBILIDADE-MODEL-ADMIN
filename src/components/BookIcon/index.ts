@@ -1,0 +1,2 @@
+export { BookIcon } from './BookIcon';
+
