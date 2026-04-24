@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Root redirect — sends authenticated users to /rides, others to /login. */
+/** Root redirect — sends users to /dashboard (AuthGuard handles unauthenticated). */
 export default function RootPage() {
-  redirect("/rides");
+  redirect("/dashboard");
 }

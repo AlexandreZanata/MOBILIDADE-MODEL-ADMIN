@@ -4,3 +4,4 @@ export { Input } from "./Input";
 export { Avatar } from "./Avatar";
 export { RideStatusPill } from "./RideStatusPill";
 export { TableActionButton } from "./TableActionButton";
+export { StatCard } from "./StatCard";

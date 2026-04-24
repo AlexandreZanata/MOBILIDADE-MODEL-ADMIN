@@ -1,0 +1,22 @@
+{
+  "page": {
+    "title": "Dashboard",
+    "subtitle": "Overview of platform activity"
+  },
+  "stats": {
+    "totalRides": "Total Rides",
+    "activeRides": "Active Rides",
+    "totalPassengers": "Total Passengers",
+    "totalVehicles": "Total Vehicles",
+    "approvedVehicles": "Approved Vehicles",
+    "pendingVehicles": "Pending Review"
+  },
+  "welcome": {
+    "greeting": "Welcome back, {{name}}",
+    "role": "Role: {{role}}"
+  },
+  "recentRides": {
+    "title": "Recent Rides",
+    "viewAll": "View all"
+  }
+}

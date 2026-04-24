@@ -1,4 +1,4 @@
-import { Car, Users, Layers, Tag } from "lucide-react";
+import { LayoutDashboard, Car, Users, Layers, Tag } from "lucide-react";
 import { Permission } from "@/models/Permission";
 import type { LucideIcon } from "lucide-react";
 
@@ -7,10 +7,18 @@ export interface NavItem {
   href: string;
   labelKey: string;
   icon: LucideIcon;
-  permission: Permission;
+  /** Permission required to see this nav item. null = always visible. */
+  permission: Permission | null;
 }
 
 export const NAV_ITEMS: NavItem[] = [
+  {
+    key: "dashboard",
+    href: "/dashboard",
+    labelKey: "nav:dashboard",
+    icon: LayoutDashboard,
+    permission: null, // visible to all authenticated users
+  },
   {
     key: "rides",
     href: "/rides",

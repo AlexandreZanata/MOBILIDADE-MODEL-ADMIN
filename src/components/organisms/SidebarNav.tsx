@@ -6,6 +6,7 @@ import { NavItem } from "@/components/molecules/NavItem";
 import { UserMenu } from "@/components/molecules/UserMenu";
 import { Can } from "@/components/auth/Can";
 import { NAV_ITEMS } from "@/config/navigation";
+import type { Permission } from "@/models/Permission";
 
 interface SidebarNavProps {
   collapsed: boolean;
@@ -14,7 +15,8 @@ interface SidebarNavProps {
 
 /**
  * Animated sidebar navigation with collapse support.
- * Each nav item is gated by its required permission via <Can>.
+ * Items with permission=null are always visible to authenticated users.
+ * Items with a permission value are gated via <Can>.
  */
 export function SidebarNav({ collapsed, onToggle }: SidebarNavProps) {
   const { t } = useTranslation(["nav", "common"]);
@@ -39,19 +41,27 @@ export function SidebarNav({ collapsed, onToggle }: SidebarNavProps) {
       {/* Nav links */}
       <nav className="flex-1 overflow-y-auto px-2 py-3">
         <ul className="flex flex-col gap-1">
-          {NAV_ITEMS.map((item) => (
-            <li key={item.key}>
-              <Can perform={item.permission}>
-                <NavItem
-                  href={item.href}
-                  label={t(item.labelKey)}
-                  icon={item.icon}
-                  collapsed={collapsed}
-                  data-testid={`nav-${item.key}`}
-                />
-              </Can>
-            </li>
-          ))}
+          {NAV_ITEMS.map((item) => {
+            const navLink = (
+              <NavItem
+                href={item.href}
+                label={t(item.labelKey)}
+                icon={item.icon}
+                collapsed={collapsed}
+                data-testid={`nav-${item.key}`}
+              />
+            );
+
+            return (
+              <li key={item.key}>
+                {item.permission === null ? (
+                  navLink
+                ) : (
+                  <Can perform={item.permission as Permission}>{navLink}</Can>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </nav>
 

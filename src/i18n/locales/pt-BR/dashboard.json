@@ -1,0 +1,22 @@
+{
+  "page": {
+    "title": "Dashboard",
+    "subtitle": "Visão geral da atividade da plataforma"
+  },
+  "stats": {
+    "totalRides": "Total de Corridas",
+    "activeRides": "Corridas Ativas",
+    "totalPassengers": "Total de Passageiros",
+    "totalVehicles": "Total de Veículos",
+    "approvedVehicles": "Veículos Aprovados",
+    "pendingVehicles": "Aguardando Revisão"
+  },
+  "welcome": {
+    "greeting": "Bem-vindo, {{name}}",
+    "role": "Perfil: {{role}}"
+  },
+  "recentRides": {
+    "title": "Corridas Recentes",
+    "viewAll": "Ver todas"
+  }
+}
