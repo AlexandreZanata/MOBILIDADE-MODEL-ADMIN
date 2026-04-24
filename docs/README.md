@@ -108,6 +108,15 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
+### Routing
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/routing/route](./routes/routing/GET-v1-routing-route.md) | Calculate route — GET version (testing only) |
+| [POST /v1/routing/route](./routes/routing/POST-v1-routing-route.md) | Calculate route with rate limiting and cache |
+| [POST /v1/routing/route/async](./routes/routing/POST-v1-routing-route-async.md) | Queue async route calculation |
+| [GET /v1/routing/rate-limit](./routes/routing/GET-v1-routing-rate-limit.md) | Get current rate limit info |
+
 ### Admin - Vehicles
 
 | Document | Description |
