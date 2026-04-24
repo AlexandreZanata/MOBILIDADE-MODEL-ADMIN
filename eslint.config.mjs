@@ -44,6 +44,8 @@ export default tseslint.config(
       "node_modules/**",
       "public/mockServiceWorker.js",
       "scripts/**",
+      "postcss.config.mjs",
+      "eslint.config.mjs",
     ],
   }
 );

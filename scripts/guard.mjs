@@ -69,8 +69,8 @@ const STEPS = [
   {
     id: "lint",
     name: "ESLint",
-    description: "eslint src/ --ext .ts,.tsx",
-    cmd: "npx eslint src --ext .ts,.tsx --max-warnings 0",
+    description: "eslint src/ next.config.ts vitest.config.ts",
+    cmd: "npx eslint src next.config.ts vitest.config.ts --max-warnings 0",
   },
   {
     id: "test",
