@@ -1,0 +1,48 @@
+{
+  "page": {
+    "title": "Veículos",
+    "brandsTitle": "Marcas de Veículos",
+    "modelsTitle": "Modelos de Veículos",
+    "accessDenied": "Você não tem permissão para visualizar veículos."
+  },
+  "fields": {
+    "licensePlate": "Placa",
+    "brand": "Marca",
+    "model": "Modelo",
+    "year": "Ano",
+    "color": "Cor",
+    "status": "Status",
+    "name": "Nome",
+    "slug": "Slug",
+    "createdAt": "Criado em"
+  },
+  "status": {
+    "PENDING_DOCS": "Documentos Pendentes",
+    "PENDING_REVIEW": "Revisão Pendente",
+    "APPROVED": "Aprovado",
+    "REJECTED": "Rejeitado"
+  },
+  "actions": {
+    "createBrand": "Nova Marca",
+    "editBrand": "Editar Marca",
+    "deleteBrand": "Excluir Marca"
+  },
+  "brand": {
+    "createTitle": "Nova Marca de Veículo",
+    "editTitle": "Editar Marca de Veículo",
+    "deleteTitle": "Excluir Marca",
+    "deleteDescription": "Isso excluirá permanentemente a marca e todos os modelos associados.",
+    "namePlaceholder": "ex: Toyota",
+    "slugPlaceholder": "ex: toyota"
+  },
+  "toast": {
+    "brandCreated": "Marca criada com sucesso.",
+    "brandUpdated": "Marca atualizada com sucesso.",
+    "brandDeleted": "Marca excluída com sucesso.",
+    "error": "Ocorreu um erro. Tente novamente."
+  },
+  "empty": {
+    "title": "Nenhum veículo encontrado",
+    "message": "Nenhum veículo corresponde aos filtros atuais."
+  }
+}

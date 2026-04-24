@@ -1,0 +1,32 @@
+{
+  "page": {
+    "title": "Categorias de Serviço",
+    "accessDenied": "Você não tem permissão para visualizar categorias de serviço."
+  },
+  "fields": {
+    "name": "Nome",
+    "slug": "Slug",
+    "baseFare": "Tarifa Base (R$)",
+    "perKmRate": "Tarifa por Km (R$)",
+    "minFare": "Tarifa Mínima (R$)",
+    "createdAt": "Criado em"
+  },
+  "actions": {
+    "create": "Nova Categoria",
+    "edit": "Editar",
+    "delete": "Excluir"
+  },
+  "modal": {
+    "createTitle": "Nova Categoria de Serviço",
+    "editTitle": "Editar Categoria de Serviço"
+  },
+  "toast": {
+    "created": "Categoria de serviço criada com sucesso.",
+    "updated": "Categoria de serviço atualizada com sucesso.",
+    "error": "Ocorreu um erro. Tente novamente."
+  },
+  "empty": {
+    "title": "Nenhuma categoria encontrada",
+    "message": "Crie a primeira categoria de serviço para começar."
+  }
+}

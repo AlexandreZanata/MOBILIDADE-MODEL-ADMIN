@@ -1,0 +1,48 @@
+{
+  "page": {
+    "title": "Vehicles",
+    "brandsTitle": "Vehicle Brands",
+    "modelsTitle": "Vehicle Models",
+    "accessDenied": "You do not have permission to view vehicles."
+  },
+  "fields": {
+    "licensePlate": "License Plate",
+    "brand": "Brand",
+    "model": "Model",
+    "year": "Year",
+    "color": "Color",
+    "status": "Status",
+    "name": "Name",
+    "slug": "Slug",
+    "createdAt": "Created At"
+  },
+  "status": {
+    "PENDING_DOCS": "Pending Documents",
+    "PENDING_REVIEW": "Pending Review",
+    "APPROVED": "Approved",
+    "REJECTED": "Rejected"
+  },
+  "actions": {
+    "createBrand": "New Brand",
+    "editBrand": "Edit Brand",
+    "deleteBrand": "Delete Brand"
+  },
+  "brand": {
+    "createTitle": "New Vehicle Brand",
+    "editTitle": "Edit Vehicle Brand",
+    "deleteTitle": "Delete Brand",
+    "deleteDescription": "This will permanently delete the brand and all associated models.",
+    "namePlaceholder": "e.g. Toyota",
+    "slugPlaceholder": "e.g. toyota"
+  },
+  "toast": {
+    "brandCreated": "Brand created successfully.",
+    "brandUpdated": "Brand updated successfully.",
+    "brandDeleted": "Brand deleted successfully.",
+    "error": "An error occurred. Please try again."
+  },
+  "empty": {
+    "title": "No vehicles found",
+    "message": "No vehicles match the current filters."
+  }
+}

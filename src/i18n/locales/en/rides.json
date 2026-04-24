@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "Rides",
+    "accessDenied": "You do not have permission to view rides."
+  },
+  "fields": {
+    "id": "ID",
+    "passenger": "Passenger",
+    "driver": "Driver",
+    "status": "Status",
+    "estimatedPrice": "Est. Price",
+    "finalPrice": "Final Price",
+    "distanceKm": "Distance (km)",
+    "durationMinutes": "Duration (min)",
+    "requestedAt": "Requested At",
+    "vehicle": "Vehicle"
+  },
+  "status": {
+    "AGUARDANDO_MOTORISTA": "Awaiting Driver",
+    "MOTORISTA_ACEITOU": "Driver Accepted",
+    "MOTORISTA_A_CAMINHO": "Driver On The Way",
+    "MOTORISTA_CHEGOU": "Driver Arrived",
+    "EM_ANDAMENTO": "In Progress",
+    "CONCLUIDA": "Completed",
+    "CANCELADA_PASSAGEIRO": "Cancelled by Passenger",
+    "CANCELADA_MOTORISTA": "Cancelled by Driver",
+    "CANCELADA_ADMIN": "Cancelled by Admin",
+    "EXPIRADA": "Expired"
+  },
+  "actions": {
+    "updateStatus": "Update Status",
+    "cancel": "Cancel Ride"
+  },
+  "cancel": {
+    "title": "Cancel Ride",
+    "description": "This will cancel the ride and notify the passenger and driver.",
+    "reasonLabel": "Reason (optional)",
+    "reasonPlaceholder": "Enter a reason for cancellation",
+    "confirmLabel": "Cancel Ride",
+    "cancelLabel": "Go Back"
+  },
+  "toast": {
+    "statusUpdated": "Ride status updated.",
+    "cancelled": "Ride cancelled successfully.",
+    "error": "An error occurred. Please try again."
+  },
+  "empty": {
+    "title": "No rides found",
+    "message": "No rides match the current filters."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "page": {
+    "title": "Passageiros",
+    "accessDenied": "Você não tem permissão para visualizar passageiros."
+  },
+  "fields": {
+    "name": "Nome",
+    "email": "E-mail",
+    "cpf": "CPF",
+    "phone": "Telefone",
+    "birthDate": "Data de Nascimento",
+    "emailVerified": "E-mail Verificado",
+    "createdAt": "Criado em",
+    "status": "Status"
+  },
+  "actions": {
+    "delete": "Excluir",
+    "reactivate": "Reativar"
+  },
+  "delete": {
+    "title": "Excluir Passageiro",
+    "description": "Isso realizará uma exclusão lógica do passageiro. Você pode reativá-lo depois.",
+    "confirmLabel": "Excluir",
+    "cancelLabel": "Cancelar"
+  },
+  "reactivate": {
+    "title": "Reativar Passageiro",
+    "description": "Isso restaurará o acesso do passageiro ao sistema.",
+    "confirmLabel": "Reativar",
+    "cancelLabel": "Cancelar"
+  },
+  "toast": {
+    "deleted": "Passageiro excluído com sucesso.",
+    "reactivated": "Passageiro reativado com sucesso.",
+    "error": "Ocorreu um erro. Tente novamente."
+  },
+  "empty": {
+    "title": "Nenhum passageiro encontrado",
+    "message": "Nenhum passageiro corresponde aos filtros atuais."
+  }
+}

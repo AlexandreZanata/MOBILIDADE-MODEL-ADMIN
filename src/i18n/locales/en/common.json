@@ -1,0 +1,48 @@
+{
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "create": "Create",
+    "reactivate": "Reactivate",
+    "confirm": "Confirm",
+    "retry": "Try again",
+    "logout": "Logout",
+    "search": "Search"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "loading": "Loading...",
+  "error": {
+    "generic": "An error occurred. Please try again.",
+    "notFound": "Record not found.",
+    "unauthorized": "You are not authorized to perform this action."
+  },
+  "empty": {
+    "title": "No records found",
+    "message": "There are no records to display."
+  },
+  "accessDenied": "You do not have permission to access this page.",
+  "pagination": {
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "filters": {
+    "all": "All",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "table": {
+    "actions": "Actions"
+  },
+  "confirm": {
+    "title": "Are you sure?",
+    "description": "This action cannot be undone.",
+    "confirmLabel": "Confirm",
+    "cancelLabel": "Cancel"
+  }
+}

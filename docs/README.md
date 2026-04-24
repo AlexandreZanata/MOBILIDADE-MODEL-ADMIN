@@ -110,10 +110,10 @@
 
 ### Admin - Rides
 
-| Document | Description |
-|----------|-------------|
-| [GET /v1/admin/rides](./routes/admin-rides/GET-v1-admin-rides.md) | List all rides with cursor pagination |
-| [POST /v1/admin/rides/{rideId}/cancel](./routes/admin-rides/POST-v1-admin-rides-rideId-cancel.md) | Cancel a ride (administrative, no penalty) |
+| Document                                                                                            | Description                                 |
+|-----------------------------------------------------------------------------------------------------|---------------------------------------------|
+| [GET /v1/admin/rides](./routes/admin-rides/GET-v1-admin-rides.md)                                   | List all rides with cursor pagination       |
+| [POST /v1/admin/rides/{rideId}/cancel](./routes/admin-rides/POST-v1-admin-rides-rideId-cancel.md)   | Cancel a ride (administrative, no penalty)  |
 | [PATCH /v1/admin/rides/{rideId}/status](./routes/admin-rides/PATCH-v1-admin-rides-rideId-status.md) | Update ride status (any transition allowed) |
 
 ### Chat

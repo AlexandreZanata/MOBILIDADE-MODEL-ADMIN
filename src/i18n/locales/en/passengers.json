@@ -1,0 +1,41 @@
+{
+  "page": {
+    "title": "Passengers",
+    "accessDenied": "You do not have permission to view passengers."
+  },
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "cpf": "CPF",
+    "phone": "Phone",
+    "birthDate": "Birth Date",
+    "emailVerified": "Email Verified",
+    "createdAt": "Created At",
+    "status": "Status"
+  },
+  "actions": {
+    "delete": "Delete",
+    "reactivate": "Reactivate"
+  },
+  "delete": {
+    "title": "Delete Passenger",
+    "description": "This will soft-delete the passenger. You can reactivate them later.",
+    "confirmLabel": "Delete",
+    "cancelLabel": "Cancel"
+  },
+  "reactivate": {
+    "title": "Reactivate Passenger",
+    "description": "This will restore the passenger's access to the system.",
+    "confirmLabel": "Reactivate",
+    "cancelLabel": "Cancel"
+  },
+  "toast": {
+    "deleted": "Passenger deleted successfully.",
+    "reactivated": "Passenger reactivated successfully.",
+    "error": "An error occurred. Please try again."
+  },
+  "empty": {
+    "title": "No passengers found",
+    "message": "No passengers match the current filters."
+  }
+}

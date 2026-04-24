@@ -1,15 +1,30 @@
-// Cole todo o conteúdo de tipos que mostrei anteriormente aqui
-export interface User {
-    id: string;
-    name: string;
-    email: string;
-    type: 'admin' | 'funcionario' | 'motorista' | 'passageiro';
-    type_label: string;
+/** Standard API response envelope */
+export interface ApiEnvelope<T> {
+  success: boolean;
+  data: T;
+  timestamp: string;
 }
 
-export interface LoginCredentials {
-    email: string;
-    password: string;
+/** Standard API error payload */
+export interface ApiErrorPayload {
+  success: false;
+  error: {
+    code: string;
+    message: string;
+    details?: Record<string, string[]>;
+  };
+  timestamp: string;
 }
 
-// ... e todos os outros tipos
+/** Typed API error thrown by facades */
+export class ApiError extends Error {
+  constructor(
+    public readonly status: number,
+    public readonly code: string,
+    message: string,
+    public readonly details?: Record<string, string[]>
+  ) {
+    super(message);
+    this.name = "ApiError";
+  }
+}

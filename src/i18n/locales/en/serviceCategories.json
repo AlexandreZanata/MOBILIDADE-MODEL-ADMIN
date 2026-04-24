@@ -1,0 +1,32 @@
+{
+  "page": {
+    "title": "Service Categories",
+    "accessDenied": "You do not have permission to view service categories."
+  },
+  "fields": {
+    "name": "Name",
+    "slug": "Slug",
+    "baseFare": "Base Fare (BRL)",
+    "perKmRate": "Per Km Rate (BRL)",
+    "minFare": "Min Fare (BRL)",
+    "createdAt": "Created At"
+  },
+  "actions": {
+    "create": "New Category",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "modal": {
+    "createTitle": "New Service Category",
+    "editTitle": "Edit Service Category"
+  },
+  "toast": {
+    "created": "Service category created successfully.",
+    "updated": "Service category updated successfully.",
+    "error": "An error occurred. Please try again."
+  },
+  "empty": {
+    "title": "No service categories found",
+    "message": "Create the first service category to get started."
+  }
+}

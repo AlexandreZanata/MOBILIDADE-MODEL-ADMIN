@@ -1,0 +1,48 @@
+{
+  "actions": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "view": "Visualizar",
+    "create": "Criar",
+    "reactivate": "Reativar",
+    "confirm": "Confirmar",
+    "retry": "Tentar novamente",
+    "logout": "Sair",
+    "search": "Buscar"
+  },
+  "status": {
+    "active": "Ativo",
+    "inactive": "Inativo"
+  },
+  "loading": "Carregando...",
+  "error": {
+    "generic": "Ocorreu um erro. Tente novamente.",
+    "notFound": "Registro não encontrado.",
+    "unauthorized": "Você não tem permissão para realizar esta ação."
+  },
+  "empty": {
+    "title": "Nenhum registro encontrado",
+    "message": "Não há registros para exibir."
+  },
+  "accessDenied": "Você não tem permissão para acessar esta página.",
+  "pagination": {
+    "next": "Próximo",
+    "previous": "Anterior"
+  },
+  "filters": {
+    "all": "Todos",
+    "active": "Ativo",
+    "inactive": "Inativo"
+  },
+  "table": {
+    "actions": "Ações"
+  },
+  "confirm": {
+    "title": "Tem certeza?",
+    "description": "Esta ação não pode ser desfeita.",
+    "confirmLabel": "Confirmar",
+    "cancelLabel": "Cancelar"
+  }
+}

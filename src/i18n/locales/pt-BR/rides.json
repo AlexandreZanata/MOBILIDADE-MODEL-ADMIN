@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "Corridas",
+    "accessDenied": "Você não tem permissão para visualizar corridas."
+  },
+  "fields": {
+    "id": "ID",
+    "passenger": "Passageiro",
+    "driver": "Motorista",
+    "status": "Status",
+    "estimatedPrice": "Preço Est.",
+    "finalPrice": "Preço Final",
+    "distanceKm": "Distância (km)",
+    "durationMinutes": "Duração (min)",
+    "requestedAt": "Solicitado em",
+    "vehicle": "Veículo"
+  },
+  "status": {
+    "AGUARDANDO_MOTORISTA": "Aguardando Motorista",
+    "MOTORISTA_ACEITOU": "Motorista Aceitou",
+    "MOTORISTA_A_CAMINHO": "Motorista a Caminho",
+    "MOTORISTA_CHEGOU": "Motorista Chegou",
+    "EM_ANDAMENTO": "Em Andamento",
+    "CONCLUIDA": "Concluída",
+    "CANCELADA_PASSAGEIRO": "Cancelada pelo Passageiro",
+    "CANCELADA_MOTORISTA": "Cancelada pelo Motorista",
+    "CANCELADA_ADMIN": "Cancelada pelo Admin",
+    "EXPIRADA": "Expirada"
+  },
+  "actions": {
+    "updateStatus": "Atualizar Status",
+    "cancel": "Cancelar Corrida"
+  },
+  "cancel": {
+    "title": "Cancelar Corrida",
+    "description": "Isso cancelará a corrida e notificará o passageiro e o motorista.",
+    "reasonLabel": "Motivo (opcional)",
+    "reasonPlaceholder": "Informe o motivo do cancelamento",
+    "confirmLabel": "Cancelar Corrida",
+    "cancelLabel": "Voltar"
+  },
+  "toast": {
+    "statusUpdated": "Status da corrida atualizado.",
+    "cancelled": "Corrida cancelada com sucesso.",
+    "error": "Ocorreu um erro. Tente novamente."
+  },
+  "empty": {
+    "title": "Nenhuma corrida encontrada",
+    "message": "Nenhuma corrida corresponde aos filtros atuais."
+  }
+}
