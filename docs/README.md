@@ -108,6 +108,21 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md) | Get current active ride |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md) | Get driver rating |
 
+### Places & Geocoding
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/places/reverse-geocode](./routes/places/GET-v1-places-reverse-geocode.md) | Reverse geocoding — GET version (testing only) |
+| [POST /v1/places/reverse-geocode](./routes/places/POST-v1-places-reverse-geocode.md) | Reverse geocoding — coordinates → address |
+| [GET /v1/places/geocode](./routes/places/GET-v1-places-geocode.md) | Geocoding — GET version (testing only) |
+| [POST /v1/places/geocode](./routes/places/POST-v1-places-geocode.md) | Geocoding — address → coordinates |
+| [POST /v1/places/details](./routes/places/POST-v1-places-details.md) | Place details by place_id |
+| [GET /v1/places/details/{placeId}](./routes/places/GET-v1-places-details-placeId.md) | Place details — GET version (testing only) |
+| [GET /v1/places/autocomplete](./routes/places/GET-v1-places-autocomplete.md) | Place autocomplete — GET version (testing only) |
+| [POST /v1/places/autocomplete](./routes/places/POST-v1-places-autocomplete.md) | Place autocomplete with rate limiting |
+| [GET /v1/places/rate-limit](./routes/places/GET-v1-places-rate-limit.md) | Current rate limit info per API type |
+| [GET /v1/places/quota](./routes/places/GET-v1-places-quota.md) | Daily quota and cost statistics |
+
 ### Driver Billing
 
 | Document | Description |
