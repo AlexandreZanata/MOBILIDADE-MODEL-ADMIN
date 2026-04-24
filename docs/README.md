@@ -67,6 +67,30 @@
 | [POST /api/v1/admin/billing/test/create-debt](./routes/billing-admin/POST-api-v1-admin-billing-test-create-debt.md) | ⚠️ Create test debt (dev/staging only) |
 | [DELETE /api/v1/admin/billing/test/debt/{cycleId}](./routes/billing-admin/DELETE-api-v1-admin-billing-test-debt-cycleId.md) | ⚠️ Delete test debt (dev/staging only) |
 
+### Drivers
+
+| Document | Description |
+|----------|-------------|
+| [POST /v1/drivers/register](./routes/drivers/POST-v1-drivers-register.md) | Register new driver account |
+| [POST /v1/drivers/verify-email](./routes/drivers/POST-v1-drivers-verify-email.md) | Verify email with code |
+| [GET /v1/drivers/profile](./routes/drivers/GET-v1-drivers-profile.md) | Get authenticated driver profile |
+| [GET /v1/drivers/validation-status](./routes/drivers/GET-v1-drivers-validation-status.md) | Get onboarding validation status |
+| [POST /v1/drivers/documents](./routes/drivers/POST-v1-drivers-documents.md) | Upload CNH or CRLV document |
+| [POST /v1/drivers/profile-photo](./routes/drivers/POST-v1-drivers-profile-photo.md) | Upload profile photo |
+| [DELETE /v1/drivers/profile-photo](./routes/drivers/DELETE-v1-drivers-profile-photo.md) | Remove profile photo |
+| [GET /v1/drivers/vehicles](./routes/drivers/GET-v1-drivers-vehicles.md) | List driver vehicles |
+| [POST /v1/drivers/vehicles](./routes/drivers/POST-v1-drivers-vehicles.md) | Register a new vehicle |
+| [GET /v1/drivers/vehicle-brands](./routes/drivers/GET-v1-drivers-vehicle-brands.md) | List vehicle brands |
+| [GET /v1/drivers/vehicle-models](./routes/drivers/GET-v1-drivers-vehicle-models.md) | List vehicle models |
+| [GET /v1/drivers/vehicle-models/brand/{brandId}](./routes/drivers/GET-v1-drivers-vehicle-models-brand-brandId.md) | List vehicle models by brand |
+| [GET /v1/drivers/vehicle-requirements](./routes/drivers/GET-v1-drivers-vehicle-requirements.md) | Get vehicle year requirements per category |
+| [GET /v1/drivers/service-categories](./routes/drivers/GET-v1-drivers-service-categories.md) | List service categories (driver view) |
+| [GET /v1/drivers/operational-status](./routes/drivers/GET-v1-drivers-operational-status.md) | Get operational and connection status |
+| [PATCH /v1/drivers/operational-status](./routes/drivers/PATCH-v1-drivers-operational-status.md) | Update operational status |
+| [GET /v1/drivers/rides](./routes/drivers/GET-v1-drivers-rides.md) | List driver ride history |
+| [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md) | Get current active ride |
+| [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md) | Get driver rating |
+
 ### Admin - Service Categories
 
 | Document | Description |
