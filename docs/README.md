@@ -50,6 +50,14 @@
 | [POST /v1/auth/logout](./routes/auth/POST-v1-auth-logout.md)   | Logout — revokes refresh token           |
 | [POST /v1/auth/refresh](./routes/auth/POST-v1-auth-refresh.md) | Renew access token using refresh token   |
 
+### Webhooks
+
+| Document | Description |
+|----------|-------------|
+| [GET /api/v1/webhooks/mercadopago/payment](./routes/webhooks/GET-api-v1-webhooks-mercadopago-payment.md) | Verify webhook endpoint availability |
+| [POST /api/v1/webhooks/mercadopago/payment](./routes/webhooks/POST-api-v1-webhooks-mercadopago-payment.md) | Receive Mercado Pago payment notification |
+| [POST /api/v1/webhooks/mercadopago/ipn](./routes/webhooks/POST-api-v1-webhooks-mercadopago-ipn.md) | Receive Mercado Pago IPN notification |
+
 > Each endpoint lives in its own file under `docs/routes/<tag>/`. Never consolidate multiple endpoints into a single file.
 
 ---
