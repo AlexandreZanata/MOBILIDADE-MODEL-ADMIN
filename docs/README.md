@@ -108,6 +108,17 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md) | Get current active ride |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md) | Get driver rating |
 
+### Driver Billing
+
+| Document | Description |
+|----------|-------------|
+| [GET /api/v1/driver/billing/status](./routes/driver-billing/GET-api-v1-driver-billing-status.md) | Get complete billing status |
+| [GET /api/v1/driver/billing/blocked](./routes/driver-billing/GET-api-v1-driver-billing-blocked.md) | Check if driver is blocked |
+| [GET /api/v1/driver/billing/cycles](./routes/driver-billing/GET-api-v1-driver-billing-cycles.md) | List all billing cycles |
+| [GET /api/v1/driver/billing/cycles/{cycleId}](./routes/driver-billing/GET-api-v1-driver-billing-cycles-cycleId.md) | Get billing cycle details |
+| [POST /api/v1/driver/billing/debt/pix](./routes/driver-billing/POST-api-v1-driver-billing-debt-pix.md) | Generate PIX to settle pending debt |
+| [POST /api/v1/driver/billing/cycles/{cycleId}/pix](./routes/driver-billing/POST-api-v1-driver-billing-cycles-cycleId-pix.md) | Generate PIX for a specific cycle |
+
 ### Card Brands
 
 | Document | Description |
