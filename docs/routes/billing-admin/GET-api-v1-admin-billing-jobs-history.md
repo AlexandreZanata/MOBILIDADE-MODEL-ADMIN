@@ -23,7 +23,7 @@ None.
 
 ### 200 — History returned successfully
 
-Returns an array of job execution records, ordered by most recent first.
+Returns an array of job execution records, ordered by the most recent first.
 
 **Content-Type:** `application/json`
 

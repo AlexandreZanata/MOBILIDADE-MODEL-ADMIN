@@ -9,20 +9,20 @@
 
 ## Parameters
 
-| Name     | Location | Type    | Required | Description                                                              |
-|----------|----------|---------|----------|--------------------------------------------------------------------------|
-| `cursor` | query    | string  | No       | Pagination cursor (UUID of the last item from the previous page)         |
-| `limit`  | query    | integer | No       | Items per page — range 1–100, default `20`                               |
-| `sort`   | query    | string  | No       | Sort expression (e.g. `-createdAt,name`). Prefix `-` for descending order|
-| `q`      | query    | string  | No       | Full-text search query                                                   |
+| Name     | Location | Type    | Required | Description                                                               |
+|----------|----------|---------|----------|---------------------------------------------------------------------------|
+| `cursor` | query    | string  | No       | Pagination cursor (UUID of the last item from the previous page)          |
+| `limit`  | query    | integer | No       | Items per page — range 1–100, default `20`                                |
+| `sort`   | query    | string  | No       | Sort expression (e.g. `-createdAt,name`). Prefix `-` for descending order |
+| `q`      | query    | string  | No       | Full-text search query                                                    |
 
 **Supported filter parameters:**
 
-| Parameter | Operators       | Example                      |
-|-----------|-----------------|------------------------------|
-| `brandId` | `eq`            | `brandId[eq]=018f1234-...`   |
-| `name`    | `eq`, `contains`| `name[contains]=corolla`     |
-| `slug`    | `eq`, `contains`| `slug[eq]=corolla`           |
+| Parameter | Operators        | Example                    |
+|-----------|------------------|----------------------------|
+| `brandId` | `eq`             | `brandId[eq]=018f1234-...` |
+| `name`    | `eq`, `contains` | `name[contains]=corolla`   |
+| `slug`    | `eq`, `contains` | `slug[eq]=corolla`         |
 
 ---
 

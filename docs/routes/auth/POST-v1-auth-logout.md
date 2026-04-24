@@ -28,7 +28,7 @@ None.
 
 ### 204 — No Content
 
-Logout successful. No response body.
+Logout successfully. No response body.
 
 ---
 

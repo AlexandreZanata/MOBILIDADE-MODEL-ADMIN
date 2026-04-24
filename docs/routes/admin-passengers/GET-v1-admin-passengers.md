@@ -9,12 +9,12 @@
 
 ## Parameters
 
-| Name     | Location | Type    | Required | Description                                                              |
-|----------|----------|---------|----------|--------------------------------------------------------------------------|
-| `cursor` | query    | string  | No       | Pagination cursor (UUID of the last item from the previous page)         |
-| `limit`  | query    | integer | No       | Items per page — range 1–100, default `20`                               |
-| `sort`   | query    | string  | No       | Sort expression (e.g. `-createdAt,name`). Prefix `-` for descending order|
-| `q`      | query    | string  | No       | Full-text search on name, email, CPF, and phone                          |
+| Name     | Location | Type    | Required | Description                                                               |
+|----------|----------|---------|----------|---------------------------------------------------------------------------|
+| `cursor` | query    | string  | No       | Pagination cursor (UUID of the last item from the previous page)          |
+| `limit`  | query    | integer | No       | Items per page — range 1–100, default `20`                                |
+| `sort`   | query    | string  | No       | Sort expression (e.g. `-createdAt,name`). Prefix `-` for descending order |
+| `q`      | query    | string  | No       | Full-text search on name, email, CPF, and phone                           |
 
 **Supported filter parameters:**
 

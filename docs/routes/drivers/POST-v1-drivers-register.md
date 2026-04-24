@@ -30,15 +30,15 @@ None.
 }
 ```
 
-| Field               | Type   | Required | Description                                      |
-|---------------------|--------|----------|--------------------------------------------------|
-| `name`              | string | Yes      | Full name of the driver                          |
-| `email`             | string | Yes      | Email address (used for login and verification)  |
-| `phone`             | string | Yes      | Phone number                                     |
-| `cpf`               | string | Yes      | Brazilian CPF (11 digits, no formatting)         |
-| `password`          | string | Yes      | Account password                                 |
-| `cnhNumber`         | string | Yes      | Brazilian driver's license number (CNH)          |
-| `cnhExpirationDate` | string | Yes      | CNH expiration date in `YYYY-MM-DD` format       |
+| Field               | Type   | Required | Description                                     |
+|---------------------|--------|----------|-------------------------------------------------|
+| `name`              | string | Yes      | Full name of the driver                         |
+| `email`             | string | Yes      | Email address (used for login and verification) |
+| `phone`             | string | Yes      | Phone number                                    |
+| `cpf`               | string | Yes      | Brazilian CPF (11 digits, no formatting)        |
+| `password`          | string | Yes      | Account password                                |
+| `cnhNumber`         | string | Yes      | Brazilian driver's license number (CNH)         |
+| `cnhExpirationDate` | string | Yes      | CNH expiration date in `YYYY-MM-DD` format      |
 | `cnhCategory`       | string | Yes      | CNH category (e.g. `B`, `C`, `D`)               |
 
 ---

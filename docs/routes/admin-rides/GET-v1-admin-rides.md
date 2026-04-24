@@ -121,12 +121,12 @@ None.
 
 #### `driver.vehicle` Object Fields
 
-| Field          | Type   | Description          |
-|----------------|--------|----------------------|
-| `licensePlate` | string | Vehicle license plate|
-| `brand`        | string | Vehicle brand name   |
-| `model`        | string | Vehicle model name   |
-| `color`        | string | Vehicle color        |
+| Field          | Type   | Description           |
+|----------------|--------|-----------------------|
+| `licensePlate` | string | Vehicle license plate |
+| `brand`        | string | Vehicle brand name    |
+| `model`        | string | Vehicle model name    |
+| `color`        | string | Vehicle color         |
 
 ---
 

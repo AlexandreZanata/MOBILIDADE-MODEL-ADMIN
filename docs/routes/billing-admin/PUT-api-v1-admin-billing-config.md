@@ -35,19 +35,19 @@ Only include the fields you want to update. All fields are optional.
 }
 ```
 
-| Field               | Type    | Required | Description                                                 |
-|---------------------|---------|----------|-------------------------------------------------------------|
-| `cycleUnit`         | string  | No       | Billing cycle unit — `MINUTES`, `HOURS`, or `DAYS`         |
-| `cycleInterval`     | number  | No       | Number of cycle units between billing runs                  |
-| `executionTime`     | string  | No       | Scheduled execution time in `HH:mm` format                  |
-| `executionTimezone` | string  | No       | IANA timezone for execution time                            |
-| `pricePerRide`      | number  | No       | Amount charged per completed ride (BRL)                     |
-| `minimumCharge`     | number  | No       | Minimum charge per billing cycle (BRL)                      |
-| `pixExpirationDays` | number  | No       | Days before a generated PIX QR code expires                 |
-| `gracePeriodHours`  | number  | No       | Hours after due date before auto-block triggers             |
-| `autoBlockEnabled`  | boolean | No       | Whether automatic driver blocking is enabled                |
-| `blockAfterCycles`  | number  | No       | Unpaid cycles before a driver is blocked                    |
-| `isActive`          | boolean | No       | Whether the billing configuration is active                 |
+| Field               | Type    | Required | Description                                        |
+|---------------------|---------|----------|----------------------------------------------------|
+| `cycleUnit`         | string  | No       | Billing cycle unit — `MINUTES`, `HOURS`, or `DAYS` |
+| `cycleInterval`     | number  | No       | Number of cycle units between billing runs         |
+| `executionTime`     | string  | No       | Scheduled execution time in `HH:mm` format         |
+| `executionTimezone` | string  | No       | IANA timezone for execution time                   |
+| `pricePerRide`      | number  | No       | Amount charged per completed ride (BRL)            |
+| `minimumCharge`     | number  | No       | Minimum charge per billing cycle (BRL)             |
+| `pixExpirationDays` | number  | No       | Days before a generated PIX QR code expires        |
+| `gracePeriodHours`  | number  | No       | Hours after due date before auto-block triggers    |
+| `autoBlockEnabled`  | boolean | No       | Whether automatic driver blocking is enabled       |
+| `blockAfterCycles`  | number  | No       | Unpaid cycles before a driver is blocked           |
+| `isActive`          | boolean | No       | Whether the billing configuration is active        |
 
 ---
 
@@ -84,7 +84,7 @@ Returns the full updated configuration object.
 |-----------------------|---------|-------------------------------------------------------------|
 | `id`                  | string  | Configuration UUID                                          |
 | `driverId`            | string  | Associated driver UUID (if driver-specific config)          |
-| `cycleUnit`           | string  | Billing cycle unit — `MINUTES`, `HOURS`, or `DAYS`         |
+| `cycleUnit`           | string  | Billing cycle unit — `MINUTES`, `HOURS`, or `DAYS`          |
 | `cycleInterval`       | number  | Number of cycle units between billing runs                  |
 | `executionTime`       | string  | Scheduled execution time in `HH:mm` format                  |
 | `executionTimezone`   | string  | IANA timezone for execution time (e.g. `America/Sao_Paulo`) |

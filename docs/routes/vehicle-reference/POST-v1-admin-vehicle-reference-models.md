@@ -25,11 +25,11 @@ None.
 }
 ```
 
-| Field     | Type   | Required | Constraints          | Description                                      |
-|-----------|--------|----------|----------------------|--------------------------------------------------|
-| `brandId` | string | Yes      | UUID format          | UUID of the parent vehicle brand                 |
-| `name`    | string | Yes      | max 50 chars         | Display name of the model                        |
-| `slug`    | string | Yes      | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier within the brand|
+| Field     | Type   | Required | Constraints                  | Description                                 |
+|-----------|--------|----------|------------------------------|---------------------------------------------|
+| `brandId` | string | Yes      | UUID format                  | UUID of the parent vehicle brand            |
+| `name`    | string | Yes      | max 50 chars                 | Display name of the model                   |
+| `slug`    | string | Yes      | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier within the brand |
 
 ---
 

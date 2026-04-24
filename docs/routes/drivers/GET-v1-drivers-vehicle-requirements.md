@@ -52,12 +52,12 @@ None.
 
 #### `categoryRequirements[]` Item Fields
 
-| Field          | Type   | Description                                                                  |
-|----------------|--------|------------------------------------------------------------------------------|
-| `categoryId`   | string | UUID of the service category                                                 |
-| `categoryName` | string | Display name of the service category                                         |
-| `categorySlug` | string | URL-safe identifier of the service category                                  |
-| `minYear`      | number | Minimum manufacture year for this category — `null` means global rule applies|
+| Field          | Type   | Description                                                                   |
+|----------------|--------|-------------------------------------------------------------------------------|
+| `categoryId`   | string | UUID of the service category                                                  |
+| `categoryName` | string | Display name of the service category                                          |
+| `categorySlug` | string | URL-safe identifier of the service category                                   |
+| `minYear`      | number | Minimum manufacture year for this category — `null` means global rule applies |
 
 ---
 

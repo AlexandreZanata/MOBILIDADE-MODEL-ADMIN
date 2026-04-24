@@ -63,7 +63,7 @@ Returns a flat array of billing cycle objects.
 | `totalAmount`       | number | Total amount due for this cycle (BRL)                     |
 | `paidAmount`        | number | Amount already paid (BRL)                                 |
 | `remainingAmount`   | number | Remaining balance due (BRL)                               |
-| `status`            | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`, `BLOCKED`   |
+| `status`            | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`, `BLOCKED`    |
 | `pixGeneratedAt`    | string | ISO 8601 timestamp when PIX was generated (nullable)      |
 | `pixExpiresAt`      | string | ISO 8601 timestamp when PIX expires (nullable)            |
 | `gracePeriodEndsAt` | string | ISO 8601 end of the grace period (nullable)               |

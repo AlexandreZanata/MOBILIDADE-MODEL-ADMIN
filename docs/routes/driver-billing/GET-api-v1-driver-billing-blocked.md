@@ -49,6 +49,6 @@ None.
 
 - Called by `driverBillingFacade.getBlockedStatus()` via `useDriverBlockedStatus` query
 - Cache with TanStack Query using `driverBillingKeys.blocked()`
-- Use this lightweight endpoint for quick block checks (e.g. before allowing a ride request)
+- Use this lightweight endpoint for quick block checks (e.g., before allowing a ride request)
 - For full billing details, use `GET /api/v1/driver/billing/status`
 - On `401`, the facade layer triggers the token refresh flow automatically

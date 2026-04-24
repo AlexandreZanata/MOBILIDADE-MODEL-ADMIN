@@ -61,25 +61,25 @@ None.
 }
 ```
 
-| Field        | Type    | Description                                                     |
-|--------------|---------|-----------------------------------------------------------------|
-| `items`      | array   | Array of DLQ message objects for the current page               |
-| `nextCursor` | string  | `messageId` to pass as `cursor` for the next page (nullable)    |
-| `prevCursor` | string  | `messageId` to pass as `cursor` for the previous page (nullable)|
-| `hasMore`    | boolean | Whether more pages exist after the current one                  |
-| `totalCount` | number  | Total record count — `null` when not computed by the server     |
+| Field        | Type    | Description                                                      |
+|--------------|---------|------------------------------------------------------------------|
+| `items`      | array   | Array of DLQ message objects for the current page                |
+| `nextCursor` | string  | `messageId` to pass as `cursor` for the next page (nullable)     |
+| `prevCursor` | string  | `messageId` to pass as `cursor` for the previous page (nullable) |
+| `hasMore`    | boolean | Whether more pages exist after the current one                   |
+| `totalCount` | number  | Total record count — `null` when not computed by the server      |
 
 #### Item Object Fields
 
-| Field               | Type   | Description                                                    |
-|---------------------|--------|----------------------------------------------------------------|
-| `messageId`         | string | Unique identifier of the DLQ message                          |
-| `emailMessage`      | object | Original email payload that failed to deliver                 |
-| `errorMessage`      | string | Error description from the last failed delivery attempt       |
-| `retryCount`        | number | Number of delivery attempts made before landing in the DLQ    |
-| `originalTimestamp` | string | ISO 8601 timestamp when the message was originally enqueued   |
-| `dlqTimestamp`      | string | ISO 8601 timestamp when the message was moved to the DLQ      |
-| `headers`           | object | Message headers (free-form map, may be empty)                 |
+| Field               | Type   | Description                                                 |
+|---------------------|--------|-------------------------------------------------------------|
+| `messageId`         | string | Unique identifier of the DLQ message                        |
+| `emailMessage`      | object | Original email payload that failed to deliver               |
+| `errorMessage`      | string | Error description from the last failed delivery attempt     |
+| `retryCount`        | number | Number of delivery attempts made before landing in the DLQ  |
+| `originalTimestamp` | string | ISO 8601 timestamp when the message was originally enqueued |
+| `dlqTimestamp`      | string | ISO 8601 timestamp when the message was moved to the DLQ    |
+| `headers`           | object | Message headers (free-form map, may be empty)               |
 
 #### `emailMessage` Object Fields
 

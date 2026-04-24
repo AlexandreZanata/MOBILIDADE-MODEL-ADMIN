@@ -42,13 +42,13 @@ None.
 }
 ```
 
-| Field             | Type   | Description                                                                  |
-|-------------------|--------|------------------------------------------------------------------------------|
-| `workflowStatus`  | string | Current onboarding workflow step (e.g. `CNH_REVIEW`, `AWAITING_VEHICLE`)    |
-| `email`           | object | Email verification details                                                   |
-| `cnh`             | object | CNH document review details                                                  |
-| `vehicles`        | array  | List of vehicle validation objects (empty if no vehicles submitted yet)      |
-| `nextStepMessage` | string | Human-readable message describing the next required action                   |
+| Field             | Type   | Description                                                              |
+|-------------------|--------|--------------------------------------------------------------------------|
+| `workflowStatus`  | string | Current onboarding workflow step (e.g. `CNH_REVIEW`, `AWAITING_VEHICLE`) |
+| `email`           | object | Email verification details                                               |
+| `cnh`             | object | CNH document review details                                              |
+| `vehicles`        | array  | List of vehicle validation objects (empty if no vehicles submitted yet)  |
+| `nextStepMessage` | string | Human-readable message describing the next required action               |
 
 #### `email` Object Fields
 
@@ -59,11 +59,11 @@ None.
 
 #### `cnh` Object Fields
 
-| Field             | Type   | Description                                                    |
-|-------------------|--------|----------------------------------------------------------------|
-| `status`          | string | CNH review status — `PENDING`, `APPROVED`, `REJECTED`         |
-| `reviewedAt`      | string | ISO 8601 timestamp of review (nullable)                        |
-| `rejectionReason` | string | Reason for rejection if status is `REJECTED` (nullable)        |
+| Field             | Type   | Description                                             |
+|-------------------|--------|---------------------------------------------------------|
+| `status`          | string | CNH review status — `PENDING`, `APPROVED`, `REJECTED`   |
+| `reviewedAt`      | string | ISO 8601 timestamp of review (nullable)                 |
+| `rejectionReason` | string | Reason for rejection if status is `REJECTED` (nullable) |
 
 ---
 

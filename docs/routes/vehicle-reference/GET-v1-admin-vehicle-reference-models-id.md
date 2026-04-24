@@ -9,9 +9,9 @@
 
 ## Parameters
 
-| Name | Location | Type   | Required | Description              |
-|------|----------|--------|----------|--------------------------|
-| `id` | path     | string | Yes      | UUID of the vehicle model|
+| Name | Location | Type   | Required | Description               |
+|------|----------|--------|----------|---------------------------|
+| `id` | path     | string | Yes      | UUID of the vehicle model |
 
 **Example URL:**
 

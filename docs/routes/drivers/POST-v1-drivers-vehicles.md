@@ -28,14 +28,14 @@ None.
 }
 ```
 
-| Field               | Type   | Required | Description                                                  |
-|---------------------|--------|----------|--------------------------------------------------------------|
-| `licensePlate`      | string | Yes      | Vehicle license plate                                        |
-| `brandId`           | string | Yes      | UUID of the vehicle brand (from `/v1/drivers/vehicle-brands`)|
-| `modelId`           | string | Yes      | UUID of the vehicle model (from `/v1/drivers/vehicle-models`)|
-| `year`              | number | Yes      | Vehicle manufacture year                                     |
-| `color`             | string | Yes      | Vehicle color                                                |
-| `serviceCategoryId` | string | Yes      | UUID of the desired service category                         |
+| Field               | Type   | Required | Description                                                   |
+|---------------------|--------|----------|---------------------------------------------------------------|
+| `licensePlate`      | string | Yes      | Vehicle license plate                                         |
+| `brandId`           | string | Yes      | UUID of the vehicle brand (from `/v1/drivers/vehicle-brands`) |
+| `modelId`           | string | Yes      | UUID of the vehicle model (from `/v1/drivers/vehicle-models`) |
+| `year`              | number | Yes      | Vehicle manufacture year                                      |
+| `color`             | string | Yes      | Vehicle color                                                 |
+| `serviceCategoryId` | string | Yes      | UUID of the desired service category                          |
 
 ---
 

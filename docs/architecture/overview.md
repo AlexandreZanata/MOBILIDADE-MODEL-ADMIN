@@ -1,4 +1,4 @@
-# Mobiliade Admin — Architecture Overview
+# Mobilidade Admin — Architecture Overview
 
 > **Version:** 2.0.0
 > **Status:** Living document — update with every accepted ADR
@@ -6,9 +6,9 @@
 
 ---
 
-## What is Mobiliade Admin
+## What is Mobilidade Admin
 
-Mobiliade Admin is a role-based operations panel (RBAC) for managing rides, passengers,
+Mobilidade Admin is a role-based operations panel (RBAC) for managing rides, passengers,
 vehicles, service categories, and billing. It is mission-critical, auditable, and multi-language.
 
 ---
@@ -188,10 +188,12 @@ export const adminRidesKeys = {
 
 ## Permission System
 
-```typescript
+```tsx
 // Via hook
 const { can } = usePermissions();
-if (can(Permission.RIDE_ADMIN_CANCEL)) { ... }
+if (can(Permission.RIDE_ADMIN_CANCEL)) {
+  return <Button>Cancel Ride</Button>;
+}
 
 // Via component
 <Can perform={Permission.RIDE_ADMIN_CANCEL}>
@@ -208,7 +210,7 @@ Hardcoded role checks (`user.role === "ADMIN"`) are forbidden in components.
 ## Internationalization (i18n)
 
 - Supported languages: `pt-BR` (default) and `en`
-- Preference saved in `localStorage` (`mobiliade.language`)
+- Preference saved in `localStorage` (`govmobile.language`)
 - Automatic fallback to `pt-BR`
 - Namespaces: `common`, `auth`, `nav`, `rides`, `passengers`, `vehicles`, `serviceCategories`
 

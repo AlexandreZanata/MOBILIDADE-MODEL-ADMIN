@@ -57,25 +57,25 @@ Returns an array of billing cycle objects for the driver.
 ]
 ```
 
-| Field               | Type   | Description                                              |
-|---------------------|--------|----------------------------------------------------------|
-| `id`                | string | Billing cycle UUID                                       |
-| `driverId`          | string | UUID of the driver                                       |
-| `driverName`        | string | Full name of the driver                                  |
-| `periodStart`       | string | ISO 8601 start of the billing period                     |
-| `periodEnd`         | string | ISO 8601 end of the billing period                       |
-| `rideCount`         | number | Number of rides in this cycle                            |
-| `pricePerRide`      | number | Price per ride at the time of cycle creation (BRL)       |
-| `totalAmount`       | number | Total amount due for this cycle (BRL)                    |
-| `paidAmount`        | number | Amount already paid (BRL)                               |
-| `remainingAmount`   | number | Remaining balance due (BRL)                              |
-| `status`            | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`, `BLOCKED`  |
-| `pixGeneratedAt`    | string | ISO 8601 timestamp when PIX was generated (nullable)     |
-| `pixExpiresAt`      | string | ISO 8601 timestamp when PIX expires (nullable)           |
-| `gracePeriodEndsAt` | string | ISO 8601 end of the grace period (nullable)              |
-| `paidAt`            | string | ISO 8601 timestamp when the cycle was paid (nullable)    |
-| `blockedAt`         | string | ISO 8601 timestamp when the driver was blocked (nullable)|
-| `createdAt`         | string | ISO 8601 creation timestamp                              |
+| Field               | Type   | Description                                               |
+|---------------------|--------|-----------------------------------------------------------|
+| `id`                | string | Billing cycle UUID                                        |
+| `driverId`          | string | UUID of the driver                                        |
+| `driverName`        | string | Full name of the driver                                   |
+| `periodStart`       | string | ISO 8601 start of the billing period                      |
+| `periodEnd`         | string | ISO 8601 end of the billing period                        |
+| `rideCount`         | number | Number of rides in this cycle                             |
+| `pricePerRide`      | number | Price per ride at the time of cycle creation (BRL)        |
+| `totalAmount`       | number | Total amount due for this cycle (BRL)                     |
+| `paidAmount`        | number | Amount already paid (BRL)                                 |
+| `remainingAmount`   | number | Remaining balance due (BRL)                               |
+| `status`            | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`, `BLOCKED`    |
+| `pixGeneratedAt`    | string | ISO 8601 timestamp when PIX was generated (nullable)      |
+| `pixExpiresAt`      | string | ISO 8601 timestamp when PIX expires (nullable)            |
+| `gracePeriodEndsAt` | string | ISO 8601 end of the grace period (nullable)               |
+| `paidAt`            | string | ISO 8601 timestamp when the cycle was paid (nullable)     |
+| `blockedAt`         | string | ISO 8601 timestamp when the driver was blocked (nullable) |
+| `createdAt`         | string | ISO 8601 creation timestamp                               |
 
 ---
 

@@ -43,7 +43,7 @@ No response body.
 
 ### 400 — Bad Request
 
-Distance validation failed (driver is more than 500m from the destination), or malformed request.
+Distance validation failed (a driver is more than 500m from the destination), or malformed request.
 
 **Content-Type:** `application/json`
 

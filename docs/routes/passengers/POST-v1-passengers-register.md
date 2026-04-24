@@ -28,14 +28,14 @@ None.
 }
 ```
 
-| Field       | Type   | Required | Description                                    |
-|-------------|--------|----------|------------------------------------------------|
-| `name`      | string | Yes      | Full name of the passenger                     |
-| `email`     | string | Yes      | Email address (used for login and verification)|
-| `phone`     | string | Yes      | Phone number (digits only)                     |
-| `cpf`       | string | Yes      | Brazilian CPF (11 digits, no formatting)       |
-| `birthDate` | string | Yes      | Date of birth in `YYYY-MM-DD` format           |
-| `password`  | string | Yes      | Account password                               |
+| Field       | Type   | Required | Description                                     |
+|-------------|--------|----------|-------------------------------------------------|
+| `name`      | string | Yes      | Full name of the passenger                      |
+| `email`     | string | Yes      | Email address (used for login and verification) |
+| `phone`     | string | Yes      | Phone number (digits only)                      |
+| `cpf`       | string | Yes      | Brazilian CPF (11 digits, no formatting)        |
+| `birthDate` | string | Yes      | Date of birth in `YYYY-MM-DD` format            |
+| `password`  | string | Yes      | Account password                                |
 
 ---
 

@@ -34,10 +34,10 @@ All fields are optional. Only include the fields you want to update.
 }
 ```
 
-| Field  | Type   | Required | Constraints          | Description                                  |
-|--------|--------|----------|----------------------|----------------------------------------------|
-| `name` | string | No       | max 50 chars         | Display name of the brand                    |
-| `slug` | string | No       | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier for the brand|
+| Field  | Type   | Required | Constraints                  | Description                              |
+|--------|--------|----------|------------------------------|------------------------------------------|
+| `name` | string | No       | max 50 chars                 | Display name of the brand                |
+| `slug` | string | No       | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier for the brand |
 
 ---
 

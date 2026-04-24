@@ -34,12 +34,12 @@ None.
 }
 ```
 
-| Field       | Type   | Description                                                  |
-|-------------|--------|--------------------------------------------------------------|
-| `id`        | string | Configuration UUID                                           |
-| `minYear`   | number | Minimum manufacture year allowed for all vehicles (1900–2100)|
-| `createdAt` | string | ISO 8601 creation timestamp                                  |
-| `updatedAt` | string | ISO 8601 last update timestamp                               |
+| Field       | Type   | Description                                                   |
+|-------------|--------|---------------------------------------------------------------|
+| `id`        | string | Configuration UUID                                            |
+| `minYear`   | number | Minimum manufacture year allowed for all vehicles (1900–2100) |
+| `createdAt` | string | ISO 8601 creation timestamp                                   |
+| `updatedAt` | string | ISO 8601 last update timestamp                                |
 
 ---
 

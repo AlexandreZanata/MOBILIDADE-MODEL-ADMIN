@@ -37,14 +37,14 @@ None.
 }
 ```
 
-| Field             | Type    | Required | Description                                                    |
-|-------------------|---------|----------|----------------------------------------------------------------|
-| `originLat`       | number  | Yes      | Latitude of the origin point                                   |
-| `originLng`       | number  | Yes      | Longitude of the origin point                                  |
-| `destinationLat`  | number  | Yes      | Latitude of the destination point                              |
-| `destinationLng`  | number  | Yes      | Longitude of the destination point                             |
-| `includeSteps`    | boolean | No       | Include step-by-step navigation instructions (default: `false`)|
-| `includeGeometry` | boolean | No       | Include full route geometry as GeoJSON (default: `false`)      |
+| Field             | Type    | Required | Description                                                     |
+|-------------------|---------|----------|-----------------------------------------------------------------|
+| `originLat`       | number  | Yes      | Latitude of the origin point                                    |
+| `originLng`       | number  | Yes      | Longitude of the origin point                                   |
+| `destinationLat`  | number  | Yes      | Latitude of the destination point                               |
+| `destinationLng`  | number  | Yes      | Longitude of the destination point                              |
+| `includeSteps`    | boolean | No       | Include step-by-step navigation instructions (default: `false`) |
+| `includeGeometry` | boolean | No       | Include full route geometry as GeoJSON (default: `false`)       |
 
 ---
 
@@ -74,15 +74,15 @@ None.
 }
 ```
 
-| Field              | Type    | Description                                                         |
-|--------------------|---------|---------------------------------------------------------------------|
-| `distanceMeters`   | number  | Total route distance in meters                                      |
-| `distanceKm`       | number  | Total route distance in kilometers                                  |
-| `durationSeconds`  | number  | Estimated travel time in seconds                                    |
-| `durationMinutes`  | number  | Estimated travel time in minutes                                    |
-| `durationFormatted`| string  | Human-readable duration string (e.g. `"12 min"`)                    |
-| `cached`           | boolean | Whether the result was served from cache                            |
-| `calculatedAt`     | string  | ISO 8601 timestamp of the calculation                               |
+| Field               | Type    | Description                                      |
+|---------------------|---------|--------------------------------------------------|
+| `distanceMeters`    | number  | Total route distance in meters                   |
+| `distanceKm`        | number  | Total route distance in kilometers               |
+| `durationSeconds`   | number  | Estimated travel time in seconds                 |
+| `durationMinutes`   | number  | Estimated travel time in minutes                 |
+| `durationFormatted` | string  | Human-readable duration string (e.g. `"12 min"`) |
+| `cached`            | boolean | Whether the result was served from cache         |
+| `calculatedAt`      | string  | ISO 8601 timestamp of the calculation            |
 
 > When `includeSteps=true`, the response also includes a `steps` array. When `includeGeometry=true`, it also includes a `geometry` GeoJSON object. See [GET /v1/routing/route](./GET-v1-routing-route.md) for the full field reference of those optional fields.
 

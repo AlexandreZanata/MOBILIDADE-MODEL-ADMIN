@@ -117,16 +117,16 @@ src/i18n/
 
 ```typescript
 // Single namespace
-const { t } = useTranslation("cargos");
-t("page.title") // → "Job Titles"
+const { t: tCargos } = useTranslation("cargos");
+tCargos("page.title") // → "Job Titles"
 
 // Multiple namespaces
-const { t } = useTranslation(["cargos", "common"]);
-t("cargos:page.title")
-t("common:actions.save")
+const { t: tMulti } = useTranslation(["cargos", "common"]);
+tMulti("cargos:page.title")
+tMulti("common:actions.save")
 
 // With interpolation
-t("toast.created", { name: cargo.name })
+tCargos("toast.created", { name: cargo.name })
 // JSON: "toast.created": "Job title \"{{name}}\" created successfully."
 ```
 

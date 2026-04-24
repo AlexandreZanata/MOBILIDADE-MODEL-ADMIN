@@ -45,15 +45,15 @@ None.
 }
 ```
 
-| Field         | Type    | Description                                    |
-|---------------|---------|------------------------------------------------|
-| `id`          | string  | Payment method UUID                            |
-| `name`        | string  | Display name of the payment method             |
-| `slug`        | string  | URL-safe identifier for the payment method     |
-| `description` | string  | Human-readable description of the method       |
-| `enabled`     | boolean | Whether the payment method is currently enabled|
-| `createdAt`   | string  | ISO 8601 creation timestamp                    |
-| `updatedAt`   | string  | ISO 8601 last update timestamp                 |
+| Field         | Type    | Description                                     |
+|---------------|---------|-------------------------------------------------|
+| `id`          | string  | Payment method UUID                             |
+| `name`        | string  | Display name of the payment method              |
+| `slug`        | string  | URL-safe identifier for the payment method      |
+| `description` | string  | Human-readable description of the method        |
+| `enabled`     | boolean | Whether the payment method is currently enabled |
+| `createdAt`   | string  | ISO 8601 creation timestamp                     |
+| `updatedAt`   | string  | ISO 8601 last update timestamp                  |
 
 ---
 

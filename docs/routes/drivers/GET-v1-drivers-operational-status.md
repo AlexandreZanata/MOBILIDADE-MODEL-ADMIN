@@ -33,11 +33,11 @@ None.
 }
 ```
 
-| Field               | Type    | Description                                                                    |
-|---------------------|---------|--------------------------------------------------------------------------------|
-| `operationalStatus` | string  | Current status — `AVAILABLE`, `BUSY`, `PAUSED`, or `OFFLINE`                  |
-| `isOnline`          | boolean | Whether the driver is currently connected                                      |
-| `canReceiveRides`   | boolean | Whether the driver is eligible to receive new ride requests                    |
+| Field               | Type    | Description                                                  |
+|---------------------|---------|--------------------------------------------------------------|
+| `operationalStatus` | string  | Current status — `AVAILABLE`, `BUSY`, `PAUSED`, or `OFFLINE` |
+| `isOnline`          | boolean | Whether the driver is currently connected                    |
+| `canReceiveRides`   | boolean | Whether the driver is eligible to receive new ride requests  |
 
 ---
 

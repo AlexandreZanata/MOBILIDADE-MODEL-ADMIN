@@ -34,7 +34,7 @@ None.
 
 ### 200 — OK
 
-Authentication successful. Returns tokens and user data.
+Authentication is successful. Returns tokens and user data.
 
 ```json
 {

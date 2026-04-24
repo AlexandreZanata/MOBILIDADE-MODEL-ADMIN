@@ -32,10 +32,10 @@ POST /v1/drivers/rides/018f1234-5678-9abc-def0-123456789abc/ratings
 }
 ```
 
-| Field     | Type   | Required | Description                                    |
-|-----------|--------|----------|------------------------------------------------|
-| `rating`  | number | Yes      | Score from 1 to 5 (5 is the best)             |
-| `comment` | string | No       | Optional text comment about the passenger      |
+| Field     | Type   | Required | Description                               |
+|-----------|--------|----------|-------------------------------------------|
+| `rating`  | number | Yes      | Score from 1 to 5 (5 is the best)         |
+| `comment` | string | No       | Optional text comment about the passenger |
 
 ---
 

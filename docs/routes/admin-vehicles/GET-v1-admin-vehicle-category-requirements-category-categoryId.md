@@ -43,13 +43,13 @@ None.
 }
 ```
 
-| Field               | Type   | Description                                                  |
-|---------------------|--------|--------------------------------------------------------------|
-| `id`                | string | Requirement UUID                                             |
-| `serviceCategoryId` | string | UUID of the associated service category                      |
-| `minYear`           | number | Minimum vehicle manufacture year for this category (1900–2100)|
-| `createdAt`         | string | ISO 8601 creation timestamp                                  |
-| `updatedAt`         | string | ISO 8601 last update timestamp                               |
+| Field               | Type   | Description                                                    |
+|---------------------|--------|----------------------------------------------------------------|
+| `id`                | string | Requirement UUID                                               |
+| `serviceCategoryId` | string | UUID of the associated service category                        |
+| `minYear`           | number | Minimum vehicle manufacture year for this category (1900–2100) |
+| `createdAt`         | string | ISO 8601 creation timestamp                                    |
+| `updatedAt`         | string | ISO 8601 last update timestamp                                 |
 
 ---
 

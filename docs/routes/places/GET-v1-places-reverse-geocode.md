@@ -9,11 +9,11 @@
 
 ## Parameters
 
-| Name       | Location | Type   | Required | Default | Description                          |
-|------------|----------|--------|----------|---------|--------------------------------------|
-| `lat`      | query    | number | Yes      | —       | Latitude of the coordinate           |
-| `lng`      | query    | number | Yes      | —       | Longitude of the coordinate          |
-| `language` | query    | string | No       | `pt-BR` | Response language (IETF language tag)|
+| Name       | Location | Type   | Required | Default | Description                           |
+|------------|----------|--------|----------|---------|---------------------------------------|
+| `lat`      | query    | number | Yes      | —       | Latitude of the coordinate            |
+| `lng`      | query    | number | Yes      | —       | Longitude of the coordinate           |
+| `language` | query    | string | No       | `pt-BR` | Response language (IETF language tag) |
 
 **Example URL:**
 

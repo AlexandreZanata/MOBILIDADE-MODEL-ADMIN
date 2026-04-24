@@ -19,9 +19,9 @@
 
 **Supported filter parameters:**
 
-| Parameter | Operators       | Example                  |
-|-----------|-----------------|--------------------------|
-| `name`    | `eq`, `contains`| `name[contains]=corolla` |
+| Parameter | Operators        | Example                  |
+|-----------|------------------|--------------------------|
+| `name`    | `eq`, `contains` | `name[contains]=corolla` |
 
 **Example URL:**
 

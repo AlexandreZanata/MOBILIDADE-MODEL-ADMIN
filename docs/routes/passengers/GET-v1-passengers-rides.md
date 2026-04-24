@@ -66,17 +66,17 @@ None.
 
 #### Item Object Fields
 
-| Field            | Type   | Description                                      |
-|------------------|--------|--------------------------------------------------|
-| `id`             | string | Ride UUID                                        |
-| `passengerId`    | string | UUID of the passenger                            |
-| `driverId`       | string | UUID of the driver (nullable if not yet assigned)|
-| `status`         | string | Ride status (e.g. `CORRIDA_FINALIZADA`)          |
-| `estimatedPrice` | number | Estimated fare at the time of request (BRL)      |
-| `finalPrice`     | number | Final charged fare (BRL, nullable if not ended)  |
-| `distanceKm`     | number | Total ride distance in kilometers                |
-| `requestedAt`    | string | ISO 8601 timestamp when the ride was requested   |
-| `createdAt`      | string | ISO 8601 creation timestamp                      |
+| Field            | Type   | Description                                       |
+|------------------|--------|---------------------------------------------------|
+| `id`             | string | Ride UUID                                         |
+| `passengerId`    | string | UUID of the passenger                             |
+| `driverId`       | string | UUID of the driver (nullable if not yet assigned) |
+| `status`         | string | Ride status (e.g. `CORRIDA_FINALIZADA`)           |
+| `estimatedPrice` | number | Estimated fare at the time of request (BRL)       |
+| `finalPrice`     | number | Final charged fare (BRL, nullable if not ended)   |
+| `distanceKm`     | number | Total ride distance in kilometers                 |
+| `requestedAt`    | string | ISO 8601 timestamp when the ride was requested    |
+| `createdAt`      | string | ISO 8601 creation timestamp                       |
 
 ---
 

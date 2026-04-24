@@ -46,16 +46,16 @@ None.
 }
 ```
 
-| Field       | Type   | Description                                   |
-|-------------|--------|-----------------------------------------------|
-| `id`        | string | Service category UUID                         |
-| `name`      | string | Display name of the category                  |
-| `slug`      | string | URL-safe identifier for the category          |
-| `baseFare`  | number | Base fare charged at the start of a ride (BRL)|
-| `perKmRate` | number | Rate charged per kilometer (BRL)              |
-| `minFare`   | number | Minimum fare for any ride in this category (BRL)|
-| `createdAt` | string | ISO 8601 creation timestamp                   |
-| `updatedAt` | string | ISO 8601 last update timestamp                |
+| Field       | Type   | Description                                      |
+|-------------|--------|--------------------------------------------------|
+| `id`        | string | Service category UUID                            |
+| `name`      | string | Display name of the category                     |
+| `slug`      | string | URL-safe identifier for the category             |
+| `baseFare`  | number | Base fare charged at the start of a ride (BRL)   |
+| `perKmRate` | number | Rate charged per kilometer (BRL)                 |
+| `minFare`   | number | Minimum fare for any ride in this category (BRL) |
+| `createdAt` | string | ISO 8601 creation timestamp                      |
+| `updatedAt` | string | ISO 8601 last update timestamp                   |
 
 ---
 

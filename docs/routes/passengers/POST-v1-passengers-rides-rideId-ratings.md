@@ -32,10 +32,10 @@ POST /v1/passengers/rides/018f1234-5678-9abc-def0-123456789abc/ratings
 }
 ```
 
-| Field     | Type   | Required | Description                                    |
-|-----------|--------|----------|------------------------------------------------|
-| `rating`  | number | Yes      | Score from 1 to 5 (5 is the best)             |
-| `comment` | string | No       | Optional text comment about the driver         |
+| Field     | Type   | Required | Description                            |
+|-----------|--------|----------|----------------------------------------|
+| `rating`  | number | Yes      | Score from 1 to 5 (5 is the best)      |
+| `comment` | string | No       | Optional text comment about the driver |
 
 ---
 
@@ -57,15 +57,15 @@ POST /v1/passengers/rides/018f1234-5678-9abc-def0-123456789abc/ratings
 }
 ```
 
-| Field       | Type   | Description                                  |
-|-------------|--------|----------------------------------------------|
-| `id`        | string | UUID of the newly created rating             |
-| `rideId`    | string | UUID of the rated ride                       |
-| `raterId`   | string | UUID of the passenger who submitted the rating|
-| `ratedId`   | string | UUID of the driver who was rated             |
-| `rating`    | number | Score from 1 to 5                            |
-| `comment`   | string | Optional text comment (nullable)             |
-| `createdAt` | string | ISO 8601 creation timestamp                  |
+| Field       | Type   | Description                                    |
+|-------------|--------|------------------------------------------------|
+| `id`        | string | UUID of the newly created rating               |
+| `rideId`    | string | UUID of the rated ride                         |
+| `raterId`   | string | UUID of the passenger who submitted the rating |
+| `ratedId`   | string | UUID of the driver who was rated               |
+| `rating`    | number | Score from 1 to 5                              |
+| `comment`   | string | Optional text comment (nullable)               |
+| `createdAt` | string | ISO 8601 creation timestamp                    |
 
 ---
 

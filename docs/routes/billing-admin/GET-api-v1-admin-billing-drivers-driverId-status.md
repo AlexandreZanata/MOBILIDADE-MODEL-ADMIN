@@ -79,19 +79,19 @@ None.
 }
 ```
 
-| Field               | Type    | Description                                               |
-|---------------------|---------|-----------------------------------------------------------|
-| `driverId`          | string  | UUID of the driver                                        |
-| `isBlocked`         | boolean | Whether the driver is currently blocked                   |
-| `blockedAt`         | string  | ISO 8601 timestamp when the driver was blocked (nullable) |
-| `blockReason`       | string  | Human-readable reason for the block (nullable)            |
-| `totalDebt`         | number  | Total outstanding debt in BRL                             |
-| `totalPendingRides` | number  | Total rides across all pending cycles                     |
-| `pendingCyclesCount`| number  | Number of unpaid billing cycles                           |
-| `nextDueDate`       | string  | ISO 8601 date of the next payment due (nullable)          |
-| `pendingCycles`     | array   | List of pending billing cycle objects (see cycle fields)  |
-| `currentPix`        | object  | Active PIX payment details (nullable, see PIX fields)     |
-| `updatedAt`         | string  | ISO 8601 timestamp of the last status update              |
+| Field                | Type    | Description                                               |
+|----------------------|---------|-----------------------------------------------------------|
+| `driverId`           | string  | UUID of the driver                                        |
+| `isBlocked`          | boolean | Whether the driver is currently blocked                   |
+| `blockedAt`          | string  | ISO 8601 timestamp when the driver was blocked (nullable) |
+| `blockReason`        | string  | Human-readable reason for the block (nullable)            |
+| `totalDebt`          | number  | Total outstanding debt in BRL                             |
+| `totalPendingRides`  | number  | Total rides across all pending cycles                     |
+| `pendingCyclesCount` | number  | Number of unpaid billing cycles                           |
+| `nextDueDate`        | string  | ISO 8601 date of the next payment due (nullable)          |
+| `pendingCycles`      | array   | List of pending billing cycle objects (see cycle fields)  |
+| `currentPix`         | object  | Active PIX payment details (nullable, see PIX fields)     |
+| `updatedAt`          | string  | ISO 8601 timestamp of the last status update              |
 
 #### Cycle Object Fields (`pendingCycles[]`)
 
@@ -107,7 +107,7 @@ None.
 | `totalAmount`       | number | Total amount due for this cycle (BRL)                     |
 | `paidAmount`        | number | Amount already paid (BRL)                                 |
 | `remainingAmount`   | number | Remaining balance due (BRL)                               |
-| `status`            | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`, `BLOCKED`   |
+| `status`            | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`, `BLOCKED`    |
 | `pixGeneratedAt`    | string | ISO 8601 timestamp when PIX was generated (nullable)      |
 | `pixExpiresAt`      | string | ISO 8601 timestamp when PIX expires (nullable)            |
 | `gracePeriodEndsAt` | string | ISO 8601 end of the grace period (nullable)               |

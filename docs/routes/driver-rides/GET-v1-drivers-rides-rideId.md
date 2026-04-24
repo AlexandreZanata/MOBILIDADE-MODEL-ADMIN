@@ -46,16 +46,16 @@ None.
 }
 ```
 
-| Field             | Type   | Description                                                    |
-|-------------------|--------|----------------------------------------------------------------|
-| `id`              | string | Ride UUID                                                      |
-| `passengerId`     | string | UUID of the passenger                                          |
-| `driverId`        | string | UUID of the assigned driver                                    |
-| `status`          | string | Current ride status (e.g. `MOTORISTA_ACEITOU`, `EM_ROTA`)     |
-| `estimatedPrice`  | number | Estimated fare at the time of request (BRL)                    |
-| `finalPrice`      | number | Final charged fare — `null` while the ride is in progress      |
-| `distanceKm`      | number | Estimated ride distance in kilometers                          |
-| `durationMinutes` | number | Estimated ride duration in minutes                             |
+| Field             | Type   | Description                                               |
+|-------------------|--------|-----------------------------------------------------------|
+| `id`              | string | Ride UUID                                                 |
+| `passengerId`     | string | UUID of the passenger                                     |
+| `driverId`        | string | UUID of the assigned driver                               |
+| `status`          | string | Current ride status (e.g. `MOTORISTA_ACEITOU`, `EM_ROTA`) |
+| `estimatedPrice`  | number | Estimated fare at the time of request (BRL)               |
+| `finalPrice`      | number | Final charged fare — `null` while the ride is in progress |
+| `distanceKm`      | number | Estimated ride distance in kilometers                     |
+| `durationMinutes` | number | Estimated ride duration in minutes                        |
 
 ---
 
@@ -101,7 +101,7 @@ None.
 
 ### 403 — Forbidden
 
-The ride exists but the authenticated driver is not the assigned driver.
+The ride exists, but the authenticated driver is not the assigned driver.
 
 **Content-Type:** `application/json`
 

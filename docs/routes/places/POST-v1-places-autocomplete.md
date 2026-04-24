@@ -45,18 +45,18 @@ None.
 }
 ```
 
-| Field          | Type    | Required | Description                                                                  |
-|----------------|---------|----------|------------------------------------------------------------------------------|
-| `input`        | string  | Yes      | Search text typed by the user                                                |
-| `location`     | object  | No       | User's current location for result bias (`lat` + `lng`)                      |
-| `radius`       | number  | No       | Radius in meters around `location` (default: `50000`)                        |
-| `strictBounds` | boolean | No       | If `true`, restricts results to the radius. Default: `false`                 |
-| `country`      | string  | No       | ISO 3166-1 alpha-2 country code (default: `br`)                              |
-| `language`     | string  | No       | Response language (IETF tag, default: `pt-BR`)                               |
-| `types`        | string  | No       | Filter by place type (e.g. `address`, `establishment`)                       |
-| `sessionToken` | string  | No       | Session token to group requests and reduce costs when the user selects a place|
-| `effectiveLat` | number  | No       | Effective latitude used internally for bias calculation                      |
-| `effectiveLng` | number  | No       | Effective longitude used internally for bias calculation                     |
+| Field          | Type    | Required | Description                                                                    |
+|----------------|---------|----------|--------------------------------------------------------------------------------|
+| `input`        | string  | Yes      | Search text typed by the user                                                  |
+| `location`     | object  | No       | User's current location for result bias (`lat` + `lng`)                        |
+| `radius`       | number  | No       | Radius in meters around `location` (default: `50000`)                          |
+| `strictBounds` | boolean | No       | If `true`, restricts results to the radius. Default: `false`                   |
+| `country`      | string  | No       | ISO 3166-1 alpha-2 country code (default: `br`)                                |
+| `language`     | string  | No       | Response language (IETF tag, default: `pt-BR`)                                 |
+| `types`        | string  | No       | Filter by place type (e.g. `address`, `establishment`)                         |
+| `sessionToken` | string  | No       | Session token to group requests and reduce costs when the user selects a place |
+| `effectiveLat` | number  | No       | Effective latitude used internally for bias calculation                        |
+| `effectiveLng` | number  | No       | Effective longitude used internally for bias calculation                       |
 
 ---
 
@@ -91,12 +91,12 @@ None.
 }
 ```
 
-| Field       | Type    | Description                                      |
-|-------------|---------|--------------------------------------------------|
-| `predictions`| array  | Array of place prediction objects                |
-| `cached`    | boolean | Whether the result was served from cache         |
-| `source`    | string  | Data source (e.g. `GOOGLE_PLACES`)               |
-| `queriedAt` | string  | ISO 8601 timestamp of the query                  |
+| Field         | Type    | Description                              |
+|---------------|---------|------------------------------------------|
+| `predictions` | array   | Array of place prediction objects        |
+| `cached`      | boolean | Whether the result was served from cache |
+| `source`      | string  | Data source (e.g. `GOOGLE_PLACES`)       |
+| `queriedAt`   | string  | ISO 8601 timestamp of the query          |
 
 #### `predictions[]` Item Fields
 

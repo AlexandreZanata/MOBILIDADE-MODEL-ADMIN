@@ -24,10 +24,10 @@ None.
 }
 ```
 
-| Field  | Type   | Required | Constraints          | Description                                  |
-|--------|--------|----------|----------------------|----------------------------------------------|
-| `name` | string | Yes      | max 50 chars         | Display name of the brand                    |
-| `slug` | string | Yes      | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier for the brand|
+| Field  | Type   | Required | Constraints                  | Description                              |
+|--------|--------|----------|------------------------------|------------------------------------------|
+| `name` | string | Yes      | max 50 chars                 | Display name of the brand                |
+| `slug` | string | Yes      | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier for the brand |
 
 ---
 

@@ -35,13 +35,13 @@ None.
 }
 ```
 
-| Field       | Type   | Description                                                                                                  |
-|-------------|--------|--------------------------------------------------------------------------------------------------------------|
-| `userId`    | string | UUID of the driver's user account                                                                            |
-| `cnhNumber` | string | Brazilian driver's license number (CNH)                                                                      |
-| `status`    | string | Driver onboarding/operational status (e.g. `ONBOARDING`, `AWAITING_CNH`, `AWAITING_VEHICLE`, `ACTIVE`)      |
-| `createdAt` | string | ISO 8601 creation timestamp                                                                                  |
-| `updatedAt` | string | ISO 8601 last update timestamp                                                                               |
+| Field       | Type   | Description                                                                                            |
+|-------------|--------|--------------------------------------------------------------------------------------------------------|
+| `userId`    | string | UUID of the driver's user account                                                                      |
+| `cnhNumber` | string | Brazilian driver's license number (CNH)                                                                |
+| `status`    | string | Driver onboarding/operational status (e.g. `ONBOARDING`, `AWAITING_CNH`, `AWAITING_VEHICLE`, `ACTIVE`) |
+| `createdAt` | string | ISO 8601 creation timestamp                                                                            |
+| `updatedAt` | string | ISO 8601 last update timestamp                                                                         |
 
 ---
 

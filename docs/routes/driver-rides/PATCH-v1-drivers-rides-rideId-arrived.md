@@ -2,7 +2,7 @@
 
 **Tag:** Driver - Rides  
 **Summary:** Mark driver arrived  
-**Description:** Driver indicates they have arrived at the pickup point (maximum 100m). The server validates the distance before updating the status.  
+**Description:** Driver indicates they have arrived at the pickup point (maximum 100 m). The server validates the distance before updating the status.  
 **Authentication:** Bearer token required (`Authorization: Bearer <accessToken>`).
 
 ---
@@ -43,7 +43,7 @@ No response body.
 
 ### 400 — Bad Request
 
-Distance validation failed (driver is more than 100m from the pickup point), or malformed request.
+Distance validation failed (a driver is more than 100 m from the pickup point), or malformed request.
 
 **Content-Type:** `application/json`
 
@@ -176,6 +176,6 @@ Distance validation failed (driver is more than 100m from the pickup point), or 
 ## Frontend Integration Notes
 
 - Called by `driverRidesFacade.markArrived(rideId, coords)` via `useMarkArrived` mutation
-- Always send the driver's current GPS coordinates — the server validates the 100m constraint
+- Always send the driver's current GPS coordinates — the server validates the 100 m constraint
 - On `onSuccess`, invalidate `driverRidesKeys.detail(rideId)` and `driverRidesKeys.active()`
 - On `401`, the facade layer triggers the token refresh flow automatically

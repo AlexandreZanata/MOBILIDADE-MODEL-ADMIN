@@ -18,9 +18,9 @@
 
 **Supported filter parameters:**
 
-| Parameter | Operators    | Example                        |
-|-----------|--------------|--------------------------------|
-| `status`  | `eq`, `in`   | `status[eq]=CORRIDA_FINALIZADA`|
+| Parameter | Operators  | Example                         |
+|-----------|------------|---------------------------------|
+| `status`  | `eq`, `in` | `status[eq]=CORRIDA_FINALIZADA` |
 
 ---
 

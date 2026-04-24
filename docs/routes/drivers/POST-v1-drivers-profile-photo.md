@@ -20,9 +20,9 @@ None.
 
 **Content-Type:** `multipart/form-data`
 
-| Field  | Type   | Required | Description                    |
-|--------|--------|----------|--------------------------------|
-| `file` | binary | Yes      | Image file for the profile photo|
+| Field  | Type   | Required | Description                      |
+|--------|--------|----------|----------------------------------|
+| `file` | binary | Yes      | Image file for the profile photo |
 
 ---
 

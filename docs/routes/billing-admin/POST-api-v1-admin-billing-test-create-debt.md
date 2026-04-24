@@ -76,19 +76,19 @@ None.
 }
 ```
 
-| Field          | Type   | Description                                       |
-|----------------|--------|---------------------------------------------------|
-| `cycleId`      | string | UUID of the created billing cycle                 |
-| `driverId`     | string | UUID of the driver                                |
-| `rideCount`    | number | Number of rides in the cycle                      |
-| `pricePerRide` | number | Price per ride (BRL)                              |
-| `totalAmount`  | number | Total amount due (BRL)                            |
-| `status`       | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`       |
-| `periodStart`  | string | ISO 8601 start of the billing period              |
-| `periodEnd`    | string | ISO 8601 end of the billing period                |
-| `createdAt`    | string | ISO 8601 creation timestamp                       |
-| `pix`          | object | PIX payment details (present if PIX was generated)|
-| `message`      | string | Human-readable result message                     |
+| Field          | Type   | Description                                        |
+|----------------|--------|----------------------------------------------------|
+| `cycleId`      | string | UUID of the created billing cycle                  |
+| `driverId`     | string | UUID of the driver                                 |
+| `rideCount`    | number | Number of rides in the cycle                       |
+| `pricePerRide` | number | Price per ride (BRL)                               |
+| `totalAmount`  | number | Total amount due (BRL)                             |
+| `status`       | string | Cycle status — `PENDING`, `PAID`, `EXPIRED`        |
+| `periodStart`  | string | ISO 8601 start of the billing period               |
+| `periodEnd`    | string | ISO 8601 end of the billing period                 |
+| `createdAt`    | string | ISO 8601 creation timestamp                        |
+| `pix`          | object | PIX payment details (present if PIX was generated) |
+| `message`      | string | Human-readable result message                      |
 
 #### `pix` Object
 
@@ -108,7 +108,7 @@ None.
 
 ### 400 — Invalid data
 
-Request body is malformed or contains invalid field values. Returns the same shape as `200`.
+The request body is malformed or contains invalid field values. Returns the same shape as `200`.
 
 **Content-Type:** `application/json`
 

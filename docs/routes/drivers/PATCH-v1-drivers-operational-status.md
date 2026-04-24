@@ -25,7 +25,7 @@ None.
 
 | Field    | Type   | Required | Description                                                          |
 |----------|--------|----------|----------------------------------------------------------------------|
-| `status` | string | Yes      | New operational status — `AVAILABLE`, `BUSY`, `PAUSED`, or `OFFLINE`|
+| `status` | string | Yes      | New operational status — `AVAILABLE`, `BUSY`, `PAUSED`, or `OFFLINE` |
 
 ---
 
@@ -43,11 +43,11 @@ None.
 }
 ```
 
-| Field               | Type    | Description                                                         |
-|---------------------|---------|---------------------------------------------------------------------|
-| `operationalStatus` | string  | Updated status — `AVAILABLE`, `BUSY`, `PAUSED`, or `OFFLINE`       |
-| `isOnline`          | boolean | Whether the driver is currently connected                           |
-| `canReceiveRides`   | boolean | Whether the driver is eligible to receive new ride requests         |
+| Field               | Type    | Description                                                  |
+|---------------------|---------|--------------------------------------------------------------|
+| `operationalStatus` | string  | Updated status — `AVAILABLE`, `BUSY`, `PAUSED`, or `OFFLINE` |
+| `isOnline`          | boolean | Whether the driver is currently connected                    |
+| `canReceiveRides`   | boolean | Whether the driver is eligible to receive new ride requests  |
 
 ---
 

@@ -50,7 +50,7 @@ None.
 |-----------------------|---------|-------------------------------------------------------------|
 | `id`                  | string  | Configuration UUID                                          |
 | `driverId`            | string  | Associated driver UUID (if driver-specific config)          |
-| `cycleUnit`           | string  | Billing cycle unit — `MINUTES`, `HOURS`, or `DAYS`         |
+| `cycleUnit`           | string  | Billing cycle unit — `MINUTES`, `HOURS`, or `DAYS`          |
 | `cycleInterval`       | number  | Number of cycle units between billing runs                  |
 | `executionTime`       | string  | Scheduled execution time in `HH:mm` format                  |
 | `executionTimezone`   | string  | IANA timezone for execution time (e.g. `America/Sao_Paulo`) |

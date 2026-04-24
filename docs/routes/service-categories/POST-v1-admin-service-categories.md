@@ -27,13 +27,13 @@ None.
 }
 ```
 
-| Field       | Type   | Required | Description                                   |
-|-------------|--------|----------|-----------------------------------------------|
-| `name`      | string | Yes      | Display name of the category                  |
-| `slug`      | string | Yes      | URL-safe unique identifier for the category   |
-| `baseFare`  | number | Yes      | Base fare charged at the start of a ride (BRL)|
-| `perKmRate` | number | Yes      | Rate charged per kilometer (BRL)              |
-| `minFare`   | number | Yes      | Minimum fare for any ride in this category (BRL)|
+| Field       | Type   | Required | Description                                      |
+|-------------|--------|----------|--------------------------------------------------|
+| `name`      | string | Yes      | Display name of the category                     |
+| `slug`      | string | Yes      | URL-safe unique identifier for the category      |
+| `baseFare`  | number | Yes      | Base fare charged at the start of a ride (BRL)   |
+| `perKmRate` | number | Yes      | Rate charged per kilometer (BRL)                 |
+| `minFare`   | number | Yes      | Minimum fare for any ride in this category (BRL) |
 
 ---
 

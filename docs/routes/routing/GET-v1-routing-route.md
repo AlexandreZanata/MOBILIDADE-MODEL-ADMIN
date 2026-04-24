@@ -63,34 +63,34 @@ None.
 }
 ```
 
-| Field             | Type    | Description                                                    |
-|-------------------|---------|----------------------------------------------------------------|
-| `distanceMeters`  | number  | Total route distance in meters                                 |
-| `distanceKm`      | number  | Total route distance in kilometers                             |
-| `durationSeconds` | number  | Estimated travel time in seconds                               |
-| `durationMinutes` | number  | Estimated travel time in minutes                               |
-| `durationFormatted`| string | Human-readable duration string                                 |
-| `steps`           | array   | Step-by-step navigation instructions (present if `includeSteps=true`) |
-| `geometry`        | object  | GeoJSON LineString of the route (present if `includeGeometry=true`) |
-| `cached`          | boolean | Whether the result was served from cache                       |
-| `calculatedAt`    | string  | ISO 8601 timestamp of the calculation                          |
+| Field               | Type    | Description                                                           |
+|---------------------|---------|-----------------------------------------------------------------------|
+| `distanceMeters`    | number  | Total route distance in meters                                        |
+| `distanceKm`        | number  | Total route distance in kilometers                                    |
+| `durationSeconds`   | number  | Estimated travel time in seconds                                      |
+| `durationMinutes`   | number  | Estimated travel time in minutes                                      |
+| `durationFormatted` | string  | Human-readable duration string                                        |
+| `steps`             | array   | Step-by-step navigation instructions (present if `includeSteps=true`) |
+| `geometry`          | object  | GeoJSON LineString of the route (present if `includeGeometry=true`)   |
+| `cached`            | boolean | Whether the result was served from cache                              |
+| `calculatedAt`      | string  | ISO 8601 timestamp of the calculation                                 |
 
 #### `steps[]` Item Fields
 
-| Field            | Type   | Description                                  |
-|------------------|--------|----------------------------------------------|
-| `distanceMeters` | number | Distance of this step in meters              |
-| `durationSeconds`| number | Duration of this step in seconds             |
-| `instruction`    | string | Human-readable navigation instruction        |
-| `name`           | string | Name of the road or path for this step       |
-| `maneuver`       | string | Maneuver type (e.g. `turn-right`, `straight`)|
+| Field             | Type   | Description                                   |
+|-------------------|--------|-----------------------------------------------|
+| `distanceMeters`  | number | Distance of this step in meters               |
+| `durationSeconds` | number | Duration of this step in seconds              |
+| `instruction`     | string | Human-readable navigation instruction         |
+| `name`            | string | Name of the road or path for this step        |
+| `maneuver`        | string | Maneuver type (e.g. `turn-right`, `straight`) |
 
 #### `geometry` Object Fields
 
-| Field         | Type     | Description                                  |
-|---------------|----------|----------------------------------------------|
-| `type`        | string   | Always `LineString`                          |
-| `coordinates` | number[][]| Array of `[lng, lat]` coordinate pairs      |
+| Field         | Type       | Description                            |
+|---------------|------------|----------------------------------------|
+| `type`        | string     | Always `LineString`                    |
+| `coordinates` | number[][] | Array of `[lng, lat]` coordinate pairs |
 
 ---
 

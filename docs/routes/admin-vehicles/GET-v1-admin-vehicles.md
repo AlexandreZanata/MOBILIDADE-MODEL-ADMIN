@@ -9,12 +9,12 @@
 
 ## Parameters
 
-| Name     | Location | Type    | Required | Description                                                              |
-|----------|----------|---------|----------|--------------------------------------------------------------------------|
-| `cursor` | query    | string  | No       | Pagination cursor (UUID of the last item from the previous page)         |
-| `limit`  | query    | integer | No       | Items per page — range 1–100, default `20`                               |
-| `sort`   | query    | string  | No       | Sort expression (e.g. `-createdAt,licensePlate`). Prefix `-` for descending|
-| `q`      | query    | string  | No       | Full-text search on plate, brand, model, and color                       |
+| Name     | Location | Type    | Required | Description                                                                 |
+|----------|----------|---------|----------|-----------------------------------------------------------------------------|
+| `cursor` | query    | string  | No       | Pagination cursor (UUID of the last item from the previous page)            |
+| `limit`  | query    | integer | No       | Items per page — range 1–100, default `20`                                  |
+| `sort`   | query    | string  | No       | Sort expression (e.g. `-createdAt,licensePlate`). Prefix `-` for descending |
+| `q`      | query    | string  | No       | Full-text search on plate, brand, model, and color                          |
 
 ---
 
@@ -64,19 +64,19 @@ None.
 
 #### Item Object Fields
 
-| Field               | Type   | Description                                                                  |
-|---------------------|--------|------------------------------------------------------------------------------|
-| `id`                | string | Vehicle UUID                                                                 |
-| `driverProfileId`   | string | UUID of the driver profile that owns this vehicle                            |
-| `serviceCategoryId` | string | UUID of the service category (nullable if not yet assigned)                  |
-| `licensePlate`      | string | Vehicle license plate                                                        |
-| `brand`             | string | Vehicle brand name                                                           |
-| `model`             | string | Vehicle model name                                                           |
-| `year`              | number | Vehicle manufacture year                                                     |
-| `color`             | string | Vehicle color                                                                |
-| `status`            | string | Vehicle status — `PENDING_DOCS`, `PENDING_REVIEW`, `APPROVED`, `REJECTED`   |
-| `createdAt`         | string | ISO 8601 creation timestamp                                                  |
-| `updatedAt`         | string | ISO 8601 last update timestamp                                               |
+| Field               | Type   | Description                                                               |
+|---------------------|--------|---------------------------------------------------------------------------|
+| `id`                | string | Vehicle UUID                                                              |
+| `driverProfileId`   | string | UUID of the driver profile that owns this vehicle                         |
+| `serviceCategoryId` | string | UUID of the service category (nullable if not yet assigned)               |
+| `licensePlate`      | string | Vehicle license plate                                                     |
+| `brand`             | string | Vehicle brand name                                                        |
+| `model`             | string | Vehicle model name                                                        |
+| `year`              | number | Vehicle manufacture year                                                  |
+| `color`             | string | Vehicle color                                                             |
+| `status`            | string | Vehicle status — `PENDING_DOCS`, `PENDING_REVIEW`, `APPROVED`, `REJECTED` |
+| `createdAt`         | string | ISO 8601 creation timestamp                                               |
+| `updatedAt`         | string | ISO 8601 last update timestamp                                            |
 
 ---
 

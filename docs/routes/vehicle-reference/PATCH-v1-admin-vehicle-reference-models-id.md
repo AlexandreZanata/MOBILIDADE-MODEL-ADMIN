@@ -35,11 +35,11 @@ All fields are optional. Only include the fields you want to update.
 }
 ```
 
-| Field     | Type   | Required | Constraints                   | Description                                       |
-|-----------|--------|----------|-------------------------------|---------------------------------------------------|
-| `brandId` | string | No       | UUID format                   | UUID of the parent vehicle brand                  |
-| `name`    | string | No       | max 50 chars                  | Display name of the model                         |
-| `slug`    | string | No       | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier within the brand       |
+| Field     | Type   | Required | Constraints                  | Description                                 |
+|-----------|--------|----------|------------------------------|---------------------------------------------|
+| `brandId` | string | No       | UUID format                  | UUID of the parent vehicle brand            |
+| `name`    | string | No       | max 50 chars                 | Display name of the model                   |
+| `slug`    | string | No       | max 50 chars, `^[a-z0-9-]+$` | URL-safe unique identifier within the brand |
 
 ---
 

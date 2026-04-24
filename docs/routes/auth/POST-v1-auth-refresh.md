@@ -8,10 +8,10 @@
 
 ## Parameters
 
-| Name              | Location | Type   | Required | Description                          |
-|-------------------|----------|--------|----------|--------------------------------------|
+| Name              | Location | Type   | Required | Description                            |
+|-------------------|----------|--------|----------|----------------------------------------|
 | `X-Refresh-Token` | header   | string | No       | Refresh token sent as a request header |
-| `refreshToken`    | cookie   | string | No       | Refresh token sent as an HTTP cookie  |
+| `refreshToken`    | cookie   | string | No       | Refresh token sent as an HTTP cookie   |
 
 > At least one of the three delivery methods (header, cookie, or body) must be provided.
 
@@ -46,10 +46,10 @@ Token renewed successfully. Returns a new token pair.
 }
 ```
 
-| Field          | Type   | Description                     |
-|----------------|--------|---------------------------------|
-| `accessToken`  | string | New JWT access token            |
-| `refreshToken` | string | New refresh token UUID (rotated)|
+| Field          | Type   | Description                      |
+|----------------|--------|----------------------------------|
+| `accessToken`  | string | New JWT access token             |
+| `refreshToken` | string | New refresh token UUID (rotated) |
 
 > **Token rotation:** The refresh token is rotated on every successful refresh. The old token is immediately invalidated. Always store the new `refreshToken` returned in the response.
 

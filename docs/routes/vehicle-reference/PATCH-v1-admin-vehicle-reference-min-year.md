@@ -23,9 +23,9 @@ None.
 }
 ```
 
-| Field     | Type    | Required | Constraints       | Description                                          |
-|-----------|---------|----------|-------------------|------------------------------------------------------|
-| `minYear` | integer | Yes      | min 1900, max 2100| Minimum manufacture year allowed for all vehicles    |
+| Field     | Type    | Required | Constraints        | Description                                       |
+|-----------|---------|----------|--------------------|---------------------------------------------------|
+| `minYear` | integer | Yes      | min 1900, max 2100 | Minimum manufacture year allowed for all vehicles |
 
 ---
 

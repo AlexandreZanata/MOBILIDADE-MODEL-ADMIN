@@ -35,14 +35,14 @@
 }
 ```
 
-| Field             | Type    | Required | Description                                                    |
-|-------------------|---------|----------|----------------------------------------------------------------|
-| `originLat`       | number  | Yes      | Latitude of the origin point                                   |
-| `originLng`       | number  | Yes      | Longitude of the origin point                                  |
-| `destinationLat`  | number  | Yes      | Latitude of the destination point                              |
-| `destinationLng`  | number  | Yes      | Longitude of the destination point                             |
-| `includeSteps`    | boolean | No       | Include step-by-step navigation instructions (default: `false`)|
-| `includeGeometry` | boolean | No       | Include full route geometry as GeoJSON (default: `false`)      |
+| Field             | Type    | Required | Description                                                     |
+|-------------------|---------|----------|-----------------------------------------------------------------|
+| `originLat`       | number  | Yes      | Latitude of the origin point                                    |
+| `originLng`       | number  | Yes      | Longitude of the origin point                                   |
+| `destinationLat`  | number  | Yes      | Latitude of the destination point                               |
+| `destinationLng`  | number  | Yes      | Longitude of the destination point                              |
+| `includeSteps`    | boolean | No       | Include step-by-step navigation instructions (default: `false`) |
+| `includeGeometry` | boolean | No       | Include full route geometry as GeoJSON (default: `false`)       |
 
 ---
 

@@ -27,12 +27,12 @@ None.
 }
 ```
 
-| Field         | Type   | Required | Description                                                    |
-|---------------|--------|----------|----------------------------------------------------------------|
-| `lat`         | number | Yes      | Latitude of the coordinate                                     |
-| `lng`         | number | Yes      | Longitude of the coordinate                                    |
+| Field         | Type   | Required | Description                                                        |
+|---------------|--------|----------|--------------------------------------------------------------------|
+| `lat`         | number | Yes      | Latitude of the coordinate                                         |
+| `lng`         | number | Yes      | Longitude of the coordinate                                        |
 | `language`    | string | No       | Response language (IETF tag, e.g. `pt-BR`, `en`). Default: `pt-BR` |
-| `resultTypes` | string | No       | Filter result types (e.g. `street_address`, `locality`)        |
+| `resultTypes` | string | No       | Filter result types (e.g. `street_address`, `locality`)            |
 
 ---
 
@@ -95,11 +95,11 @@ None.
 
 #### `addressComponents[]` Item Fields
 
-| Field      | Type     | Description                                  |
-|------------|----------|----------------------------------------------|
-| `longName` | string   | Full name of the address component           |
-| `shortName`| string   | Abbreviated name of the address component    |
-| `types`    | string[] | Component type tags                          |
+| Field       | Type     | Description                               |
+|-------------|----------|-------------------------------------------|
+| `longName`  | string   | Full name of the address component        |
+| `shortName` | string   | Abbreviated name of the address component |
+| `types`     | string[] | Component type tags                       |
 
 ---
 

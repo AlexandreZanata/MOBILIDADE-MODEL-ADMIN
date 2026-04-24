@@ -24,10 +24,10 @@ None.
 }
 ```
 
-| Field               | Type    | Required | Constraints       | Description                                                  |
-|---------------------|---------|----------|-------------------|--------------------------------------------------------------|
-| `serviceCategoryId` | string  | Yes      | UUID format       | UUID of the service category to configure                    |
-| `minYear`           | integer | Yes      | min 1900, max 2100| Minimum vehicle manufacture year for this category           |
+| Field               | Type    | Required | Constraints        | Description                                        |
+|---------------------|---------|----------|--------------------|----------------------------------------------------|
+| `serviceCategoryId` | string  | Yes      | UUID format        | UUID of the service category to configure          |
+| `minYear`           | integer | Yes      | min 1900, max 2100 | Minimum vehicle manufacture year for this category |
 
 ---
 

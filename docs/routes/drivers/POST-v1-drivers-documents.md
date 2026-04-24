@@ -16,8 +16,8 @@
 
 | Name           | Location | Type   | Required | Description                                                    |
 |----------------|----------|--------|----------|----------------------------------------------------------------|
-| `documentType` | query    | string | Yes      | Type of document — `CNH` or `VEHICLE_DOC`                     |
-| `vehicleId`    | query    | string | No       | UUID of the vehicle — required when `documentType=VEHICLE_DOC`|
+| `documentType` | query    | string | Yes      | Type of document — `CNH` or `VEHICLE_DOC`                      |
+| `vehicleId`    | query    | string | No       | UUID of the vehicle — required when `documentType=VEHICLE_DOC` |
 
 **Example URL:**
 

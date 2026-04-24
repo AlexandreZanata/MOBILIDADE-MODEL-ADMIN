@@ -44,22 +44,22 @@ None.
 }
 ```
 
-| Field               | Type   | Description                                                          |
-|---------------------|--------|----------------------------------------------------------------------|
-| `id`                | string | Ride UUID                                                            |
-| `passengerId`       | string | UUID of the passenger                                                |
-| `driverId`          | string | UUID of the driver                                                   |
-| `serviceCategoryId` | string | UUID of the service category                                         |
-| `paymentMethodId`   | string | UUID of the payment method                                           |
-| `cardBrandId`       | string | UUID of the card brand (nullable if not a card payment)              |
-| `status`            | string | Current ride status (e.g. `MOTORISTA_ACEITOU`, `EM_ROTA`)           |
-| `estimatedPrice`    | number | Estimated fare at the time of request (BRL)                          |
-| `finalPrice`        | number | Final charged fare (BRL) — `null` while the ride is in progress      |
-| `distanceKm`        | number | Estimated ride distance in kilometers                                |
-| `durationMinutes`   | number | Estimated ride duration in minutes                                   |
-| `surge`             | number | Surge multiplier applied to the fare                                 |
-| `requestedAt`       | string | ISO 8601 timestamp when the ride was requested                       |
-| `createdAt`         | string | ISO 8601 creation timestamp                                          |
+| Field               | Type   | Description                                                     |
+|---------------------|--------|-----------------------------------------------------------------|
+| `id`                | string | Ride UUID                                                       |
+| `passengerId`       | string | UUID of the passenger                                           |
+| `driverId`          | string | UUID of the driver                                              |
+| `serviceCategoryId` | string | UUID of the service category                                    |
+| `paymentMethodId`   | string | UUID of the payment method                                      |
+| `cardBrandId`       | string | UUID of the card brand (nullable if not a card payment)         |
+| `status`            | string | Current ride status (e.g. `MOTORISTA_ACEITOU`, `EM_ROTA`)       |
+| `estimatedPrice`    | number | Estimated fare at the time of request (BRL)                     |
+| `finalPrice`        | number | Final charged fare (BRL) — `null` while the ride is in progress |
+| `distanceKm`        | number | Estimated ride distance in kilometers                           |
+| `durationMinutes`   | number | Estimated ride duration in minutes                              |
+| `surge`             | number | Surge multiplier applied to the fare                            |
+| `requestedAt`       | string | ISO 8601 timestamp when the ride was requested                  |
+| `createdAt`         | string | ISO 8601 creation timestamp                                     |
 
 ---
 

@@ -18,13 +18,13 @@
 
 **Supported filter parameters (not listed above):**
 
-| Parameter           | Operators       | Example                          |
-|---------------------|-----------------|----------------------------------|
-| `name`              | `eq`, `contains`| `name[contains]=econômico`       |
-| `slug`              | `eq`, `contains`| `slug[eq]=economico`             |
-| `baseFare`          | `gte`, `lte`    | `baseFare[gte]=5`                |
-| `perKmRate`         | `gte`, `lte`    | `perKmRate[lte]=3`               |
-| `minFare`           | `gte`, `lte`    | `minFare[gte]=10`                |
+| Parameter   | Operators        | Example                    |
+|-------------|------------------|----------------------------|
+| `name`      | `eq`, `contains` | `name[contains]=econômico` |
+| `slug`      | `eq`, `contains` | `slug[eq]=economico`       |
+| `baseFare`  | `gte`, `lte`     | `baseFare[gte]=5`          |
+| `perKmRate` | `gte`, `lte`     | `perKmRate[lte]=3`         |
+| `minFare`   | `gte`, `lte`     | `minFare[gte]=10`          |
 
 **Example URL:**
 
@@ -67,26 +67,26 @@ None.
 }
 ```
 
-| Field        | Type    | Description                                                    |
-|--------------|---------|----------------------------------------------------------------|
-| `items`      | array   | Array of service category objects for the current page         |
-| `nextCursor` | string  | Cursor to pass as `cursor` to fetch the next page (nullable)   |
-| `prevCursor` | string  | Cursor to pass as `cursor` to fetch the previous page (nullable)|
-| `hasMore`    | boolean | Whether more pages exist after the current one                 |
-| `totalCount` | number  | Total number of records matching the current filters           |
+| Field        | Type    | Description                                                      |
+|--------------|---------|------------------------------------------------------------------|
+| `items`      | array   | Array of service category objects for the current page           |
+| `nextCursor` | string  | Cursor to pass as `cursor` to fetch the next page (nullable)     |
+| `prevCursor` | string  | Cursor to pass as `cursor` to fetch the previous page (nullable) |
+| `hasMore`    | boolean | Whether more pages exist after the current one                   |
+| `totalCount` | number  | Total number of records matching the current filters             |
 
 #### Item Object Fields
 
-| Field       | Type   | Description                                  |
-|-------------|--------|----------------------------------------------|
-| `id`        | string | Service category UUID                        |
-| `name`      | string | Display name of the category                 |
-| `slug`      | string | URL-safe identifier for the category         |
-| `baseFare`  | number | Base fare charged at the start of a ride (BRL)|
-| `perKmRate` | number | Rate charged per kilometer (BRL)             |
-| `minFare`   | number | Minimum fare for any ride in this category (BRL)|
-| `createdAt` | string | ISO 8601 creation timestamp                  |
-| `updatedAt` | string | ISO 8601 last update timestamp               |
+| Field       | Type   | Description                                      |
+|-------------|--------|--------------------------------------------------|
+| `id`        | string | Service category UUID                            |
+| `name`      | string | Display name of the category                     |
+| `slug`      | string | URL-safe identifier for the category             |
+| `baseFare`  | number | Base fare charged at the start of a ride (BRL)   |
+| `perKmRate` | number | Rate charged per kilometer (BRL)                 |
+| `minFare`   | number | Minimum fare for any ride in this category (BRL) |
+| `createdAt` | string | ISO 8601 creation timestamp                      |
+| `updatedAt` | string | ISO 8601 last update timestamp                   |
 
 ---
 

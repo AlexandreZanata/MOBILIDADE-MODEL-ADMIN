@@ -80,11 +80,11 @@ None.
 
 #### `addressComponents[]` Item Fields
 
-| Field      | Type     | Description                                  |
-|------------|----------|----------------------------------------------|
-| `longName` | string   | Full name of the address component           |
-| `shortName`| string   | Abbreviated name of the address component    |
-| `types`    | string[] | Component type tags                          |
+| Field       | Type     | Description                               |
+|-------------|----------|-------------------------------------------|
+| `longName`  | string   | Full name of the address component        |
+| `shortName` | string   | Abbreviated name of the address component |
+| `types`     | string[] | Component type tags                       |
 
 ---
 

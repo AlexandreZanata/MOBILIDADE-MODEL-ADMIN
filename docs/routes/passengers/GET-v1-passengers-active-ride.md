@@ -60,24 +60,24 @@ None.
 }
 ```
 
-| Field               | Type   | Description                                                          |
-|---------------------|--------|----------------------------------------------------------------------|
-| `id`                | string | Ride UUID                                                            |
-| `passengerId`       | string | UUID of the passenger                                                |
-| `driverId`          | string | UUID of the driver (nullable if not yet assigned)                    |
-| `serviceCategoryId` | string | UUID of the service category                                         |
-| `paymentMethodId`   | string | UUID of the payment method                                           |
-| `cardBrandId`       | string | UUID of the card brand (nullable)                                    |
-| `status`            | string | Current ride status (e.g. `MOTORISTA_ACEITOU`, `EM_ROTA`)           |
-| `estimatedPrice`    | number | Estimated fare (BRL)                                                 |
-| `finalPrice`        | number | Final charged fare — `null` while the ride is in progress            |
-| `distanceKm`        | number | Estimated ride distance in kilometers                                |
-| `durationMinutes`   | number | Estimated ride duration in minutes                                   |
-| `surge`             | number | Surge multiplier applied to the fare                                 |
-| `requestedAt`       | string | ISO 8601 timestamp when the ride was requested                       |
-| `createdAt`         | string | ISO 8601 creation timestamp                                          |
-| `passenger`         | object | Passenger summary (nullable)                                         |
-| `driver`            | object | Driver summary with vehicle — `null` if no driver assigned yet       |
+| Field               | Type   | Description                                                    |
+|---------------------|--------|----------------------------------------------------------------|
+| `id`                | string | Ride UUID                                                      |
+| `passengerId`       | string | UUID of the passenger                                          |
+| `driverId`          | string | UUID of the driver (nullable if not yet assigned)              |
+| `serviceCategoryId` | string | UUID of the service category                                   |
+| `paymentMethodId`   | string | UUID of the payment method                                     |
+| `cardBrandId`       | string | UUID of the card brand (nullable)                              |
+| `status`            | string | Current ride status (e.g. `MOTORISTA_ACEITOU`, `EM_ROTA`)      |
+| `estimatedPrice`    | number | Estimated fare (BRL)                                           |
+| `finalPrice`        | number | Final charged fare — `null` while the ride is in progress      |
+| `distanceKm`        | number | Estimated ride distance in kilometers                          |
+| `durationMinutes`   | number | Estimated ride duration in minutes                             |
+| `surge`             | number | Surge multiplier applied to the fare                           |
+| `requestedAt`       | string | ISO 8601 timestamp when the ride was requested                 |
+| `createdAt`         | string | ISO 8601 creation timestamp                                    |
+| `passenger`         | object | Passenger summary (nullable)                                   |
+| `driver`            | object | Driver summary with vehicle — `null` if no driver assigned yet |
 
 #### `passenger` Object Fields
 
@@ -98,12 +98,12 @@ None.
 
 #### `driver.vehicle` Object Fields
 
-| Field          | Type   | Description          |
-|----------------|--------|----------------------|
-| `licensePlate` | string | Vehicle license plate|
-| `brand`        | string | Vehicle brand name   |
-| `model`        | string | Vehicle model name   |
-| `color`        | string | Vehicle color        |
+| Field          | Type   | Description           |
+|----------------|--------|-----------------------|
+| `licensePlate` | string | Vehicle license plate |
+| `brand`        | string | Vehicle brand name    |
+| `model`        | string | Vehicle model name    |
+| `color`        | string | Vehicle color         |
 
 ---
 

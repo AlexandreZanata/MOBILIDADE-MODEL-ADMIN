@@ -24,10 +24,10 @@ None.
 }
 ```
 
-| Field        | Type     | Required | Description                                                              |
-|--------------|----------|----------|--------------------------------------------------------------------------|
-| `rideId`     | string   | Yes      | UUID of the ride                                                         |
-| `messageIds` | string[] | No       | Array of message UUIDs to mark as read. Omit to mark all messages as read|
+| Field        | Type     | Required | Description                                                               |
+|--------------|----------|----------|---------------------------------------------------------------------------|
+| `rideId`     | string   | Yes      | UUID of the ride                                                          |
+| `messageIds` | string[] | No       | Array of message UUIDs to mark as read. Omit to mark all messages as read |
 
 ---
 
