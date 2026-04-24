@@ -1,4 +1,4 @@
-# GovMobile Admin — Infraestrutura e Arquitetura Completa
+``````# GovMobile Admin — Infraestrutura e Arquitetura Completa
 
 > Documento gerado automaticamente a partir da análise do repositório.
 > Projeto: `govmobile-admin` · Stack: Next.js 16 · React 19 · TypeScript 5
@@ -24,7 +24,7 @@
 | Linting           | ESLint (Next.js + TypeScript)     | ^9         |
 
 ---
-
+``````
 ## Estrutura de Pastas
 
 ```
