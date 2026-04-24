@@ -8,10 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --project tsconfig.src.json",
     "test": "vitest --run",
     "test:watch": "vitest",
-    "validate": "npm run lint && npm run typecheck && npm run test"
+    "validate": "npm run lint && npm run typecheck && npm run test",
+    "guard:all": "node scripts/guard.mjs",
+    "guard:types": "node scripts/guard.mjs --only typecheck",
+    "guard:lint": "node scripts/guard.mjs --only lint",
+    "guard:test": "node scripts/guard.mjs --only test"
   },
   "dependencies": {
     "next": "^16.2.4",
