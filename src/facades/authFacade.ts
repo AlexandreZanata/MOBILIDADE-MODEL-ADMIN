@@ -123,6 +123,53 @@ export const authFacade = {
     return refreshPromise;
   },
 
+  // --- Session restore on page load ---
+  /**
+   * Attempts to restore a session from the stored refresh token.
+   * Returns an AuthUser on success, or null if no valid session exists.
+   * Never throws — all errors are swallowed and treated as "no session".
+   */
+  async restoreSession(): Promise<AuthUser | null> {
+    const refreshToken = sessionStorage.getItem(REFRESH_KEY);
+    if (!refreshToken) return null;
+
+    try {
+      const newToken = await authFacade.refreshAccessToken();
+
+      // Decode the JWT payload to extract user identity
+      const parts = newToken.split(".");
+      if (parts.length !== 3) return null;
+
+      const payload = JSON.parse(atob(parts[1])) as {
+        sub?: string;
+        email?: string;
+        roles?: string[];
+        role?: string;
+      };
+
+      const rawRole = (payload.roles?.[0] ?? payload.role ?? "").toUpperCase();
+      const role = Object.values(UserRole).includes(rawRole as UserRole)
+        ? (rawRole as UserRole)
+        : UserRole.AGENT;
+
+      const email = payload.email ?? payload.sub ?? "unknown";
+
+      const user: AuthUser = {
+        id: payload.sub ?? "unknown",
+        name: email.split("@")[0],
+        email,
+        role,
+        active: true,
+      };
+
+      return user;
+    } catch {
+      // Refresh failed or token is malformed — treat as unauthenticated
+      authFacade.clearTokens();
+      return null;
+    }
+  },
+
   // --- Authenticated fetch helper (auto-refresh on 401) ---
   async fetchWithAuth(url: string, init: RequestInit = {}): Promise<Response> {
     const token = _accessToken;

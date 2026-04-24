@@ -3,6 +3,7 @@
 import { useEffect, type ReactNode } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useAuthStore } from "@/stores/authStore";
+import { useSessionRestore } from "@/hooks/auth/useSessionRestore";
 import { PermissionsProvider } from "@/components/auth/PermissionsProvider";
 import { ErrorState } from "@/components/molecules/ErrorState";
 
@@ -12,13 +13,19 @@ interface AuthGuardProps {
 
 /**
  * Session verification wrapper for all admin routes.
- * Redirects to /login when unauthenticated.
- * Renders PermissionsProvider after successful verification.
+ *
+ * On mount, attempts to restore the session from sessionStorage via
+ * useSessionRestore. Once hydrated:
+ * - Authenticated → renders children inside PermissionsProvider
+ * - Unauthenticated → redirects to /login
  */
 export function AuthGuard({ children }: AuthGuardProps) {
   const router = useRouter();
   const pathname = usePathname();
   const { user, isAuthenticated, isHydrated, setRedirectUrl } = useAuthStore();
+
+  // Attempt session restore on first render
+  useSessionRestore();
 
   useEffect(() => {
     if (!isHydrated) return;
@@ -28,7 +35,7 @@ export function AuthGuard({ children }: AuthGuardProps) {
     }
   }, [isHydrated, isAuthenticated, pathname, router, setRedirectUrl]);
 
-  // Not yet hydrated — show skeleton
+  // Waiting for session restore to complete
   if (!isHydrated) {
     return (
       <div className="flex h-screen flex-col gap-4 p-8" data-testid="auth-guard-skeleton">

@@ -25,5 +25,5 @@ export const useAuthStore = create<AuthState>()((set) => ({
   setRedirectUrl: (url) => set({ redirectUrl: url }),
 
   clear: () =>
-    set({ user: null, isAuthenticated: false, redirectUrl: null }),
+    set({ user: null, isAuthenticated: false, isHydrated: true, redirectUrl: null }),
 }));
