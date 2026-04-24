@@ -1,0 +1,28 @@
+{
+  "page": {
+    "title": "My Profile",
+    "subtitle": "Your account information"
+  },
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "id": "User ID"
+  },
+  "roles": {
+    "ADMIN": "Administrator",
+    "SUPERVISOR": "Supervisor",
+    "DISPATCHER": "Dispatcher",
+    "AGENT": "Agent"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "session": {
+    "title": "Session",
+    "logout": "Sign out",
+    "logoutDescription": "You will be redirected to the login page."
+  }
+}

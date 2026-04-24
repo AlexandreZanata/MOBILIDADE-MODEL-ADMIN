@@ -193,16 +193,19 @@ export function useCreateMyDomain() {
 Add the new domain's permissions to the enum:
 
 ```typescript
-MY_DOMAIN_VIEW = "MY_DOMAIN_VIEW",
-MY_DOMAIN_CREATE = "MY_DOMAIN_CREATE",
-MY_DOMAIN_UPDATE = "MY_DOMAIN_UPDATE",
-MY_DOMAIN_DELETE = "MY_DOMAIN_DELETE",
+export enum Permission {
+  MY_DOMAIN_VIEW = "MY_DOMAIN_VIEW",
+  MY_DOMAIN_CREATE = "MY_DOMAIN_CREATE",
+  MY_DOMAIN_UPDATE = "MY_DOMAIN_UPDATE",
+  MY_DOMAIN_DELETE = "MY_DOMAIN_DELETE",
+}
 ```
 
 ### 9. i18n (`src/i18n/locales/`)
 
+File: `src/i18n/locales/en/myDomain.json`
+
 ```json
-// src/i18n/locales/en/myDomain.json
 {
   "page": {
     "title": "My Domain",
@@ -242,7 +245,7 @@ Follow the pattern documented in [components.md](../design-system/components.md#
 
 ### 11. Route (`src/app/(admin)/`)
 
-```typescript
+```tsx
 // src/app/(admin)/my-domain/page.tsx
 import { MyDomainPageClient } from "@/components/organisms/MyDomainPageClient";
 
@@ -254,13 +257,13 @@ export default function MyDomainPage() {
 ### 12. Navigation (`src/config/navigation.ts`)
 
 ```typescript
-{
+const myDomainNavItem = {
   key: "my-domain",
   href: "/my-domain",
   labelKey: "nav:myDomain",
   icon: "IconName",
   permission: Permission.MY_DOMAIN_VIEW,
-}
+};
 ```
 
 ---
@@ -293,7 +296,7 @@ describe("myDomainFacade", () => {
 
 ### PageClient Test
 
-```typescript
+```tsx
 // src/components/organisms/__tests__/MyDomainPageClient.test.tsx
 import { describe, it, expect } from "vitest";
 import { screen } from "@testing-library/react";

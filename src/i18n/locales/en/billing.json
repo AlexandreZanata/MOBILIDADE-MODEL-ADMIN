@@ -1,0 +1,93 @@
+{
+  "page": {
+    "title": "Billing",
+    "configTitle": "Billing Configuration",
+    "jobsTitle": "Job History",
+    "accessDenied": "You do not have permission to view billing."
+  },
+  "config": {
+    "cycleUnit": "Cycle Unit",
+    "cycleInterval": "Cycle Interval",
+    "executionTime": "Execution Time",
+    "executionTimezone": "Timezone",
+    "pricePerRide": "Price per Ride (BRL)",
+    "minimumCharge": "Minimum Charge (BRL)",
+    "pixExpirationDays": "PIX Expiration (days)",
+    "gracePeriodHours": "Grace Period (hours)",
+    "autoBlockEnabled": "Auto-block Enabled",
+    "blockAfterCycles": "Block After Cycles",
+    "isActive": "Active",
+    "intervalDescription": "Interval",
+    "editTitle": "Edit Billing Configuration"
+  },
+  "cycle": {
+    "status": {
+      "PENDING": "Pending",
+      "PAID": "Paid",
+      "EXPIRED": "Expired",
+      "BLOCKED": "Blocked"
+    },
+    "fields": {
+      "period": "Period",
+      "rideCount": "Rides",
+      "totalAmount": "Total",
+      "remainingAmount": "Remaining",
+      "status": "Status",
+      "driverName": "Driver"
+    }
+  },
+  "jobs": {
+    "fields": {
+      "jobType": "Job Type",
+      "status": "Status",
+      "driversProcessed": "Drivers",
+      "cyclesGenerated": "Cycles Generated",
+      "cyclesExpired": "Cycles Expired",
+      "driversBlocked": "Drivers Blocked",
+      "durationMs": "Duration (ms)",
+      "startedAt": "Started At"
+    },
+    "runBillingCycle": "Run Billing Cycle",
+    "runExpirationCheck": "Run Expiration Check"
+  },
+  "driver": {
+    "isBlocked": "Blocked",
+    "totalDebt": "Total Debt",
+    "pendingCycles": "Pending Cycles",
+    "unblock": "Unblock Driver",
+    "unblockConfirmTitle": "Unblock Driver",
+    "unblockConfirmDescription": "This will allow the driver to resume working even with outstanding debt. Are you sure?"
+  },
+  "pix": {
+    "generate": "Generate PIX",
+    "copyPaste": "Copy PIX Code",
+    "copied": "Copied!",
+    "expiresAt": "Expires at"
+  },
+  "test": {
+    "sectionTitle": "Test Tools",
+    "createDebt": "Create Test Debt",
+    "deleteDebt": "Delete Test Debt",
+    "driverId": "Driver ID",
+    "rideCount": "Ride Count",
+    "pricePerRide": "Price per Ride",
+    "generatePix": "Generate PIX immediately",
+    "deleteConfirmTitle": "Delete Test Debt",
+    "deleteConfirmDescription": "This will permanently delete the billing cycle and all associated payments."
+  },
+  "toast": {
+    "configUpdated": "Billing configuration updated.",
+    "pixGenerated": "PIX generated successfully.",
+    "driverUnblocked": "Driver unblocked successfully.",
+    "jobCompleted": "Job completed: {{cycles}} cycles generated, {{blocked}} drivers blocked.",
+    "jobAlreadyRunning": "A billing job is already running.",
+    "expirationCheckCompleted": "Expiration check: {{expired}} expired, {{blocked}} blocked.",
+    "testDebtCreated": "Test debt created successfully.",
+    "testDebtDeleted": "Test debt deleted.",
+    "error": "An error occurred. Please try again."
+  },
+  "empty": {
+    "jobsTitle": "No job history",
+    "jobsMessage": "No billing jobs have been executed yet."
+  }
+}

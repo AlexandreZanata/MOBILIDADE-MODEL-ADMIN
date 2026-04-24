@@ -6,6 +6,8 @@
   "vehicleReference": "Vehicle Reference",
   "serviceCategories": "Service Categories",
   "vehicleCategoryRequirements": "Category Requirements",
+  "billing": "Billing",
+  "profile": "My Profile",
   "appName": "Mobiliade Admin",
   "language": {
     "label": "Language",

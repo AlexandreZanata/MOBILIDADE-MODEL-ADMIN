@@ -4,11 +4,13 @@ import { adminRidesHandlers } from "@/msw/adminRidesHandlers";
 import { adminPassengersHandlers } from "@/msw/adminPassengersHandlers";
 import { adminVehiclesHandlers } from "@/msw/adminVehiclesHandlers";
 import { serviceCategoriesHandlers } from "@/msw/serviceCategoriesHandlers";
+import { billingHandlers } from "@/msw/billingHandlers";
 
 export const server = setupServer(
   ...authHandlers,
   ...adminRidesHandlers,
   ...adminPassengersHandlers,
   ...adminVehiclesHandlers,
-  ...serviceCategoriesHandlers
+  ...serviceCategoriesHandlers,
+  ...billingHandlers
 );

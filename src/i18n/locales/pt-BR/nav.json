@@ -6,6 +6,8 @@
   "vehicleReference": "Referência de Veículos",
   "serviceCategories": "Categorias de Serviço",
   "vehicleCategoryRequirements": "Requisitos por Categoria",
+  "billing": "Cobrança",
+  "profile": "Meu Perfil",
   "appName": "Mobiliade Admin",
   "language": {
     "label": "Idioma",

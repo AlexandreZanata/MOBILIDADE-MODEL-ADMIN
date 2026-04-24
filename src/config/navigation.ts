@@ -1,4 +1,4 @@
-import { LayoutDashboard, Car, Users, Layers, Tag, ShieldCheck } from "lucide-react";
+import { LayoutDashboard, Car, Users, Layers, Tag, ShieldCheck, CreditCard, UserCircle } from "lucide-react";
 import { Permission } from "@/models/Permission";
 import type { LucideIcon } from "lucide-react";
 
@@ -60,5 +60,19 @@ export const NAV_ITEMS: NavItem[] = [
     labelKey: "nav:vehicleCategoryRequirements",
     icon: ShieldCheck,
     permission: Permission.VEHICLE_ADMIN_VIEW,
+  },
+  {
+    key: "billing",
+    href: "/billing",
+    labelKey: "nav:billing",
+    icon: CreditCard,
+    permission: Permission.BILLING_CONFIG_VIEW,
+  },
+  {
+    key: "profile",
+    href: "/profile",
+    labelKey: "nav:profile",
+    icon: UserCircle,
+    permission: null,
   },
 ];

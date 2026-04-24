@@ -1,0 +1,28 @@
+{
+  "page": {
+    "title": "Meu Perfil",
+    "subtitle": "Informações da sua conta"
+  },
+  "fields": {
+    "name": "Nome",
+    "email": "E-mail",
+    "role": "Perfil",
+    "status": "Status",
+    "id": "ID do Usuário"
+  },
+  "roles": {
+    "ADMIN": "Administrador",
+    "SUPERVISOR": "Supervisor",
+    "DISPATCHER": "Despachante",
+    "AGENT": "Agente"
+  },
+  "status": {
+    "active": "Ativo",
+    "inactive": "Inativo"
+  },
+  "session": {
+    "title": "Sessão",
+    "logout": "Sair",
+    "logoutDescription": "Você será redirecionado para a página de login."
+  }
+}

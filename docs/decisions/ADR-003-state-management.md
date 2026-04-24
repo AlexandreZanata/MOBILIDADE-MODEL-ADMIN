@@ -65,7 +65,7 @@ new QueryClient({
 
 ### UI State → Zustand
 
-Zustand manages all state that lives only on the client:
+Zustand manages all states that live only on the client:
 
 ```typescript
 // src/stores/authStore.ts
@@ -144,9 +144,9 @@ export const cargosKeys = {
 
 ## Alternatives Considered
 
-| Alternative              | Reason for Rejection                                        |
-|--------------------------|-------------------------------------------------------------|
-| Redux Toolkit            | Excessive boilerplate; no native cache for server state     |
-| Jotai                    | Atomic model makes coordinated query invalidation harder    |
+| Alternative                | Reason for Rejection                                     |
+|----------------------------|----------------------------------------------------------|
+| Redux Toolkit              | Excessive boilerplate; no native cache for server state  |
+| Jotai                      | Atomic model makes coordinated query invalidation harder |
 | Context API for everything | Unnecessary re-renders; no cache; no devtools            |
-| SWR                      | Fewer features than TanStack Query; no native mutations     |
+| SWR                        | Fewer features than TanStack Query; no native mutations  |

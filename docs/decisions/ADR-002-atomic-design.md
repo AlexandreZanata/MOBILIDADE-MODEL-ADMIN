@@ -35,7 +35,7 @@ Primitive UI units. No business logic, no API calls, no store access.
 
 ### Molecules (`src/components/molecules/`)
 
-Atom compositions with a single purpose. May have local UI state (e.g., dropdown open/closed). Use hooks only for data already available via props or context.
+Atom compositions with a single purpose. May have a local UI state (e.g., dropdown open/closed). Use hooks only for data already available via props or context.
 
 **Can import from:** `atoms/`, `models/`, `hooks/`  
 **Forbidden to import from:** organisms, facades, MSW
@@ -97,8 +97,8 @@ export { StatusChip } from "./StatusChip";
 
 ## Alternatives Considered
 
-| Alternative              | Reason for Rejection                                        |
-|--------------------------|-------------------------------------------------------------|
-| Feature-based folders    | Hinders reuse across features; no abstraction hierarchy     |
-| Flat components/         | No structure; scales poorly                                 |
+| Alternative                                    | Reason for Rejection                                                       |
+|------------------------------------------------|----------------------------------------------------------------------------|
+| Feature-based folders                          | Hinders reuse across features; no abstraction hierarchy                    |
+| Flat components/                               | No structure; scales poorly                                                |
 | Full 5-level Atomic Design (+ templates/pages) | Pages are managed by App Router; templates are unnecessary in this context |

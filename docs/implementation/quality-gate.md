@@ -73,26 +73,26 @@ Zero warnings are allowed — every warning is treated as an error.
 
 **Excluded from lint** (via `eslint.config.mjs` `ignores`):
 
-| Path                        | Reason                                  |
-|-----------------------------|-----------------------------------------|
-| `.next/**`                  | Generated build output                  |
-| `node_modules/**`           | Third-party code                        |
-| `public/mockServiceWorker.js` | MSW-generated service worker          |
-| `scripts/**`                | Plain JS tooling scripts (no TS types)  |
-| `postcss.config.mjs`        | Plain JS config                         |
-| `eslint.config.mjs`         | Self-referential — would cause loops    |
+| Path                          | Reason                                 |
+|-------------------------------|----------------------------------------|
+| `.next/**`                    | Generated build output                 |
+| `node_modules/**`             | Third-party code                       |
+| `public/mockServiceWorker.js` | MSW-generated service worker           |
+| `scripts/**`                  | Plain JS tooling scripts (no TS types) |
+| `postcss.config.mjs`          | Plain JS config                        |
+| `eslint.config.mjs`           | Self-referential — would cause loops   |
 
 **Active rules:**
 
-| Rule                                  | Level   | Notes                              |
-|---------------------------------------|---------|------------------------------------|
-| `@typescript-eslint/no-explicit-any`  | error   | Zero `any` policy                  |
-| `@typescript-eslint/no-unused-vars`   | error   | Prefix `_` to intentionally ignore |
-| `no-console`                          | warn→error | Only `console.warn/error` allowed |
-| `react/react-in-jsx-scope`            | off     | React 17+ JSX transform            |
-| `react/prop-types`                    | off     | TypeScript handles prop types       |
-| `react-hooks/rules-of-hooks`          | error   | Hooks must follow the rules        |
-| `react-hooks/exhaustive-deps`         | warn→error | All hook deps must be declared   |
+| Rule                                 | Level      | Notes                              |
+|--------------------------------------|------------|------------------------------------|
+| `@typescript-eslint/no-explicit-any` | error      | Zero `any` policy                  |
+| `@typescript-eslint/no-unused-vars`  | error      | Prefix `_` to intentionally ignore |
+| `no-console`                         | warn→error | Only `console.warn/error` allowed  |
+| `react/react-in-jsx-scope`           | off        | React 17+ JSX transform            |
+| `react/prop-types`                   | off        | TypeScript handles prop types      |
+| `react-hooks/rules-of-hooks`         | error      | Hooks must follow the rules        |
+| `react-hooks/exhaustive-deps`        | warn→error | All hook deps must be declared     |
 
 ---
 
@@ -111,12 +111,12 @@ test APIs (`describe`, `it`, `expect`, `vi`).
 
 ## Configuration Files
 
-| File                  | Purpose                                              |
-|-----------------------|------------------------------------------------------|
-| `scripts/guard.mjs`   | Guard runner — orchestrates all steps                |
-| `eslint.config.mjs`   | ESLint 9 flat config (typescript-eslint + react)     |
-| `tsconfig.src.json`   | Src-scoped TypeScript config (extends `tsconfig.json`) |
-| `vitest.config.ts`    | Vitest config (jsdom, globals, path aliases)         |
+| File                | Purpose                                                |
+|---------------------|--------------------------------------------------------|
+| `scripts/guard.mjs` | Guard runner — orchestrates all steps                  |
+| `eslint.config.mjs` | ESLint 9 flat config (typescript-eslint + react)       |
+| `tsconfig.src.json` | Src-scoped TypeScript config (extends `tsconfig.json`) |
+| `vitest.config.ts`  | Vitest config (jsdom, globals, path aliases)           |
 
 ---
 
@@ -163,7 +163,7 @@ Example GitHub Actions step:
 },
 ```
 
-3. Run `npm run guard:lint` to verify it passes before committing.
+1. Run `npm run guard:lint` to verify it passes before committing.
 
 ---
 

@@ -12,6 +12,10 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     Permission.VEHICLE_ADMIN_UPDATE,
     Permission.VEHICLE_REFERENCE_VIEW,
     Permission.SERVICE_CATEGORY_VIEW,
+    Permission.BILLING_CONFIG_VIEW,
+    Permission.BILLING_DRIVER_VIEW,
+    Permission.BILLING_PIX_GENERATE,
+    Permission.BILLING_JOBS_VIEW,
   ],
 
   [UserRole.DISPATCHER]: [

@@ -1,0 +1,93 @@
+{
+  "page": {
+    "title": "Cobrança",
+    "configTitle": "Configuração de Cobrança",
+    "jobsTitle": "Histórico de Jobs",
+    "accessDenied": "Você não tem permissão para visualizar cobrança."
+  },
+  "config": {
+    "cycleUnit": "Unidade do Ciclo",
+    "cycleInterval": "Intervalo do Ciclo",
+    "executionTime": "Horário de Execução",
+    "executionTimezone": "Fuso Horário",
+    "pricePerRide": "Preço por Corrida (R$)",
+    "minimumCharge": "Cobrança Mínima (R$)",
+    "pixExpirationDays": "Expiração do PIX (dias)",
+    "gracePeriodHours": "Período de Carência (horas)",
+    "autoBlockEnabled": "Bloqueio Automático",
+    "blockAfterCycles": "Bloquear Após Ciclos",
+    "isActive": "Ativo",
+    "intervalDescription": "Intervalo",
+    "editTitle": "Editar Configuração de Cobrança"
+  },
+  "cycle": {
+    "status": {
+      "PENDING": "Pendente",
+      "PAID": "Pago",
+      "EXPIRED": "Expirado",
+      "BLOCKED": "Bloqueado"
+    },
+    "fields": {
+      "period": "Período",
+      "rideCount": "Corridas",
+      "totalAmount": "Total",
+      "remainingAmount": "Restante",
+      "status": "Status",
+      "driverName": "Motorista"
+    }
+  },
+  "jobs": {
+    "fields": {
+      "jobType": "Tipo de Job",
+      "status": "Status",
+      "driversProcessed": "Motoristas",
+      "cyclesGenerated": "Ciclos Gerados",
+      "cyclesExpired": "Ciclos Expirados",
+      "driversBlocked": "Motoristas Bloqueados",
+      "durationMs": "Duração (ms)",
+      "startedAt": "Iniciado em"
+    },
+    "runBillingCycle": "Executar Ciclo de Cobrança",
+    "runExpirationCheck": "Executar Verificação de Expiração"
+  },
+  "driver": {
+    "isBlocked": "Bloqueado",
+    "totalDebt": "Dívida Total",
+    "pendingCycles": "Ciclos Pendentes",
+    "unblock": "Desbloquear Motorista",
+    "unblockConfirmTitle": "Desbloquear Motorista",
+    "unblockConfirmDescription": "Isso permitirá que o motorista retome o trabalho mesmo com dívida pendente. Tem certeza?"
+  },
+  "pix": {
+    "generate": "Gerar PIX",
+    "copyPaste": "Copiar Código PIX",
+    "copied": "Copiado!",
+    "expiresAt": "Expira em"
+  },
+  "test": {
+    "sectionTitle": "Ferramentas de Teste",
+    "createDebt": "Criar Dívida de Teste",
+    "deleteDebt": "Excluir Dívida de Teste",
+    "driverId": "ID do Motorista",
+    "rideCount": "Número de Corridas",
+    "pricePerRide": "Preço por Corrida",
+    "generatePix": "Gerar PIX imediatamente",
+    "deleteConfirmTitle": "Excluir Dívida de Teste",
+    "deleteConfirmDescription": "Isso excluirá permanentemente o ciclo de cobrança e todos os pagamentos associados."
+  },
+  "toast": {
+    "configUpdated": "Configuração de cobrança atualizada.",
+    "pixGenerated": "PIX gerado com sucesso.",
+    "driverUnblocked": "Motorista desbloqueado com sucesso.",
+    "jobCompleted": "Job concluído: {{cycles}} ciclos gerados, {{blocked}} motoristas bloqueados.",
+    "jobAlreadyRunning": "Um job de cobrança já está em execução.",
+    "expirationCheckCompleted": "Verificação: {{expired}} expirados, {{blocked}} bloqueados.",
+    "testDebtCreated": "Dívida de teste criada com sucesso.",
+    "testDebtDeleted": "Dívida de teste excluída.",
+    "error": "Ocorreu um erro. Tente novamente."
+  },
+  "empty": {
+    "jobsTitle": "Nenhum histórico de jobs",
+    "jobsMessage": "Nenhum job de cobrança foi executado ainda."
+  }
+}

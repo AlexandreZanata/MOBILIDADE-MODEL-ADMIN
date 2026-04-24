@@ -15,20 +15,20 @@ vehicles, service categories, and billing. It is mission-critical, auditable, an
 
 ## Tech Stack
 
-| Category       | Technology              | Version    |
-|----------------|-------------------------|------------|
-| Framework      | Next.js (App Router)    | ^16.2.4    |
-| UI Library     | React                   | 19.2.4     |
-| Language       | TypeScript              | ^5 (strict)|
-| Styling        | Tailwind CSS            | ^4         |
-| Server State   | TanStack Query          | ^5.99.0    |
-| Client State   | Zustand                 | ^5.0.12    |
-| i18n           | i18next + react-i18next | ^26 / ^17  |
-| Mocking (dev)  | MSW                     | ^2.13.3    |
-| Testing        | Vitest + Testing Library| ^4 / ^16   |
-| Notifications  | Sonner                  | ^2.0.7     |
-| Icons          | Lucide React            | ^1.8.0     |
-| Property Tests | fast-check              | 4.6.0      |
+| Category       | Technology               | Version     |
+|----------------|--------------------------|-------------|
+| Framework      | Next.js (App Router)     | ^16.2.4     |
+| UI Library     | React                    | 19.2.4      |
+| Language       | TypeScript               | ^5 (strict) |
+| Styling        | Tailwind CSS             | ^4          |
+| Server State   | TanStack Query           | ^5.99.0     |
+| Client State   | Zustand                  | ^5.0.12     |
+| i18n           | i18next + react-i18next  | ^26 / ^17   |
+| Mocking (dev)  | MSW                      | ^2.13.3     |
+| Testing        | Vitest + Testing Library | ^4 / ^16    |
+| Notifications  | Sonner                   | ^2.0.7      |
+| Icons          | Lucide React             | ^1.8.0      |
+| Property Tests | fast-check               | 4.6.0       |
 
 ---
 
@@ -139,15 +139,15 @@ src/
 
 ## State Management
 
-| Type                   | Tool                 | Examples                                      |
-|------------------------|----------------------|-----------------------------------------------|
-| Remote data            | TanStack Query       | Lists, details                                |
-| Mutations              | TanStack Query       | Create, edit, delete                          |
-| Active filters         | Zustand              | Table filters                                 |
-| Modal state            | Zustand              | Dialog open/close                             |
-| Session / role         | Zustand (`authStore`)| Authenticated user, isAuthenticated           |
-| Form state             | React local state    | Controlled fields                             |
-| URL state              | Next.js searchParams | Pagination, shareable filters                 |
+| Type           | Tool                  | Examples                            |
+|----------------|-----------------------|-------------------------------------|
+| Remote data    | TanStack Query        | Lists, details                      |
+| Mutations      | TanStack Query        | Create, edit, delete                |
+| Active filters | Zustand               | Table filters                       |
+| Modal state    | Zustand               | Dialog open/close                   |
+| Session / role | Zustand (`authStore`) | Authenticated user, isAuthenticated |
+| Form state     | React local state     | Controlled fields                   |
+| URL state      | Next.js searchParams  | Pagination, shareable filters       |
 
 ### TanStack Query — Global Config
 

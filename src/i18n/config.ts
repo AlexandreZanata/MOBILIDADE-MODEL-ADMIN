@@ -11,6 +11,8 @@ import enPassengers from "@/i18n/locales/en/passengers.json";
 import enVehicles from "@/i18n/locales/en/vehicles.json";
 import enServiceCategories from "@/i18n/locales/en/serviceCategories.json";
 import enDashboard from "@/i18n/locales/en/dashboard.json";
+import enBilling from "@/i18n/locales/en/billing.json";
+import enProfile from "@/i18n/locales/en/profile.json";
 
 // pt-BR
 import ptBRCommon from "@/i18n/locales/pt-BR/common.json";
@@ -21,6 +23,8 @@ import ptBRPassengers from "@/i18n/locales/pt-BR/passengers.json";
 import ptBRVehicles from "@/i18n/locales/pt-BR/vehicles.json";
 import ptBRServiceCategories from "@/i18n/locales/pt-BR/serviceCategories.json";
 import ptBRDashboard from "@/i18n/locales/pt-BR/dashboard.json";
+import ptBRBilling from "@/i18n/locales/pt-BR/billing.json";
+import ptBRProfile from "@/i18n/locales/pt-BR/profile.json";
 
 void i18n
   .use(LanguageDetector)
@@ -36,6 +40,8 @@ void i18n
         vehicles: enVehicles,
         serviceCategories: enServiceCategories,
         dashboard: enDashboard,
+        billing: enBilling,
+        profile: enProfile,
       },
       "pt-BR": {
         common: ptBRCommon,
@@ -46,6 +52,8 @@ void i18n
         vehicles: ptBRVehicles,
         serviceCategories: ptBRServiceCategories,
         dashboard: ptBRDashboard,
+        billing: ptBRBilling,
+        profile: ptBRProfile,
       },
     },
     lng: undefined,          // let LanguageDetector pick from localStorage / navigator

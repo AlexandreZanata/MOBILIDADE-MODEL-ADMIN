@@ -110,9 +110,9 @@ async function refreshAccessToken(): Promise<string> {
 
 ## Alternatives Considered
 
-| Alternative              | Reason for Rejection                                        |
-|--------------------------|-------------------------------------------------------------|
-| Direct fetch in hooks    | Untestable without module stubbing; no audit point          |
-| Axios with interceptors  | Extra dependency; MSW works better with native fetch        |
-| React Query with inline queryFn | Network logic scattered; hard to reuse across queries |
-| tRPC                     | Requires TypeScript backend; not applicable to this context |
+| Alternative                     | Reason for Rejection                                        |
+|---------------------------------|-------------------------------------------------------------|
+| Direct fetch in hooks           | Untestable without module stubbing; no audit point          |
+| Axios with interceptors         | Extra dependency; MSW works better with native fetch        |
+| React Query with inline queryFn | Network logic scattered; hard to reuse across queries       |
+| tRPC                            | Requires TypeScript backend; not applicable to this context |

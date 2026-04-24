@@ -28,7 +28,7 @@ import "@testing-library/jest-dom";
 
 Mandatory wrapper for all component tests:
 
-```typescript
+```tsx
 // src/test/renderWithProviders.tsx
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { render } from "@testing-library/react";
@@ -99,7 +99,7 @@ Tests focus on:
 - Accessibility (aria-*, role)
 - Basic interactions (click, focus)
 
-```typescript
+```tsx
 describe("Button", () => {
   it("renders primary variant", () => {
     renderWithProviders(<Button variant="primary">Save</Button>);
@@ -181,7 +181,7 @@ Tests focus on:
 - Interactions: open modal, filter, search
 - Permissions: create button hidden without permission
 
-```typescript
+```tsx
 describe("MyDomainPageClient", () => {
   it("shows skeleton while loading", () => {
     renderWithProviders(<MyDomainPageClient />);
