@@ -1,4 +1,9 @@
-import type { AdminVehicle, VehicleBrand, VehicleModel } from "@/models/Vehicle";
+import type {
+  AdminVehicle,
+  VehicleBrand,
+  VehicleModel,
+  VehicleCategoryRequirement,
+} from "@/models/Vehicle";
 import { VehicleStatus } from "@/models/Vehicle";
 
 export const vehicleFixtures: AdminVehicle[] = [
@@ -61,6 +66,23 @@ export const vehicleModelFixtures: VehicleModel[] = [
     brandId: "brand-002",
     name: "Civic",
     slug: "civic",
+    createdAt: "2025-01-01T00:00:00Z",
+    updatedAt: "2025-01-01T00:00:00Z",
+  },
+];
+
+export const vehicleCategoryRequirementFixtures: VehicleCategoryRequirement[] = [
+  {
+    id: "req-001",
+    serviceCategoryId: "cat-001",
+    minYear: 2018,
+    createdAt: "2025-01-01T00:00:00Z",
+    updatedAt: "2025-01-01T00:00:00Z",
+  },
+  {
+    id: "req-002",
+    serviceCategoryId: "cat-002",
+    minYear: 2020,
     createdAt: "2025-01-01T00:00:00Z",
     updatedAt: "2025-01-01T00:00:00Z",
   },

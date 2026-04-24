@@ -20,3 +20,9 @@ export const vehicleModelsKeys = {
     [...vehicleModelsKeys.all, "list", params ?? {}] as const,
   detail: (id: string) => [...vehicleModelsKeys.all, "detail", id] as const,
 };
+
+export const vehicleCategoryRequirementsKeys = {
+  all: ["vehicleCategoryRequirements"] as const,
+  byCategory: (categoryId: string) =>
+    [...vehicleCategoryRequirementsKeys.all, "byCategory", categoryId] as const,
+};

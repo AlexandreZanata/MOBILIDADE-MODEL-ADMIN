@@ -21,3 +21,10 @@ export interface UpdateVehicleBrandInput {
   name?: string;
   slug?: string;
 }
+
+/** POST /v1/admin/vehicle-category-requirements — upsert payload */
+export interface UpsertVehicleCategoryRequirementInput {
+  serviceCategoryId: string;
+  /** Minimum vehicle manufacture year. Range: 1900–2100. */
+  minYear: number;
+}

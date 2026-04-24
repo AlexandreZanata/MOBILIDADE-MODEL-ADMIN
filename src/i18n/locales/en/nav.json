@@ -5,6 +5,7 @@
   "vehicles": "Vehicles",
   "vehicleReference": "Vehicle Reference",
   "serviceCategories": "Service Categories",
+  "vehicleCategoryRequirements": "Category Requirements",
   "appName": "Mobiliade Admin",
   "language": {
     "label": "Language",

@@ -18,10 +18,10 @@
 
 **Supported filter parameters:**
 
-| Parameter | Operators       | Example                    |
-|-----------|-----------------|----------------------------|
-| `brandId` | `eq`            | `brandId[eq]=018f1234-...` |
-| `name`    | `eq`, `contains`| `name[contains]=corolla`   |
+| Parameter | Operators        | Example                    |
+|-----------|------------------|----------------------------|
+| `brandId` | `eq`             | `brandId[eq]=018f1234-...` |
+| `name`    | `eq`, `contains` | `name[contains]=corolla`   |
 
 ---
 

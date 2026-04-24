@@ -3,6 +3,7 @@
     "title": "Veículos",
     "brandsTitle": "Marcas de Veículos",
     "modelsTitle": "Modelos de Veículos",
+    "requirementsTitle": "Requisitos por Categoria",
     "accessDenied": "Você não tem permissão para visualizar veículos."
   },
   "fields": {
@@ -14,7 +15,9 @@
     "status": "Status",
     "name": "Nome",
     "slug": "Slug",
-    "createdAt": "Criado em"
+    "createdAt": "Criado em",
+    "serviceCategory": "Categoria de Serviço",
+    "minYear": "Ano Mínimo"
   },
   "status": {
     "PENDING_DOCS": "Documentos Pendentes",
@@ -25,7 +28,9 @@
   "actions": {
     "createBrand": "Nova Marca",
     "editBrand": "Editar Marca",
-    "deleteBrand": "Excluir Marca"
+    "deleteBrand": "Excluir Marca",
+    "setRequirement": "Definir Requisito",
+    "deleteRequirement": "Remover Requisito"
   },
   "brand": {
     "createTitle": "Nova Marca de Veículo",
@@ -35,14 +40,27 @@
     "namePlaceholder": "ex: Toyota",
     "slugPlaceholder": "ex: toyota"
   },
+  "requirement": {
+    "upsertTitle": "Definir Requisito de Ano",
+    "deleteTitle": "Remover Requisito",
+    "deleteDescription": "Isso removerá o requisito de ano mínimo para esta categoria. O ano mínimo global será aplicado.",
+    "minYearLabel": "Ano Mínimo",
+    "minYearPlaceholder": "ex: 2018",
+    "minYearHelperText": "Veículos mais antigos que este ano não serão aceitos para esta categoria.",
+    "categoryLabel": "Categoria de Serviço"
+  },
   "toast": {
     "brandCreated": "Marca criada com sucesso.",
     "brandUpdated": "Marca atualizada com sucesso.",
     "brandDeleted": "Marca excluída com sucesso.",
+    "requirementSaved": "Requisito salvo com sucesso.",
+    "requirementDeleted": "Requisito removido com sucesso.",
     "error": "Ocorreu um erro. Tente novamente."
   },
   "empty": {
     "title": "Nenhum veículo encontrado",
-    "message": "Nenhum veículo corresponde aos filtros atuais."
+    "message": "Nenhum veículo corresponde aos filtros atuais.",
+    "requirementsTitle": "Nenhum requisito configurado",
+    "requirementsMessage": "Nenhum requisito de categoria foi definido. Todas as categorias usam o ano mínimo global."
   }
 }

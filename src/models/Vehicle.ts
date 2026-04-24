@@ -38,3 +38,15 @@ export interface VehicleModel {
   createdAt: string;
   updatedAt: string;
 }
+
+/**
+ * Vehicle category requirement — from GET /v1/admin/vehicle-category-requirements
+ * Defines the minimum manufacture year for vehicles in a given service category.
+ */
+export interface VehicleCategoryRequirement {
+  id: string;
+  serviceCategoryId: string;
+  minYear: number;
+  createdAt: string;
+  updatedAt: string;
+}

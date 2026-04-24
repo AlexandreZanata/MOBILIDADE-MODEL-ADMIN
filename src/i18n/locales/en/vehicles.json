@@ -3,6 +3,7 @@
     "title": "Vehicles",
     "brandsTitle": "Vehicle Brands",
     "modelsTitle": "Vehicle Models",
+    "requirementsTitle": "Category Requirements",
     "accessDenied": "You do not have permission to view vehicles."
   },
   "fields": {
@@ -14,7 +15,9 @@
     "status": "Status",
     "name": "Name",
     "slug": "Slug",
-    "createdAt": "Created At"
+    "createdAt": "Created At",
+    "serviceCategory": "Service Category",
+    "minYear": "Min. Year"
   },
   "status": {
     "PENDING_DOCS": "Pending Documents",
@@ -25,7 +28,9 @@
   "actions": {
     "createBrand": "New Brand",
     "editBrand": "Edit Brand",
-    "deleteBrand": "Delete Brand"
+    "deleteBrand": "Delete Brand",
+    "setRequirement": "Set Requirement",
+    "deleteRequirement": "Remove Requirement"
   },
   "brand": {
     "createTitle": "New Vehicle Brand",
@@ -35,14 +40,27 @@
     "namePlaceholder": "e.g. Toyota",
     "slugPlaceholder": "e.g. toyota"
   },
+  "requirement": {
+    "upsertTitle": "Set Year Requirement",
+    "deleteTitle": "Remove Requirement",
+    "deleteDescription": "This will remove the minimum year requirement for this category. The global minimum year will apply instead.",
+    "minYearLabel": "Minimum Year",
+    "minYearPlaceholder": "e.g. 2018",
+    "minYearHelperText": "Vehicles older than this year will not be accepted for this category.",
+    "categoryLabel": "Service Category"
+  },
   "toast": {
     "brandCreated": "Brand created successfully.",
     "brandUpdated": "Brand updated successfully.",
     "brandDeleted": "Brand deleted successfully.",
+    "requirementSaved": "Requirement saved successfully.",
+    "requirementDeleted": "Requirement removed successfully.",
     "error": "An error occurred. Please try again."
   },
   "empty": {
     "title": "No vehicles found",
-    "message": "No vehicles match the current filters."
+    "message": "No vehicles match the current filters.",
+    "requirementsTitle": "No requirements configured",
+    "requirementsMessage": "No category requirements have been set. All categories use the global minimum year."
   }
 }

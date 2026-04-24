@@ -26,12 +26,12 @@ GovMobile Admin is a role-based government operations panel (RBAC). It allows go
 
 ## Roles and Capabilities
 
-| Role         | Runs | Job Titles | Assignments | Staff | Drivers | Vehicles | Users | Audit |
-|--------------|------|------------|-------------|-------|---------|----------|-------|-------|
-| ADMIN        | ✅ RW | ✅ RW     | ✅ RW       | ✅ RW | ✅ RW   | ✅ RW    | ✅ RW | ✅ R  |
-| SUPERVISOR   | ✅ R  | ✅ R      | ✅ R        | ✅ RW | ✅ RW   | ✅ R     | ❌    | ✅ R  |
-| DISPATCHER   | ✅ RW | ❌        | ❌          | ❌    | ✅ R    | ✅ R     | ❌    | ❌    |
-| AGENT        | ✅ R  | ❌        | ❌          | ❌    | ❌      | ❌       | ❌    | ❌    |
+| Role       | Runs | Job Titles | Assignments | Staff | Drivers | Vehicles | Users | Audit |
+|------------|------|------------|-------------|-------|---------|----------|-------|-------|
+| ADMIN      | ✅ RW | ✅ RW       | ✅ RW        | ✅ RW  | ✅ RW    | ✅ RW     | ✅ RW  | ✅ R   |
+| SUPERVISOR | ✅ R  | ✅ R        | ✅ R         | ✅ RW  | ✅ RW    | ✅ R      | ❌     | ✅ R   |
+| DISPATCHER | ✅ RW | ❌          | ❌           | ❌     | ✅ R     | ✅ R      | ❌     | ❌     |
+| AGENT      | ✅ R  | ❌          | ❌           | ❌     | ❌       | ❌        | ❌     | ❌     |
 
 R = Read, W = Write (create/update/delete)
 

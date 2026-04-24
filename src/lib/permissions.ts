@@ -9,6 +9,7 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     Permission.RIDE_ADMIN_VIEW,
     Permission.PASSENGER_ADMIN_VIEW,
     Permission.VEHICLE_ADMIN_VIEW,
+    Permission.VEHICLE_ADMIN_UPDATE,
     Permission.VEHICLE_REFERENCE_VIEW,
     Permission.SERVICE_CATEGORY_VIEW,
   ],

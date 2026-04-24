@@ -68,7 +68,7 @@ On refresh failure:
 
 ### Verification Logic
 
-```typescript
+```tsx
 // AuthGuard pseudocode
 const { data: user, isLoading, isError, error } = useCurrentUser();
 
@@ -191,7 +191,9 @@ if (can(Permission.CARGO_VIEW)) {
 1. **Never check role directly in components:**
    ```tsx
    // ❌ Forbidden
-   if (user.role === "ADMIN") { ... }
+   if (user.role === "ADMIN") {
+     return <AdminPanel />;
+   }
 
    // ✅ Correct
    <Can perform={Permission.USER_VIEW}>...</Can>

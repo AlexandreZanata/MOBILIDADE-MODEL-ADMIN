@@ -1,4 +1,4 @@
-import { LayoutDashboard, Car, Users, Layers, Tag } from "lucide-react";
+import { LayoutDashboard, Car, Users, Layers, Tag, ShieldCheck } from "lucide-react";
 import { Permission } from "@/models/Permission";
 import type { LucideIcon } from "lucide-react";
 
@@ -53,5 +53,12 @@ export const NAV_ITEMS: NavItem[] = [
     labelKey: "nav:serviceCategories",
     icon: Tag,
     permission: Permission.SERVICE_CATEGORY_VIEW,
+  },
+  {
+    key: "vehicleCategoryRequirements",
+    href: "/vehicle-category-requirements",
+    labelKey: "nav:vehicleCategoryRequirements",
+    icon: ShieldCheck,
+    permission: Permission.VEHICLE_ADMIN_VIEW,
   },
 ];

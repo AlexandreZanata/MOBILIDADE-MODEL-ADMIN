@@ -182,15 +182,15 @@ Colored pill for run status (`RunStatus`). Label resolved via i18n `runs:status.
 
 #### Status Mapping
 
-| Status               | Tailwind Classes                          |
-|----------------------|-------------------------------------------|
-| `REQUESTED`          | `bg-warning/15 text-warning`              |
-| `AWAITING_ACCEPTANCE`| `bg-info/15 text-info`                    |
-| `ACCEPTED`           | `bg-info/15 text-info`                    |
-| `EN_ROUTE`           | `bg-brand-primary/15 text-brand-primary`  |
-| `COMPLETED`          | `bg-success/15 text-success`              |
-| `CANCELLED`          | `bg-danger/15 text-danger`                |
-| `EXPIRED`            | `bg-neutral-200 text-neutral-700`         |
+| Status                | Tailwind Classes                         |
+|-----------------------|------------------------------------------|
+| `REQUESTED`           | `bg-warning/15 text-warning`             |
+| `AWAITING_ACCEPTANCE` | `bg-info/15 text-info`                   |
+| `ACCEPTED`            | `bg-info/15 text-info`                   |
+| `EN_ROUTE`            | `bg-brand-primary/15 text-brand-primary` |
+| `COMPLETED`           | `bg-success/15 text-success`             |
+| `CANCELLED`           | `bg-danger/15 text-danger`               |
+| `EXPIRED`             | `bg-neutral-200 text-neutral-700`        |
 
 Fallback for unknown status: `bg-neutral-200 text-neutral-700`
 
@@ -355,9 +355,9 @@ Sidebar navigation link.
 
 #### Visual States
 
-| State    | Classes                                                    |
-|----------|------------------------------------------------------------|
-| Active   | `bg-brand-primary/10 text-brand-primary`                   |
+| State    | Classes                                                        |
+|----------|----------------------------------------------------------------|
+| Active   | `bg-brand-primary/10 text-brand-primary`                       |
 | Inactive | `text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900` |
 
 ---
@@ -396,16 +396,16 @@ Collapsed mode: shows only the `Avatar`.
 
 Each domain has its own form dialogs:
 
-| File                       | Domain     | Mutations                              |
-|----------------------------|------------|----------------------------------------|
-| `CargoFormDialog.tsx`      | Job Titles | `useCreateCargo`, `useUpdateCargo`     |
-| `LotacaoFormDialog.tsx`    | Assignments| `useCreateLotacao`, `useUpdateLotacao` |
-| `DepartmentFormDialog.tsx` | Departments| `useCreateDepartment`                  |
-| `ServidorFormDialog.tsx`   | Staff      | `useCreateServidor`, `useUpdateServidor`|
-| `MotoristaFormDialog.tsx`  | Drivers    | `useCreateMotorista`, `useUpdateMotorista`|
-| `VeiculoFormDialog.tsx`    | Vehicles   | `useCreateVeiculo`, `useUpdateVeiculo` |
-| `UserFormDialog.tsx`       | Users      | `useCreateUser`, `useUpdateUser`       |
-| `RunOverrideDialog.tsx`    | Runs       | `useOverrideRunMutation`               |
+| File                       | Domain      | Mutations                                  |
+|----------------------------|-------------|--------------------------------------------|
+| `CargoFormDialog.tsx`      | Job Titles  | `useCreateCargo`, `useUpdateCargo`         |
+| `LotacaoFormDialog.tsx`    | Assignments | `useCreateLotacao`, `useUpdateLotacao`     |
+| `DepartmentFormDialog.tsx` | Departments | `useCreateDepartment`                      |
+| `ServidorFormDialog.tsx`   | Staff       | `useCreateServidor`, `useUpdateServidor`   |
+| `MotoristaFormDialog.tsx`  | Drivers     | `useCreateMotorista`, `useUpdateMotorista` |
+| `VeiculoFormDialog.tsx`    | Vehicles    | `useCreateVeiculo`, `useUpdateVeiculo`     |
+| `UserFormDialog.tsx`       | Users       | `useCreateUser`, `useUpdateUser`           |
+| `RunOverrideDialog.tsx`    | Runs        | `useOverrideRunMutation`                   |
 
 **Form dialog pattern:**
 - `"create"` or `"edit"` mode via `mode` prop
@@ -508,9 +508,9 @@ Mandatory pattern for all `*PageClient` components:
   </div>
 
   {/* Dialogs */}
-  <FormDialog open={formOpen} ... />
-  <DeleteDialog open={!!deleteTarget} ... />
-  <ViewModal open={!!viewTarget} ... />
+  <FormDialog open={formOpen} onOpenChange={setFormOpen} />
+  <DeleteDialog open={!!deleteTarget} onConfirm={handleDeleteConfirm} />
+  <ViewModal open={!!viewTarget} onClose={() => setViewTarget(null)} />
 </Can>
 ```
 
