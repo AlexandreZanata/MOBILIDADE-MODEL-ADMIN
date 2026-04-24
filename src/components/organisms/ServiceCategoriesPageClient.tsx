@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Plus, Pencil } from "lucide-react";
 import { Can } from "@/components/auth/Can";
 import { Button } from "@/components/atoms/Button";
+import { TableActionButton } from "@/components/atoms/TableActionButton";
 import { Input } from "@/components/atoms/Input";
 import { Modal } from "@/components/molecules/Modal";
 import { ErrorState } from "@/components/molecules/ErrorState";
@@ -46,7 +47,11 @@ export function ServiceCategoriesPageClient() {
 
   function openCreate() {
     setEditTarget(null);
-    setName(""); setSlug(""); setBaseFare(""); setPerKmRate(""); setMinFare("");
+    setName("");
+    setSlug("");
+    setBaseFare("");
+    setPerKmRate("");
+    setMinFare("");
     setFormOpen(true);
   }
 
@@ -151,16 +156,17 @@ export function ServiceCategoriesPageClient() {
                       {currency.format(cat.minFare)}
                     </td>
                     <td className="px-4 py-3">
-                      <Can perform={Permission.SERVICE_CATEGORY_UPDATE}>
-                        <button
-                          onClick={() => openEdit(cat)}
-                          aria-label={t("actions.edit")}
-                          className="rounded-md p-1.5 hover:bg-brand-primary/10 hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary"
-                          data-testid={`btn-edit-category-${cat.id}`}
-                        >
-                          <Pencil className="h-4 w-4" aria-hidden="true" />
-                        </button>
-                      </Can>
+                      <div className="flex items-center gap-1">
+                        <Can perform={Permission.SERVICE_CATEGORY_UPDATE}>
+                          <TableActionButton
+                            icon={Pencil}
+                            label={t("actions.edit")}
+                            variant="default"
+                            onClick={() => openEdit(cat)}
+                            data-testid={`btn-edit-category-${cat.id}`}
+                          />
+                        </Can>
+                      </div>
                     </td>
                   </tr>
                 ))}

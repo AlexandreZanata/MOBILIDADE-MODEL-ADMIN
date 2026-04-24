@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Search, Trash2, RotateCcw } from "lucide-react";
 import { Can } from "@/components/auth/Can";
+import { TableActionButton } from "@/components/atoms/TableActionButton";
 import { ErrorState } from "@/components/molecules/ErrorState";
 import { EmptyState } from "@/components/molecules/EmptyState";
 import { ConfirmDialog } from "@/components/molecules/ConfirmDialog";
@@ -66,7 +67,7 @@ export function PassengersPageClient() {
           </div>
         </div>
 
-        {/* Content */}
+        {/* Loading */}
         {isLoading && (
           <div className="space-y-2" data-testid="passengers-skeleton">
             {[1, 2, 3, 4, 5].map((i) => (
@@ -100,7 +101,7 @@ export function PassengersPageClient() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-100">
-                {passengers.map((p) => (
+                {passengers.map((p: AdminPassenger) => (
                   <tr key={p.userId} className="transition-colors hover:bg-neutral-50">
                     <td className="px-4 py-3 font-medium text-neutral-900">{p.name}</td>
                     <td className="px-4 py-3 text-neutral-600">{p.email}</td>
@@ -113,24 +114,22 @@ export function PassengersPageClient() {
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-1">
                         <Can perform={Permission.PASSENGER_ADMIN_REACTIVATE}>
-                          <button
+                          <TableActionButton
+                            icon={RotateCcw}
+                            label={t("actions.reactivate")}
+                            variant="success"
                             onClick={() => setReactivateTarget(p)}
-                            aria-label={t("actions.reactivate")}
-                            className="rounded-md p-1.5 hover:bg-success/10 hover:text-success focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary"
                             data-testid={`btn-reactivate-${p.userId}`}
-                          >
-                            <RotateCcw className="h-4 w-4" aria-hidden="true" />
-                          </button>
+                          />
                         </Can>
                         <Can perform={Permission.PASSENGER_ADMIN_DELETE}>
-                          <button
+                          <TableActionButton
+                            icon={Trash2}
+                            label={t("actions.delete")}
+                            variant="danger"
                             onClick={() => setDeleteTarget(p)}
-                            aria-label={t("actions.delete")}
-                            className="rounded-md p-1.5 hover:bg-danger/10 hover:text-danger focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary"
                             data-testid={`btn-delete-${p.userId}`}
-                          >
-                            <Trash2 className="h-4 w-4" aria-hidden="true" />
-                          </button>
+                          />
                         </Can>
                       </div>
                     </td>
@@ -148,7 +147,9 @@ export function PassengersPageClient() {
         onClose={() => setDeleteTarget(null)}
         onConfirm={() => {
           if (!deleteTarget) return;
-          deletePassenger(deleteTarget.userId, { onSettled: () => setDeleteTarget(null) });
+          deletePassenger(deleteTarget.userId, {
+            onSettled: () => setDeleteTarget(null),
+          });
         }}
         title={t("delete.title")}
         description={t("delete.description")}

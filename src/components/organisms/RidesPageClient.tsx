@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Search } from "lucide-react";
+import { Search, XCircle } from "lucide-react";
 import { Can } from "@/components/auth/Can";
-import { Button } from "@/components/atoms/Button";
 import { RideStatusPill } from "@/components/atoms/RideStatusPill";
+import { TableActionButton } from "@/components/atoms/TableActionButton";
 import { ErrorState } from "@/components/molecules/ErrorState";
 import { EmptyState } from "@/components/molecules/EmptyState";
 import { ConfirmDialog } from "@/components/molecules/ConfirmDialog";
@@ -16,7 +16,7 @@ import type { AdminRide } from "@/models/Ride";
 
 /**
  * Rides list page organism.
- * Displays all rides with search, status filter, and cancel action.
+ * Displays all rides with search and cancel action.
  */
 export function RidesPageClient() {
   const { t, i18n } = useTranslation("rides");
@@ -45,9 +45,10 @@ export function RidesPageClient() {
   }
 
   return (
-    <Can perform={Permission.RIDE_ADMIN_VIEW} fallback={
-      <p className="text-sm font-medium text-danger">{t("page.accessDenied")}</p>
-    }>
+    <Can
+      perform={Permission.RIDE_ADMIN_VIEW}
+      fallback={<p className="text-sm font-medium text-danger">{t("page.accessDenied")}</p>}
+    >
       <div className="space-y-4" data-testid="rides-page">
         {/* Header */}
         <div className="flex items-center justify-between">
@@ -72,7 +73,7 @@ export function RidesPageClient() {
           </div>
         </div>
 
-        {/* Content */}
+        {/* Loading */}
         {isLoading && (
           <div className="space-y-2" data-testid="rides-skeleton">
             {[1, 2, 3, 4, 5].map((i) => (
@@ -127,16 +128,17 @@ export function RidesPageClient() {
                       }).format(new Date(ride.requestedAt))}
                     </td>
                     <td className="px-4 py-3">
-                      <Can perform={Permission.RIDE_ADMIN_CANCEL}>
-                        <Button
-                          variant="destructive"
-                          size="sm"
-                          onClick={() => setCancelTarget(ride)}
-                          data-testid={`btn-cancel-ride-${ride.id}`}
-                        >
-                          {t("actions.cancel")}
-                        </Button>
-                      </Can>
+                      <div className="flex items-center gap-1">
+                        <Can perform={Permission.RIDE_ADMIN_CANCEL}>
+                          <TableActionButton
+                            icon={XCircle}
+                            label={t("actions.cancel")}
+                            variant="danger"
+                            onClick={() => setCancelTarget(ride)}
+                            data-testid={`btn-cancel-ride-${ride.id}`}
+                          />
+                        </Can>
+                      </div>
                     </td>
                   </tr>
                 ))}
@@ -149,7 +151,10 @@ export function RidesPageClient() {
       {/* Cancel confirm dialog */}
       <ConfirmDialog
         open={!!cancelTarget}
-        onClose={() => { setCancelTarget(null); setCancelReason(""); }}
+        onClose={() => {
+          setCancelTarget(null);
+          setCancelReason("");
+        }}
         onConfirm={handleConfirmCancel}
         title={t("cancel.title")}
         description={t("cancel.description")}

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Plus, Pencil, Trash2 } from "lucide-react";
 import { Can } from "@/components/auth/Can";
 import { Button } from "@/components/atoms/Button";
+import { TableActionButton } from "@/components/atoms/TableActionButton";
 import { Input } from "@/components/atoms/Input";
 import { Modal } from "@/components/molecules/Modal";
 import { ConfirmDialog } from "@/components/molecules/ConfirmDialog";
@@ -68,10 +69,7 @@ export function VehicleReferencePageClient() {
         { onSuccess: () => setFormOpen(false) }
       );
     } else {
-      createBrand(
-        { name, slug },
-        { onSuccess: () => setFormOpen(false) }
-      );
+      createBrand({ name, slug }, { onSuccess: () => setFormOpen(false) });
     }
   }
 
@@ -136,24 +134,22 @@ export function VehicleReferencePageClient() {
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-1">
                         <Can perform={Permission.VEHICLE_REFERENCE_UPDATE}>
-                          <button
+                          <TableActionButton
+                            icon={Pencil}
+                            label={t("actions.editBrand")}
+                            variant="default"
                             onClick={() => openEdit(brand)}
-                            aria-label={t("actions.editBrand")}
-                            className="rounded-md p-1.5 hover:bg-brand-primary/10 hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary"
                             data-testid={`btn-edit-brand-${brand.id}`}
-                          >
-                            <Pencil className="h-4 w-4" aria-hidden="true" />
-                          </button>
+                          />
                         </Can>
                         <Can perform={Permission.VEHICLE_REFERENCE_DELETE}>
-                          <button
+                          <TableActionButton
+                            icon={Trash2}
+                            label={t("actions.deleteBrand")}
+                            variant="danger"
                             onClick={() => setDeleteTarget(brand)}
-                            aria-label={t("actions.deleteBrand")}
-                            className="rounded-md p-1.5 hover:bg-danger/10 hover:text-danger focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary"
                             data-testid={`btn-delete-brand-${brand.id}`}
-                          >
-                            <Trash2 className="h-4 w-4" aria-hidden="true" />
-                          </button>
+                          />
                         </Can>
                       </div>
                     </td>
