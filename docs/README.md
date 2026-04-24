@@ -41,6 +41,17 @@
 |-------------------------------------------|--------------------------------------|
 | [Product Overview](./product/overview.md) | Functional domains, roles, use cases |
 
+## API Reference
+
+| Document                                    | Description                              |
+|---------------------------------------------|------------------------------------------|
+| [api.json](./api.json)                      | Full OpenAPI 3.1 spec (Vamu API)         |
+| [POST /v1/auth/login](./routes/auth/POST-v1-auth-login.md)     | User login — returns token pair          |
+| [POST /v1/auth/logout](./routes/auth/POST-v1-auth-logout.md)   | Logout — revokes refresh token           |
+| [POST /v1/auth/refresh](./routes/auth/POST-v1-auth-refresh.md) | Renew access token using refresh token   |
+
+> Each endpoint lives in its own file under `docs/routes/<tag>/`. Never consolidate multiple endpoints into a single file.
+
 ---
 
 ## Quick Start
