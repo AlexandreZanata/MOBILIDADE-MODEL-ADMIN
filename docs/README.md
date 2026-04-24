@@ -108,6 +108,12 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
+### Profile Photos
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/profile-photos/{userId}](./routes/profile-photos/GET-v1-profile-photos-userId.md) | Get user profile photo (public, no auth) |
+
 ### Admin - Emails
 
 | Document | Description |
