@@ -4,5 +4,10 @@
   "vehicles": "Vehicles",
   "vehicleReference": "Vehicle Reference",
   "serviceCategories": "Service Categories",
-  "appName": "Mobiliade Admin"
+  "appName": "Mobiliade Admin",
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "pt-BR": "Português"
+  }
 }

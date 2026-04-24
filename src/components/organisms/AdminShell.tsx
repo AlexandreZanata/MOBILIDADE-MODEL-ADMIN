@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { SidebarNav } from "@/components/organisms/SidebarNav";
+import { LanguageSwitcher } from "@/components/molecules/LanguageSwitcher";
 
 interface AdminShellProps {
   children: ReactNode;
@@ -11,6 +12,7 @@ interface AdminShellProps {
 /**
  * Root layout shell for the admin panel.
  * Manages sidebar collapse state and renders the main content area.
+ * The topbar contains the app name on the left and the language switcher on the right.
  */
 export function AdminShell({ children }: AdminShellProps) {
   const [collapsed, setCollapsed] = useState(false);
@@ -25,17 +27,19 @@ export function AdminShell({ children }: AdminShellProps) {
 
       <div className="flex flex-1 flex-col overflow-hidden">
         {/* Topbar */}
-        <header className="flex h-14 shrink-0 items-center border-b border-neutral-200 bg-white px-6">
+        <header className="flex h-14 shrink-0 items-center justify-between border-b border-neutral-200 bg-white px-6">
           <h1 className="text-sm font-semibold text-neutral-900">
             {t("appName")}
           </h1>
+
+          {/* Right-side controls */}
+          <div className="flex items-center gap-2">
+            <LanguageSwitcher />
+          </div>
         </header>
 
         {/* Main content */}
-        <main
-          id="main-content"
-          className="flex-1 overflow-y-auto p-6"
-        >
+        <main id="main-content" className="flex-1 overflow-y-auto p-6">
           {children}
         </main>
       </div>

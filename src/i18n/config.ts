@@ -44,11 +44,11 @@ void i18n
         serviceCategories: ptBRServiceCategories,
       },
     },
-    lng: "pt-BR",
+    lng: undefined,          // let LanguageDetector pick from localStorage / navigator
     fallbackLng: "pt-BR",
     defaultNS: "common",
     detection: {
-      order: ["localStorage"],
+      order: ["localStorage", "navigator"],
       lookupLocalStorage: "mobiliade.language",
       caches: ["localStorage"],
     },
