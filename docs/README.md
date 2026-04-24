@@ -67,6 +67,16 @@
 | [POST /api/v1/admin/billing/test/create-debt](./routes/billing-admin/POST-api-v1-admin-billing-test-create-debt.md) | ⚠️ Create test debt (dev/staging only) |
 | [DELETE /api/v1/admin/billing/test/debt/{cycleId}](./routes/billing-admin/DELETE-api-v1-admin-billing-test-debt-cycleId.md) | ⚠️ Delete test debt (dev/staging only) |
 
+### Admin - Service Categories
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/admin/service-categories](./routes/service-categories/GET-v1-admin-service-categories.md) | List service categories with cursor pagination and filters |
+| [POST /v1/admin/service-categories](./routes/service-categories/POST-v1-admin-service-categories.md) | Create a new service category |
+| [GET /v1/admin/service-categories/{id}](./routes/service-categories/GET-v1-admin-service-categories-id.md) | Get service category by ID |
+| [PATCH /v1/admin/service-categories/{id}](./routes/service-categories/PATCH-v1-admin-service-categories-id.md) | Update a service category (partial) |
+| [DELETE /v1/admin/service-categories/{id}](./routes/service-categories/DELETE-v1-admin-service-categories-id.md) | Soft delete a service category |
+
 ### Webhooks
 
 | Document | Description |
