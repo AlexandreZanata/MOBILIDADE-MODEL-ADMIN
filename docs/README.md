@@ -108,6 +108,13 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md) | Get current active ride |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md) | Get driver rating |
 
+### Card Brands
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/card-brands](./routes/card-brands/GET-v1-card-brands.md) | List all enabled card brands |
+| [GET /v1/card-brands/{id}](./routes/card-brands/GET-v1-card-brands-id.md) | Get card brand by ID |
+
 ### Admin - Vehicle Reference
 
 | Document | Description |
