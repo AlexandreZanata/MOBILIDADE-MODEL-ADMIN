@@ -6,15 +6,15 @@
 
 > ⚠️ **Development / Staging only.** This endpoint must never be called in production. Gate it behind an environment check in the facade layer.
 
-**Authentication:** Bearer token required.
+**Authentication:** Bearer token required (`Authorization: Bearer <accessToken>`).
 
 ---
 
 ## Parameters
 
-| Name      | Location | Type   | Required | Description                    |
-|-----------|----------|--------|----------|--------------------------------|
-| `cycleId` | path     | string | Yes      | UUID of the cycle to delete    |
+| Name      | Location | Type   | Required | Description                 |
+|-----------|----------|--------|----------|-----------------------------|
+| `cycleId` | path     | string | Yes      | UUID of the cycle to delete |
 
 **Example URL:**
 
@@ -38,9 +38,147 @@ No response body.
 
 ---
 
+### 400 — Bad Request
+
+**Content-Type:** `application/json`
+
+```json
+{
+  "error": {
+    "message": "string",
+    "code": "string",
+    "fields": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    }
+  }
+}
+```
+
+| Field           | Type   | Description                                     |
+|-----------------|--------|-------------------------------------------------|
+| `error.message` | string | Human-readable error description                |
+| `error.code`    | string | Machine-readable error code                     |
+| `error.fields`  | object | Map of field names to validation error messages |
+
+---
+
+### 401 — Unauthorized
+
+Missing or invalid Bearer token.
+
+**Content-Type:** `application/json`
+
+```json
+{
+  "error": {
+    "message": "string",
+    "code": "string",
+    "fields": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    }
+  }
+}
+```
+
+---
+
+### 403 — Forbidden
+
+Authenticated user does not have the required role or permission.
+
+**Content-Type:** `application/json`
+
+```json
+{
+  "error": {
+    "message": "string",
+    "code": "string",
+    "fields": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    }
+  }
+}
+```
+
+---
+
 ### 404 — Cycle not found
 
 No billing cycle exists with the provided `cycleId`.
+
+**Content-Type:** `application/json`
+
+```json
+{
+  "error": {
+    "message": "string",
+    "code": "string",
+    "fields": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    }
+  }
+}
+```
+
+---
+
+### 422 — Validation Error
+
+**Content-Type:** `application/json`
+
+```json
+{
+  "error": {
+    "message": "string",
+    "code": "string",
+    "fields": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    }
+  }
+}
+```
+
+---
+
+### 500 — Internal Server Error
+
+**Content-Type:** `application/json`
+
+```json
+{
+  "error": {
+    "message": "string",
+    "code": "string",
+    "fields": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    }
+  }
+}
+```
+
+---
+
+## Error Envelope Reference
+
+All error responses share the same envelope shape:
+
+| Field           | Type   | Description                                     |
+|-----------------|--------|-------------------------------------------------|
+| `error.message` | string | Human-readable error description                |
+| `error.code`    | string | Machine-readable error code                     |
+| `error.fields`  | object | Map of field names to validation error messages |
 
 ---
 
@@ -51,3 +189,4 @@ No billing cycle exists with the provided `cycleId`.
 - On `onSuccess`, invalidate `billingKeys.driverCycles(driverId)` and `billingKeys.driverStatus(driverId)`
 - Requires `BILLING_TEST_DELETE` permission — gate with `<Can perform={Permission.BILLING_TEST_DELETE}>`
 - Always show a `ConfirmDialog` before calling this mutation
+- On `401`, the facade layer triggers the token refresh flow automatically
