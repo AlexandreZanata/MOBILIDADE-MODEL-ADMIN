@@ -67,6 +67,23 @@
 | [POST /api/v1/admin/billing/test/create-debt](./routes/billing-admin/POST-api-v1-admin-billing-test-create-debt.md) | ⚠️ Create test debt (dev/staging only) |
 | [DELETE /api/v1/admin/billing/test/debt/{cycleId}](./routes/billing-admin/DELETE-api-v1-admin-billing-test-debt-cycleId.md) | ⚠️ Delete test debt (dev/staging only) |
 
+### Passengers
+
+| Document | Description |
+|----------|-------------|
+| [POST /v1/passengers/register](./routes/passengers/POST-v1-passengers-register.md) | Register new passenger account |
+| [POST /v1/passengers/verify-email](./routes/passengers/POST-v1-passengers-verify-email.md) | Verify email with code |
+| [GET /v1/passengers/profile](./routes/passengers/GET-v1-passengers-profile.md) | Get authenticated passenger profile |
+| [POST /v1/passengers/profile-photo](./routes/passengers/POST-v1-passengers-profile-photo.md) | Upload profile photo |
+| [DELETE /v1/passengers/profile-photo](./routes/passengers/DELETE-v1-passengers-profile-photo.md) | Remove profile photo |
+| [POST /v1/passengers/fare-estimate](./routes/passengers/POST-v1-passengers-fare-estimate.md) | Estimate ride fare for all categories |
+| [POST /v1/passengers/rides](./routes/passengers/POST-v1-passengers-rides.md) | Request a ride |
+| [GET /v1/passengers/rides](./routes/passengers/GET-v1-passengers-rides.md) | List passenger ride history |
+| [GET /v1/passengers/active-ride](./routes/passengers/GET-v1-passengers-active-ride.md) | Get current active ride |
+| [POST /v1/passengers/rides/{rideId}/cancel](./routes/passengers/POST-v1-passengers-rides-rideId-cancel.md) | Cancel a ride |
+| [POST /v1/passengers/rides/{rideId}/ratings](./routes/passengers/POST-v1-passengers-rides-rideId-ratings.md) | Rate driver after completed ride |
+| [GET /v1/passengers/ratings/me](./routes/passengers/GET-v1-passengers-ratings-me.md) | Get passenger rating |
+
 ### Drivers
 
 | Document | Description |
