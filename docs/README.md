@@ -108,6 +108,24 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md) | Get current active ride |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md) | Get driver rating |
 
+### Admin - Vehicle Reference
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/admin/vehicle-reference/brands](./routes/vehicle-reference/GET-v1-admin-vehicle-reference-brands.md) | List vehicle brands |
+| [POST /v1/admin/vehicle-reference/brands](./routes/vehicle-reference/POST-v1-admin-vehicle-reference-brands.md) | Create vehicle brand |
+| [GET /v1/admin/vehicle-reference/brands/{id}](./routes/vehicle-reference/GET-v1-admin-vehicle-reference-brands-id.md) | Get brand by ID |
+| [PATCH /v1/admin/vehicle-reference/brands/{id}](./routes/vehicle-reference/PATCH-v1-admin-vehicle-reference-brands-id.md) | Update brand |
+| [DELETE /v1/admin/vehicle-reference/brands/{id}](./routes/vehicle-reference/DELETE-v1-admin-vehicle-reference-brands-id.md) | Delete brand |
+| [GET /v1/admin/vehicle-reference/models](./routes/vehicle-reference/GET-v1-admin-vehicle-reference-models.md) | List vehicle models |
+| [POST /v1/admin/vehicle-reference/models](./routes/vehicle-reference/POST-v1-admin-vehicle-reference-models.md) | Create vehicle model |
+| [GET /v1/admin/vehicle-reference/models/{id}](./routes/vehicle-reference/GET-v1-admin-vehicle-reference-models-id.md) | Get model by ID |
+| [PATCH /v1/admin/vehicle-reference/models/{id}](./routes/vehicle-reference/PATCH-v1-admin-vehicle-reference-models-id.md) | Update model |
+| [DELETE /v1/admin/vehicle-reference/models/{id}](./routes/vehicle-reference/DELETE-v1-admin-vehicle-reference-models-id.md) | Delete model |
+| [GET /v1/admin/vehicle-reference/models/brand/{brandId}](./routes/vehicle-reference/GET-v1-admin-vehicle-reference-models-brand-brandId.md) | List models by brand |
+| [GET /v1/admin/vehicle-reference/min-year](./routes/vehicle-reference/GET-v1-admin-vehicle-reference-min-year.md) | Get minimum year configuration |
+| [PATCH /v1/admin/vehicle-reference/min-year](./routes/vehicle-reference/PATCH-v1-admin-vehicle-reference-min-year.md) | Update minimum year configuration |
+
 ### Admin - Service Categories
 
 | Document | Description |
