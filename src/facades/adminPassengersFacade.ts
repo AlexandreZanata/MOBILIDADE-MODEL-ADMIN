@@ -1,31 +1,9 @@
 import { resolveApiBase } from "@/lib/apiBase";
+import { buildQueryString, throwApiError } from "@/lib/http";
 import { authFacade } from "@/facades/authFacade";
-import { ApiError } from "@/types/api";
 import type { AdminPassenger } from "@/models/Passenger";
 import type { PaginatedResponse } from "@/types/pagination";
 import type { AdminPassengersListParams } from "@/types/passengers";
-
-function buildQuery(params: AdminPassengersListParams): string {
-  const q = new URLSearchParams();
-  Object.entries(params).forEach(([k, v]) => {
-    if (v !== undefined) q.set(k, String(v));
-  });
-  const str = q.toString();
-  return str ? `?${str}` : "";
-}
-
-async function parseError(res: Response): Promise<never> {
-  let code = "UNKNOWN_ERROR";
-  let message = res.statusText;
-  try {
-    const body = (await res.json()) as { error?: { code?: string; message?: string } };
-    code = body.error?.code ?? code;
-    message = body.error?.message ?? message;
-  } catch {
-    // ignore
-  }
-  throw new ApiError(res.status, code, message);
-}
 
 export const adminPassengersFacade = {
   /** GET /v1/admin/passengers */
@@ -33,9 +11,9 @@ export const adminPassengersFacade = {
     params: AdminPassengersListParams = {}
   ): Promise<PaginatedResponse<AdminPassenger>> {
     const res = await authFacade.fetchWithAuth(
-      `${resolveApiBase()}/v1/admin/passengers${buildQuery(params)}`
+      `${resolveApiBase()}/v1/admin/passengers${buildQueryString(params as Record<string, string | number | undefined | null>)}`
     );
-    if (!res.ok) return parseError(res);
+    if (!res.ok) return throwApiError(res);
     return res.json() as Promise<PaginatedResponse<AdminPassenger>>;
   },
 
@@ -45,7 +23,7 @@ export const adminPassengersFacade = {
       `${resolveApiBase()}/v1/admin/passengers/${passengerId}`,
       { method: "DELETE" }
     );
-    if (!res.ok) return parseError(res);
+    if (!res.ok) return throwApiError(res);
     return res.json() as Promise<{ message: string }>;
   },
 
@@ -55,7 +33,7 @@ export const adminPassengersFacade = {
       `${resolveApiBase()}/v1/admin/passengers/${passengerId}/reactivate`,
       { method: "POST" }
     );
-    if (!res.ok) return parseError(res);
+    if (!res.ok) return throwApiError(res);
     return res.json() as Promise<{ message: string }>;
   },
 };
