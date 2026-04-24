@@ -108,6 +108,15 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
+### Admin - Emails
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/admin/emails/dlq/stats](./routes/admin-emails/GET-v1-admin-emails-dlq-stats.md) | DLQ statistics (message count, consumer count) |
+| [GET /v1/admin/emails/dlq/messages](./routes/admin-emails/GET-v1-admin-emails-dlq-messages.md) | List DLQ messages with cursor pagination |
+| [POST /v1/admin/emails/dlq/messages/{messageId}/requeue](./routes/admin-emails/POST-v1-admin-emails-dlq-messages-messageId-requeue.md) | Requeue a DLQ message for retry |
+| [DELETE /v1/admin/emails/dlq/messages/{messageId}](./routes/admin-emails/DELETE-v1-admin-emails-dlq-messages-messageId.md) | Permanently remove a DLQ message |
+
 ### Routing
 
 | Document | Description |
