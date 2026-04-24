@@ -108,65 +108,73 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
-### Chat
+### Admin - Rides
 
 | Document | Description |
 |----------|-------------|
-| [GET /v1/chat/messages](./routes/chat/GET-v1-chat-messages.md) | List ride messages with cursor pagination |
-| [POST /v1/chat/messages](./routes/chat/POST-v1-chat-messages.md) | Send a chat message |
-| [POST /v1/chat/messages/read](./routes/chat/POST-v1-chat-messages-read.md) | Mark messages as read |
-| [GET /v1/chat/messages/unread](./routes/chat/GET-v1-chat-messages-unread.md) | Get unread message count for a ride |
-| [GET /v1/chat/messages/poll](./routes/chat/GET-v1-chat-messages-poll.md) | Long polling for new messages (WebSocket fallback) |
-| [GET /v1/chat/users/{userId}/online-status](./routes/chat/GET-v1-chat-users-userId-online-status.md) | Get user online status |
+| [GET /v1/admin/rides](./routes/admin-rides/GET-v1-admin-rides.md) | List all rides with cursor pagination |
+| [POST /v1/admin/rides/{rideId}/cancel](./routes/admin-rides/POST-v1-admin-rides-rideId-cancel.md) | Cancel a ride (administrative, no penalty) |
+| [PATCH /v1/admin/rides/{rideId}/status](./routes/admin-rides/PATCH-v1-admin-rides-rideId-status.md) | Update ride status (any transition allowed) |
+
+### Chat
+
+| Document                                                                                             | Description                                        |
+|------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| [GET /v1/chat/messages](./routes/chat/GET-v1-chat-messages.md)                                       | List ride messages with cursor pagination          |
+| [POST /v1/chat/messages](./routes/chat/POST-v1-chat-messages.md)                                     | Send a chat message                                |
+| [POST /v1/chat/messages/read](./routes/chat/POST-v1-chat-messages-read.md)                           | Mark messages as read                              |
+| [GET /v1/chat/messages/unread](./routes/chat/GET-v1-chat-messages-unread.md)                         | Get unread message count for a ride                |
+| [GET /v1/chat/messages/poll](./routes/chat/GET-v1-chat-messages-poll.md)                             | Long polling for new messages (WebSocket fallback) |
+| [GET /v1/chat/users/{userId}/online-status](./routes/chat/GET-v1-chat-users-userId-online-status.md) | Get user online status                             |
 
 ### Admin - Passengers
 
-| Document | Description |
-|----------|-------------|
-| [GET /v1/admin/passengers](./routes/admin-passengers/GET-v1-admin-passengers.md) | List passengers with cursor pagination and filters |
-| [DELETE /v1/admin/passengers/{passengerId}](./routes/admin-passengers/DELETE-v1-admin-passengers-passengerId.md) | Soft delete a passenger (reversible) |
-| [POST /v1/admin/passengers/{passengerId}/reactivate](./routes/admin-passengers/POST-v1-admin-passengers-passengerId-reactivate.md) | Reactivate a soft-deleted passenger |
+| Document                                                                                                                           | Description                                        |
+|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| [GET /v1/admin/passengers](./routes/admin-passengers/GET-v1-admin-passengers.md)                                                   | List passengers with cursor pagination and filters |
+| [DELETE /v1/admin/passengers/{passengerId}](./routes/admin-passengers/DELETE-v1-admin-passengers-passengerId.md)                   | Soft delete a passenger (reversible)               |
+| [POST /v1/admin/passengers/{passengerId}/reactivate](./routes/admin-passengers/POST-v1-admin-passengers-passengerId-reactivate.md) | Reactivate a soft-deleted passenger                |
 
 ### Payment Methods
 
-| Document | Description |
-|----------|-------------|
-| [GET /v1/payment-methods](./routes/payment-methods/GET-v1-payment-methods.md) | List all enabled payment methods |
-| [GET /v1/payment-methods/{id}](./routes/payment-methods/GET-v1-payment-methods-id.md) | Get payment method by ID |
+| Document                                                                              | Description                      |
+|---------------------------------------------------------------------------------------|----------------------------------|
+| [GET /v1/payment-methods](./routes/payment-methods/GET-v1-payment-methods.md)         | List all enabled payment methods |
+| [GET /v1/payment-methods/{id}](./routes/payment-methods/GET-v1-payment-methods-id.md) | Get payment method by ID         |
 
 ### Profile Photos
 
-| Document | Description |
-|----------|-------------|
+| Document                                                                                   | Description                              |
+|--------------------------------------------------------------------------------------------|------------------------------------------|
 | [GET /v1/profile-photos/{userId}](./routes/profile-photos/GET-v1-profile-photos-userId.md) | Get user profile photo (public, no auth) |
 
 ### Admin - Emails
 
-| Document | Description |
-|----------|-------------|
-| [GET /v1/admin/emails/dlq/stats](./routes/admin-emails/GET-v1-admin-emails-dlq-stats.md) | DLQ statistics (message count, consumer count) |
-| [GET /v1/admin/emails/dlq/messages](./routes/admin-emails/GET-v1-admin-emails-dlq-messages.md) | List DLQ messages with cursor pagination |
-| [POST /v1/admin/emails/dlq/messages/{messageId}/requeue](./routes/admin-emails/POST-v1-admin-emails-dlq-messages-messageId-requeue.md) | Requeue a DLQ message for retry |
-| [DELETE /v1/admin/emails/dlq/messages/{messageId}](./routes/admin-emails/DELETE-v1-admin-emails-dlq-messages-messageId.md) | Permanently remove a DLQ message |
+| Document                                                                                                                               | Description                                    |
+|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| [GET /v1/admin/emails/dlq/stats](./routes/admin-emails/GET-v1-admin-emails-dlq-stats.md)                                               | DLQ statistics (message count, consumer count) |
+| [GET /v1/admin/emails/dlq/messages](./routes/admin-emails/GET-v1-admin-emails-dlq-messages.md)                                         | List DLQ messages with cursor pagination       |
+| [POST /v1/admin/emails/dlq/messages/{messageId}/requeue](./routes/admin-emails/POST-v1-admin-emails-dlq-messages-messageId-requeue.md) | Requeue a DLQ message for retry                |
+| [DELETE /v1/admin/emails/dlq/messages/{messageId}](./routes/admin-emails/DELETE-v1-admin-emails-dlq-messages-messageId.md)             | Permanently remove a DLQ message               |
 
 ### Routing
 
-| Document | Description |
-|----------|-------------|
-| [GET /v1/routing/route](./routes/routing/GET-v1-routing-route.md) | Calculate route — GET version (testing only) |
-| [POST /v1/routing/route](./routes/routing/POST-v1-routing-route.md) | Calculate route with rate limiting and cache |
-| [POST /v1/routing/route/async](./routes/routing/POST-v1-routing-route-async.md) | Queue async route calculation |
-| [GET /v1/routing/rate-limit](./routes/routing/GET-v1-routing-rate-limit.md) | Get current rate limit info |
+| Document                                                                        | Description                                  |
+|---------------------------------------------------------------------------------|----------------------------------------------|
+| [GET /v1/routing/route](./routes/routing/GET-v1-routing-route.md)               | Calculate route — GET version (testing only) |
+| [POST /v1/routing/route](./routes/routing/POST-v1-routing-route.md)             | Calculate route with rate limiting and cache |
+| [POST /v1/routing/route/async](./routes/routing/POST-v1-routing-route-async.md) | Queue async route calculation                |
+| [GET /v1/routing/rate-limit](./routes/routing/GET-v1-routing-rate-limit.md)     | Get current rate limit info                  |
 
 ### Admin - Vehicles
 
-| Document | Description |
-|----------|-------------|
-| [GET /v1/admin/vehicles](./routes/admin-vehicles/GET-v1-admin-vehicles.md) | List all vehicles with cursor pagination |
-| [GET /v1/admin/vehicle-category-requirements](./routes/admin-vehicles/GET-v1-admin-vehicle-category-requirements.md) | List all vehicle category requirements |
-| [POST /v1/admin/vehicle-category-requirements](./routes/admin-vehicles/POST-v1-admin-vehicle-category-requirements.md) | Create or update vehicle category requirement |
-| [GET /v1/admin/vehicle-category-requirements/category/{categoryId}](./routes/admin-vehicles/GET-v1-admin-vehicle-category-requirements-category-categoryId.md) | Get requirement by category |
-| [DELETE /v1/admin/vehicle-category-requirements/category/{categoryId}](./routes/admin-vehicles/DELETE-v1-admin-vehicle-category-requirements-category-categoryId.md) | Remove category requirement |
+| Document                                                                                                                                                             | Description                                   |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| [GET /v1/admin/vehicles](./routes/admin-vehicles/GET-v1-admin-vehicles.md)                                                                                           | List all vehicles with cursor pagination      |
+| [GET /v1/admin/vehicle-category-requirements](./routes/admin-vehicles/GET-v1-admin-vehicle-category-requirements.md)                                                 | List all vehicle category requirements        |
+| [POST /v1/admin/vehicle-category-requirements](./routes/admin-vehicles/POST-v1-admin-vehicle-category-requirements.md)                                               | Create or update vehicle category requirement |
+| [GET /v1/admin/vehicle-category-requirements/category/{categoryId}](./routes/admin-vehicles/GET-v1-admin-vehicle-category-requirements-category-categoryId.md)       | Get requirement by category                   |
+| [DELETE /v1/admin/vehicle-category-requirements/category/{categoryId}](./routes/admin-vehicles/DELETE-v1-admin-vehicle-category-requirements-category-categoryId.md) | Remove category requirement                   |
 
 ### Driver - Rides
 
