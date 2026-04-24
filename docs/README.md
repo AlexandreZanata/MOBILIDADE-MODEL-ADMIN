@@ -108,6 +108,13 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
+### Payment Methods
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/payment-methods](./routes/payment-methods/GET-v1-payment-methods.md) | List all enabled payment methods |
+| [GET /v1/payment-methods/{id}](./routes/payment-methods/GET-v1-payment-methods-id.md) | Get payment method by ID |
+
 ### Profile Photos
 
 | Document | Description |
