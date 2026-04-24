@@ -108,6 +108,14 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
+### Admin - Passengers
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/admin/passengers](./routes/admin-passengers/GET-v1-admin-passengers.md) | List passengers with cursor pagination and filters |
+| [DELETE /v1/admin/passengers/{passengerId}](./routes/admin-passengers/DELETE-v1-admin-passengers-passengerId.md) | Soft delete a passenger (reversible) |
+| [POST /v1/admin/passengers/{passengerId}/reactivate](./routes/admin-passengers/POST-v1-admin-passengers-passengerId-reactivate.md) | Reactivate a soft-deleted passenger |
+
 ### Payment Methods
 
 | Document | Description |
