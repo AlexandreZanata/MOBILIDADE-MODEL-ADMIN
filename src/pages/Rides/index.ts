@@ -1,2 +1,0 @@
-export { Rides } from './Rides';
-

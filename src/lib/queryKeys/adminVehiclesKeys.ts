@@ -1,4 +1,4 @@
-import type { AdminVehiclesListParams } from "@/types/vehicles";
+import type { AdminVehiclesListParams, VehicleBrandsListParams, VehicleModelsListParams } from "@/types/vehicles";
 
 export const adminVehiclesKeys = {
   all: ["adminVehicles"] as const,
@@ -9,14 +9,14 @@ export const adminVehiclesKeys = {
 
 export const vehicleBrandsKeys = {
   all: ["vehicleBrands"] as const,
-  list: (params?: Record<string, string | undefined>) =>
+  list: (params?: VehicleBrandsListParams) =>
     [...vehicleBrandsKeys.all, "list", params ?? {}] as const,
   detail: (id: string) => [...vehicleBrandsKeys.all, "detail", id] as const,
 };
 
 export const vehicleModelsKeys = {
   all: ["vehicleModels"] as const,
-  list: (params?: Record<string, string | undefined>) =>
+  list: (params?: VehicleModelsListParams) =>
     [...vehicleModelsKeys.all, "list", params ?? {}] as const,
   detail: (id: string) => [...vehicleModelsKeys.all, "detail", id] as const,
 };

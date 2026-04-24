@@ -1,2 +1,0 @@
-export { BookIcon } from './BookIcon';
-

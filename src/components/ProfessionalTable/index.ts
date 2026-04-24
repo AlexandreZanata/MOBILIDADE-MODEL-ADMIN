@@ -1,1 +1,0 @@
-export { ProfessionalTable } from './ProfessionalTable';

@@ -1,2 +1,0 @@
-export { showConfirmDialog } from './ConfirmDialog';
-
