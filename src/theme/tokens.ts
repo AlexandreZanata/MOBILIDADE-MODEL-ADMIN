@@ -1,31 +1,30 @@
 /**
- * TypeScript references to CSS design tokens.
- * Use these for dynamic inline styles only.
- * Prefer Tailwind utility classes for static styles.
+ * Design token references — map to CSS custom properties defined in govmobile.css.
+ * Use these in TypeScript/TSX instead of raw CSS variable strings.
  */
 export const tokens = {
   colors: {
     brand: {
-      primary: "hsl(var(--color-brand-primary))",
-      secondary: "hsl(var(--color-brand-secondary))",
+      primary: "var(--color-brand-primary)",
+      secondary: "var(--color-brand-secondary)",
     },
     semantic: {
-      success: "hsl(var(--color-success))",
-      warning: "hsl(var(--color-warning))",
-      danger: "hsl(var(--color-danger))",
-      info: "hsl(var(--color-info))",
+      success: "var(--color-success)",
+      warning: "var(--color-warning)",
+      danger: "var(--color-danger)",
+      info: "var(--color-info)",
     },
     neutral: {
-      50: "hsl(var(--color-neutral-50))",
-      100: "hsl(var(--color-neutral-100))",
-      200: "hsl(var(--color-neutral-200))",
-      300: "hsl(var(--color-neutral-300))",
-      400: "hsl(var(--color-neutral-400))",
-      500: "hsl(var(--color-neutral-500))",
-      600: "hsl(var(--color-neutral-600))",
-      700: "hsl(var(--color-neutral-700))",
-      800: "hsl(var(--color-neutral-800))",
-      900: "hsl(var(--color-neutral-900))",
+      50: "var(--color-neutral-50)",
+      100: "var(--color-neutral-100)",
+      200: "var(--color-neutral-200)",
+      300: "var(--color-neutral-300)",
+      400: "var(--color-neutral-400)",
+      500: "var(--color-neutral-500)",
+      600: "var(--color-neutral-600)",
+      700: "var(--color-neutral-700)",
+      800: "var(--color-neutral-800)",
+      900: "var(--color-neutral-900)",
     },
   },
   radius: {

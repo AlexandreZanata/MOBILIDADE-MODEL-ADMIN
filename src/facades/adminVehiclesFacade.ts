@@ -11,10 +11,10 @@ import type {
   UpdateVehicleBrandInput,
 } from "@/types/vehicles";
 
-function buildQuery(params: Record<string, string | number | undefined>): string {
+function buildQuery(params: Record<string, string | number | undefined | null>): string {
   const q = new URLSearchParams();
   Object.entries(params).forEach(([k, v]) => {
-    if (v !== undefined) q.set(k, String(v));
+    if (v !== undefined && v !== null) q.set(k, String(v));
   });
   const str = q.toString();
   return str ? `?${str}` : "";
@@ -39,7 +39,7 @@ export const adminVehiclesFacade = {
     params: AdminVehiclesListParams = {}
   ): Promise<PaginatedResponse<AdminVehicle>> {
     const res = await authFacade.fetchWithAuth(
-      `${resolveApiBase()}/v1/admin/vehicles${buildQuery(params)}`
+      `${resolveApiBase()}/v1/admin/vehicles${buildQuery(params as Record<string, string | number | undefined | null>)}`
     );
     if (!res.ok) return parseError(res);
     return res.json() as Promise<PaginatedResponse<AdminVehicle>>;
@@ -50,7 +50,7 @@ export const adminVehiclesFacade = {
     params: VehicleBrandsListParams = {}
   ): Promise<PaginatedResponse<VehicleBrand>> {
     const res = await authFacade.fetchWithAuth(
-      `${resolveApiBase()}/v1/admin/vehicle-reference/brands${buildQuery(params)}`
+      `${resolveApiBase()}/v1/admin/vehicle-reference/brands${buildQuery(params as Record<string, string | number | undefined | null>)}`
     );
     if (!res.ok) return parseError(res);
     return res.json() as Promise<PaginatedResponse<VehicleBrand>>;
@@ -98,7 +98,7 @@ export const adminVehiclesFacade = {
     params: VehicleModelsListParams = {}
   ): Promise<PaginatedResponse<VehicleModel>> {
     const res = await authFacade.fetchWithAuth(
-      `${resolveApiBase()}/v1/admin/vehicle-reference/models${buildQuery(params)}`
+      `${resolveApiBase()}/v1/admin/vehicle-reference/models${buildQuery(params as Record<string, string | number | undefined | null>)}`
     );
     if (!res.ok) return parseError(res);
     return res.json() as Promise<PaginatedResponse<VehicleModel>>;

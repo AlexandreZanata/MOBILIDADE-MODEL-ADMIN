@@ -9,7 +9,7 @@ import { rideFixtures } from "@/test/fixtures/rides";
 import { resolveApiBase } from "@/lib/apiBase";
 import { PermissionsContext } from "@/components/auth/PermissionsProvider";
 import { UserRole } from "@/models/User";
-import "../../../test/i18n-mock";
+import "@/test/i18n-mock";
 
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
