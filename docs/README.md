@@ -50,6 +50,23 @@
 | [POST /v1/auth/logout](./routes/auth/POST-v1-auth-logout.md)   | Logout — revokes refresh token           |
 | [POST /v1/auth/refresh](./routes/auth/POST-v1-auth-refresh.md) | Renew access token using refresh token   |
 
+### Billing Admin
+
+| Document | Description |
+|----------|-------------|
+| [GET /api/v1/admin/billing/config](./routes/billing-admin/GET-api-v1-admin-billing-config.md) | Get global billing configuration |
+| [PUT /api/v1/admin/billing/config](./routes/billing-admin/PUT-api-v1-admin-billing-config.md) | Update global billing configuration |
+| [GET /api/v1/admin/billing/jobs/history](./routes/billing-admin/GET-api-v1-admin-billing-jobs-history.md) | Job execution history |
+| [POST /api/v1/admin/billing/jobs/billing-cycle/run](./routes/billing-admin/POST-api-v1-admin-billing-jobs-billing-cycle-run.md) | Run billing cycle job manually |
+| [POST /api/v1/admin/billing/jobs/expiration-check/run](./routes/billing-admin/POST-api-v1-admin-billing-jobs-expiration-check-run.md) | Run expiration check job manually |
+| [GET /api/v1/admin/billing/drivers/{driverId}/status](./routes/billing-admin/GET-api-v1-admin-billing-drivers-driverId-status.md) | Driver billing status |
+| [GET /api/v1/admin/billing/drivers/{driverId}/cycles](./routes/billing-admin/GET-api-v1-admin-billing-drivers-driverId-cycles.md) | Driver billing cycles list |
+| [POST /api/v1/admin/billing/drivers/{driverId}/unblock](./routes/billing-admin/POST-api-v1-admin-billing-drivers-driverId-unblock.md) | Manually unblock a driver |
+| [GET /api/v1/admin/billing/cycles/{cycleId}](./routes/billing-admin/GET-api-v1-admin-billing-cycles-cycleId.md) | Billing cycle details |
+| [POST /api/v1/admin/billing/cycles/{cycleId}/pix](./routes/billing-admin/POST-api-v1-admin-billing-cycles-cycleId-pix.md) | Generate PIX for a billing cycle |
+| [POST /api/v1/admin/billing/test/create-debt](./routes/billing-admin/POST-api-v1-admin-billing-test-create-debt.md) | ⚠️ Create test debt (dev/staging only) |
+| [DELETE /api/v1/admin/billing/test/debt/{cycleId}](./routes/billing-admin/DELETE-api-v1-admin-billing-test-debt-cycleId.md) | ⚠️ Delete test debt (dev/staging only) |
+
 ### Webhooks
 
 | Document | Description |
