@@ -108,6 +108,17 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
+### Chat
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/chat/messages](./routes/chat/GET-v1-chat-messages.md) | List ride messages with cursor pagination |
+| [POST /v1/chat/messages](./routes/chat/POST-v1-chat-messages.md) | Send a chat message |
+| [POST /v1/chat/messages/read](./routes/chat/POST-v1-chat-messages-read.md) | Mark messages as read |
+| [GET /v1/chat/messages/unread](./routes/chat/GET-v1-chat-messages-unread.md) | Get unread message count for a ride |
+| [GET /v1/chat/messages/poll](./routes/chat/GET-v1-chat-messages-poll.md) | Long polling for new messages (WebSocket fallback) |
+| [GET /v1/chat/users/{userId}/online-status](./routes/chat/GET-v1-chat-users-userId-online-status.md) | Get user online status |
+
 ### Admin - Passengers
 
 | Document | Description |
