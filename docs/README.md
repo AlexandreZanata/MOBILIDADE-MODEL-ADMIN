@@ -108,6 +108,16 @@
 | [GET /v1/drivers/active-ride](./routes/drivers/GET-v1-drivers-active-ride.md)                                     | Get current active ride                    |
 | [GET /v1/drivers/ratings/me](./routes/drivers/GET-v1-drivers-ratings-me.md)                                       | Get driver rating                          |
 
+### Admin - Vehicles
+
+| Document | Description |
+|----------|-------------|
+| [GET /v1/admin/vehicles](./routes/admin-vehicles/GET-v1-admin-vehicles.md) | List all vehicles with cursor pagination |
+| [GET /v1/admin/vehicle-category-requirements](./routes/admin-vehicles/GET-v1-admin-vehicle-category-requirements.md) | List all vehicle category requirements |
+| [POST /v1/admin/vehicle-category-requirements](./routes/admin-vehicles/POST-v1-admin-vehicle-category-requirements.md) | Create or update vehicle category requirement |
+| [GET /v1/admin/vehicle-category-requirements/category/{categoryId}](./routes/admin-vehicles/GET-v1-admin-vehicle-category-requirements-category-categoryId.md) | Get requirement by category |
+| [DELETE /v1/admin/vehicle-category-requirements/category/{categoryId}](./routes/admin-vehicles/DELETE-v1-admin-vehicle-category-requirements-category-categoryId.md) | Remove category requirement |
+
 ### Driver - Rides
 
 | Document                                                                                                                     | Description                            |
